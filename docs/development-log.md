@@ -1,5 +1,7 @@
 # Development log — 2026-10-10
 
+**Current status:** Implementation, independent review fixes, and browser acceptance complete. Final suite: 54 passing tests. See the completed browser acceptance section below.
+
 ## Authorized scope and execution
 
 The owner approved the linked design and six-task plan, requested sequential native implementation with test-first behavioral changes, small commits, an independent GPT-6 Astra High review, and real browser verification. No merge, push, publication, or course submission is authorized.
@@ -38,3 +40,24 @@ Review rulings: actual browser behavior remains a separate acceptance gate; expl
 ## Browser verification status
 
 A localhost Streamlit server was started with a temporary data directory and telemetry disabled. Native browser control repeatedly reported that macOS Accessibility/Screen Recording permissions were not granted, including after the owner reported enabling them and after reconnection. Chrome and in-app browser connector surfaces were unavailable. Permission to use a separate Playwright browser was requested; until it is authorized and exercised, CSV upload, canvas editing, confirmation dialogs, downloads, and restart behavior **are not browser-verified**. Automated coverage and server startup are not substitutes for that walkthrough.
+
+## Completed browser acceptance — Playwright / Edge
+
+The owner explicitly authorized Playwright after the native browser extension/permissions failure. Used an isolated headless Microsoft Edge browser and a disposable `/private/tmp` SQLite directory; no personal browser profile or portfolio database was used. Playwright was installed only in a disposable verification environment, not added to application dependencies.
+
+Observed passes:
+
+- Uploaded the actual synthetic CSV through the file input; expected totals appeared: $2,000 basis, $2,100 value, $100 gain, 5%.
+- Edited a real canvas cell to `oops`; row-specific validation appeared and save was disabled. The invalid edit survived a rerun. Correcting quantity to 11 produced $2,220 value.
+- Added a fractional DEMO_C holding (0.5 shares, $10 basis, $30 price), producing $2,115 total value. Selected and deleted rows through the table toolbar and returned to $2,100.
+- Canceled and confirmed unsaved-draft navigation. Saved snapshots; canceled same-date replacement and confirmed replacement after the UI settled.
+- Filtered to DEMO_A: $1,000 basis, $1,200 value, $200 gain, 20%, one holding. Intersecting with Healthcare showed the empty state and disabled the report.
+- Downloaded both CSV files through browser download events. The report had only DEMO_A and 100% allocation; complete snapshot retained both holdings and metadata. Re-imported the complete CSV; metadata was restored. Importing the analysis report was rejected.
+- Saved a second date, stopped the Streamlit process, restarted against the same temporary database, and reloaded the browser. Latest date and saved totals appeared; the older date could be opened separately.
+- Canceled deletion, confirmed deletion of the disposable older snapshot, and confirmed deletion of the disposable portfolio. The draft remained available; SQLite inspection confirmed cascaded removal of test holdings.
+
+Browser discovery: Plotly's default pie labels displayed 57.1% / 42.9%. The approved design requires two decimals. Added a failing label regression, then formatted labels directly from Decimal allocations. The full suite passed **54 tests**, and the restarted browser visibly showed **57.14% / 42.86%**. This was a browser-discovered correction after the independent review, not a second review pass.
+
+Some scripted actions initially raced Streamlit rerenders or focused a canvas cell before its editor opened. Repeating them with settled UI state and visible cell-editor checks passed; no production workaround was needed.
+
+[Verified synthetic dashboard screenshot](evidence/synthetic-dashboard.png). No video was recorded or submitted. Browser acceptance is now complete; the prior blocked status above is historical. Scope remains local desktop v1, and no merge, push, hosting, or publication occurred.

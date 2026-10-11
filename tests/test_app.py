@@ -105,3 +105,15 @@ def test_ignored_columns_remain_visible_after_import_and_rerun(tmp_path, monkeyp
     button(at, "New blank draft").click().run()
     button(at, "Discard changes and switch").click().run()
     assert not any("Ignored columns" in w.value for w in at.warning)
+
+
+def test_allocation_labels_show_two_decimal_places():
+    from decimal import Decimal
+
+    from stock_portfolio.charts import allocation_chart
+
+    chart = allocation_chart(
+        {"DEMO_A": Decimal("57.142857142857"), "DEMO_B": Decimal("42.857142857143")},
+        "Stock allocation",
+    )
+    assert list(chart.data[0].text or []) == ["DEMO_A<br>57.14%", "DEMO_B<br>42.86%"]

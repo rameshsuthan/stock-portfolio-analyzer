@@ -9,7 +9,8 @@ def allocation_chart(values, title):
             labels=list(values),
             values=[float(v) for v in values.values()],
             hole=0.45,
-            textinfo="label+percent",
+            textinfo="text",
+            text=[f"{label}<br>{value:.2f}%" for label, value in values.items()],
             sort=False,
         )
     )
