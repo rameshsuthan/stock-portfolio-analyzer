@@ -2,8 +2,8 @@
 
 import sqlite3
 from datetime import date
-from pathlib import Path
 
+from .database import UnsupportedSchema, open_database  # noqa: F401
 from .models import Metadata, Snapshot
 from .validation import FIELDS, holding_rows, validate_rows
 
@@ -12,40 +12,9 @@ class ReplacementRequired(ValueError):
     pass
 
 
-class UnsupportedSchema(ValueError):
-    pass
-
-
 class Repository:
     def __init__(self, path):
-        path = Path(path)
-        path.parent.mkdir(parents=True, exist_ok=True)
-        self.connection = sqlite3.connect(path)
-        c = self.connection
-        version = c.execute("PRAGMA user_version").fetchone()[0]
-        if version not in (0, 1) or (
-            version == 0
-            and c.execute("SELECT name FROM sqlite_master WHERE type='table'").fetchone()
-        ):
-            c.close()
-            raise UnsupportedSchema("Unsupported database schema; database left unchanged.")
-        c.execute("PRAGMA foreign_keys=ON")
-        if version == 0:
-            with c:
-                c.executescript("""
-                    BEGIN;
-                    CREATE TABLE portfolios (id INTEGER PRIMARY KEY, name TEXT NOT NULL,
-                        name_key TEXT NOT NULL UNIQUE);
-                    CREATE TABLE snapshots (id INTEGER PRIMARY KEY,
-                        portfolio_id INTEGER NOT NULL REFERENCES portfolios(id) ON DELETE CASCADE,
-                        snapshot_date TEXT NOT NULL, UNIQUE(portfolio_id, snapshot_date));
-                    CREATE TABLE holdings (snapshot_id INTEGER NOT NULL REFERENCES snapshots(id) ON DELETE CASCADE,
-                        symbol TEXT NOT NULL, quantity TEXT NOT NULL, cost_basis TEXT NOT NULL,
-                        current_price TEXT NOT NULL, company_name TEXT NOT NULL, sector TEXT NOT NULL,
-                        PRIMARY KEY(snapshot_id, symbol));
-                    PRAGMA user_version=1;
-                    COMMIT;
-                """)
+        self.connection = open_database(path)
 
     def __enter__(self):
         return self
