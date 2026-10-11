@@ -1,0 +1,1001 @@
+symbol,quantity,cost_basis,current_price,company_name,sector,portfolio_name,snapshot_date,currency,export_kind
+MOD,644.68,89797.48,232.15,Modine Manufacturing Company Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GPAC,649.8,125108.27,226.51,General Purpose Acquisition Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ARTNA,365.61,14968.07,40.94,Artesian Resources Corporation - Class A Non-Voting Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HTFL,52.44,14455.95,239.71,"Heartflow, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MAMA,629.07,25857.29,29.36,"Mama's Creations, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ONT,903.65,7910.55,14.59,"Onterris, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LYFT,924.58,449632.96,572.13,"Lyft, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MSI,998.46,444244.81,444.93,"Motorola Solutions, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HP,452.58,76675.20,147.32,"Helmerich & Payne, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ELDN,863.5,485252.46,401.4,"Eledon Pharmaceuticals, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DYOR,695.55,237122.73,568.19,Insight Digital Partners II - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OBK,168.04,44902.72,314.37,"Origin Bancorp, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RDN,34.5,254.61,7.38,Radian Group Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ABOS,301.73,223315.50,643.58,"Acumen Pharmaceuticals, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VEEE,317.28,46009.41,103.58,Twin Vee PowerCats Co. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+STGW,255.55,38022.77,247.98,Stagwell Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KDK,933.46,240380.89,302.96,"Kodiak AI, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LZB,799.52,157337.54,196.79,La-Z-Boy Incorporated Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PUK,21.2,2367.30,97.1,Prudential Public Limited Company Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ZS,337.48,131753.54,278.86,"Zscaler, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EFSC,907.98,127834.50,234.65,Enterprise Financial Services Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FANG,961.2,112127.82,137.24,"Diamondback Energy, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MKZR,399.03,59974.21,150.3,"MacKenzie Realty Capital, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JOF,467,181829.02,338.57,Japan Smaller Capitalization Fund Inc Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KLXE,140.89,89940.23,455.98,"KLX Energy Services Holdings, Inc.  - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CGTX,213.1,58392.38,456.69,"Cognition Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CAKE,590.8,25083.89,49.95,The Cheesecake Factory Incorporated - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BARK,620.35,142140.80,229.13,"BARK, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BTDR,447.08,125599.75,244.29,Bitdeer Technologies Group - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IDXX,378.13,113758.90,214.89,"IDEXX Laboratories, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LNTH,607.24,210638.20,578.13,"Lantheus Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OCGN,289.78,131678.93,534.6,"Ocugen, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KEQU,946.91,140521.44,148.4,Kewaunee Scientific Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BAND,62.48,5888.27,81.95,Bandwidth Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+REAX,708.38,154551.51,155.84,Real REMAX Group Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NVEC,40.82,10087.76,411.88,NVE Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CSR,656.86,92308.86,165.33,D/B/A Centerspace Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ODTX,527.44,303446.78,575.32,"Odyssey Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UTL,234.96,63876.23,236.4,UNITIL Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TRTX,395.83,358055.15,646.12,"TPG RE Finance Trust, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ARBB,372.4,39910.85,178.62,ARB IOT Group Limited - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TTD,734.06,135428.56,217.05,"The Trade Desk, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PENG,283.56,120651.94,425.49,"Penguin Solutions, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EOS,522.5,297511.24,495.13,Eaton Vance Enhance Equity Income Fund II Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ZCMD,480.75,188575.15,280.18,Zhongchao Inc. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FSUN,774.91,223936.59,481.64,FirstSun Capital Bancorp - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BHF,343.68,20887.15,71.5,"Brighthouse Financial, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UVSP,96.23,39567.85,411.18,Univest Financial Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MD,455.23,166571.84,318.18,"Pediatrix Medical Group, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KULR,97.5,19378.90,141.97,"KULR Technology Group, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WWD,805.11,101893.11,210.93,"Woodward, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PEBK,683.48,198966.50,342.48,"Peoples Bancorp of North Carolina, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SYBT,830.55,405989.45,488.82,"Stock Yards Bancorp, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FRBA,999.41,549168.80,477.82,First Bank  - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TOST,735.62,187744.94,182.3,"Toast, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OPENW,904.66,349756.03,644.36,"Opendoor Technologies Inc  - Series K Warrants, each whole warrant exercisable to purchase one share of Common Stock at an exercise price of $9.00 per warrant",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PNBK,237.01,80643.84,400.3,Patriot National Bancorp Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CCII,597.55,40113.53,67.13,Cohen Circle Acquisition Corp. II - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LIN,970.63,618243.26,553.87,Linde plc - Ordinary Shares,Materials,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AEHL,795.07,302773.79,272.01,Antelope Enterprise Holdings Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SHEL,808.32,109923.44,226.65,Shell PLC American Depositary Shares (each representing two (2) Ordinary Shares),Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SFIX,808.44,348623.99,507.33,"Stitch Fix, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TRGP,257.21,91137.22,354.33,"Targa Resources, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IPST,851.04,556398.46,568.51,"IP Strategy Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DRH,10.01,3599.64,256.86,Diamondrock Hospitality Company - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ALVO,644.18,32161.33,83.21,Alvotech - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TGHL,439.8,212088.71,567.34,The GrowHub Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BRKR,200.23,109501.78,546.88,Bruker Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PAYC,433.54,149920.30,300.7,"Paycom Software, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DGII,997.21,346133.59,247.93,Digi International Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TRGS,14.49,5604.67,644.66,TRG Latin America Acquisitions Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PHIO,526.31,219906.00,491.56,Phio Pharmaceuticals Corp. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SINT,254.71,75139.45,295,"SiNtx Technologies, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VIDA,393.12,94346.24,208.69,VIDA Global Inc. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IFF,984.12,471251.77,342.04,"International Flavors & Fragrances, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TXT,20.27,4376.74,359.87,Textron Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FTRA,779.22,345693.55,521.93,FutureCorp Space Acquisition 1 Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WT,42.46,12867.93,303.06,"WisdomTree, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EVCM,620.18,394139.58,552.63,EverCommerce Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PAG,586.36,318149.55,387.56,"Penske Automotive Group, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KMRK,653.75,197917.58,504.57,K-Tech Solutions Company Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MLR,664.31,135688.64,240.3,"Miller Industries, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HASI,279.4,20130.77,72.05,"HA Sustainable Infrastructure Capital, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BNL,689.24,268930.08,339.29,"Broadstone Net Lease, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JOE,576.32,388005.13,480.89,St. Joe Company (The) Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+III,419.63,99077.16,393.51,"Information Services Group, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IBAC,353.78,10876.79,36.17,IB Acquisition Corp. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AVBC,860.5,341738.97,397.14,"Avidia Bancorp, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AMS,805.79,446881.06,482.25,American Shared Hospital Services Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TEAD,275.64,80470.89,208.53,Teads Holding Co. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DFIN,957.67,343726.92,598.2,"Donnelley Financial Solutions, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GIB,393.6,141672.78,423.46,CGI Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HURN,334.76,8024.20,23.97,Huron Consulting Group Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ARL,269.61,135349.88,436.54,"American Realty Investors, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AAT,14.04,6449.33,328.11,"American Assets Trust, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FVCB,482.92,7142.39,24.65,"FVCBankcorp, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CYPH,956.49,169148.08,208.05,Cypherpunk Technologies Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VNTG,428.98,233781.23,544.97,Vantage Corp Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TDTH,443.69,321086.03,629.28,Trident Digital Tech Holdings Ltd - Class B Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CISS,74.73,39058.53,373.33,C3is Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+APMD,463.5,158035.89,568.27,"Apnimed, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SWK,762.57,243192.34,375.19,"Stanley Black & Decker, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ETS,624.82,175536.93,280.94,Elite Express Holding Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GEG,924.88,640305.06,602.01,"Great Elm Group, Inc.  - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OIG,859.45,109277.35,90.82,Orion180 Insurance Group Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CRK,757.88,231192.81,508.42,"Comstock Resources, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TW,500.92,217438.35,510.68,Tradeweb Markets Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CVE,984.03,522952.90,531.44,Cenovus Energy Inc Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VIP,818.88,505963.02,537.28,Vulcan Infrastructure and Power Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VATE,474.15,69029.60,103.99,INNOVATE Corp. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HIX,860.4,154417.71,299.12,Western Asset High Income Fund II Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+APH,731.47,65936.53,106.05,Amphenol Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AIIO,754.85,353443.42,468.23,Robo.ai Inc. - Class B Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RWT,328.82,170345.86,450.48,"Redwood Trust, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ULTA,715.44,54327.65,54.24,"Ulta Beauty, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ONDS,631.31,243366.22,642.49,Ondas Inc - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SOUL,660.55,239252.53,426.12,Soulpower Acquisition Corporation Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CGTL,521.9,128162.98,245.57,Creative Global Technology Holdings Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ADP,660.45,324321.57,427.01,"Automatic Data Processing, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CWEN,651.4,277655.34,304.46,"Clearway Energy, Inc. Class C Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CUB,436.4,55049.24,210.24,Lionheart Holdings - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MAIR,210.76,10809.67,60.34,Madison Air Solutions Corporation Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ABTC,593.04,161727.94,272.71,American Bitcoin Corp. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DNOW,175.84,97136.48,480.36,DNOW Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VNCE,710.47,632274.25,635.67,Vince Holding Corp. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PAYO,741.96,153256.29,344.26,Payoneer Global Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AQMS,806.08,395554.34,577.31,"Aqua Metals, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ZEO,311.47,181664.88,583.25,Zeo Energy Corporation - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VRM,978.82,395539.69,351.39,"Vroom, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ZBIO,799.81,605977.65,541.18,"Zenas BioPharma, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SBCF,633.64,212408.80,558.7,Seacoast Banking Corporation of Florida - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WSBF,11.33,1125.13,116.83,"Waterstone Financial, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GIPR,121.8,50240.06,412.48,Generation Income Properties Inc. - Common stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+REA,786.93,106931.20,118.16,"Rare Earths Americas, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NOEM,962.37,235511.19,174.8,CO2 Energy Transition Corp. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RACD,728.63,157283.53,359.77,Research Alliance Corporation IV - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SPG,109.07,18588.25,200.5,"Simon Property Group, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MIY,228.17,41376.35,181.34,"Blackrock MuniYield Michigan Quality Fund, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CINF,235.57,103561.75,382.28,Cincinnati Financial Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CXM,747.48,17151.68,16.39,"Sprinklr, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SVCC,656.48,156066.30,396.22,Stellar V Capital Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UPST,783.54,48991.62,73.56,"Upstart Holdings, Inc. - Common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FBRT,740.45,267309.85,361.01,"Franklin BSP Realty Trust, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SFBS,938.14,238158.57,220.75,"ServisFirst Bancshares, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ORLY,282.72,23499.12,59.37,"O'Reilly Automotive, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FINW,48.06,5403.00,187.37,FinWise Bancorp - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VTRS,278.76,30708.20,129.6,Viatris Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ATR,431.8,243526.56,563.98,"AptarGroup, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KIM,633.91,372480.76,510.95,Kimco Realty Corporation (HC) Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MPT,302.61,6583.58,15.54,"Medical Properties Trust, Inc. common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ONEG,901.18,107071.00,198.02,OneConstruction Group Limited - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RECT,434.63,109914.45,297.52,Rectitude Holdings Ltd - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CMPX,831.59,381566.76,458.84,"Compass Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GLBS,610.46,154390.22,219.92,Globus Maritime Limited - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GRML,787.96,392377.29,355.69,Greenland Mines Ltd - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PAY,929.23,243532.60,436.8,"Paymentus Holdings, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UPC,521.02,249006.40,562.26,Universe Pharmaceuticals Inc - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TEAM,117.68,40512.52,344.26,Atlassian Corporation  - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LKSP,780.81,358831.39,399.62,Lake Superior Acquisition Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PCT,467.18,260947.13,398.97,"PureCycle Technologies, Inc. - Common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NKSH,315.83,53157.98,280.52,"National Bankshares, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ADNT,549.7,207008.22,443.04,Adient plc Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ETN,826.07,293271.37,355.02,"Eaton Corporation, PLC Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RELY,361.3,242923.31,584.66,"Remitly Global, Inc. - Common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MYO,566.05,361730.86,456.46,Myomo Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AIRT,657.3,84397.32,214,"Air T, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GTERA,852.45,225866.86,311.72,Globa Terra Acquisition Corporation - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TRMD,931.68,135661.92,145.61,TORM plc - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PSF,341.32,169312.64,431.35,"Cohen & Steers Select Preferred and Income Fund, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ATEN,533.84,24125.30,32.28,"A10 Networks, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BURL,256.14,98997.09,644.16,"Burlington Stores, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HAL,756.83,343158.45,533.43,Halliburton Company Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LGIH,611.77,336485.74,550.02,"LGI Homes, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TLYS,516.99,62373.03,104.91,"Tilly's, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+XPOF,236.41,133557.94,403.53,"Xponential Fitness, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MDXG,977.11,22794.02,38.88,"MiMedx Group, Inc - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ICCC,406.9,125210.05,362.02,ImmuCell Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RYDE,347.3,98421.35,283.39,Ryde Group Ltd. Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UTMD,498.06,318700.13,556.42,"Utah Medical Products, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MUZE,810.76,223982.18,197.33,Muzero Acquisition Corp - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HIG,377.53,135808.87,599.55,"The Hartford Insurance Group, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NVS,551.12,235832.79,503.43,Novartis AG Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CHMI,591.22,16217.16,27.43,Cherry Hill Mortgage Investment Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PAHC,556.78,147550.04,230.44,Phibro Animal Health Corporation - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AMPX,786.29,168654.49,153.21,"Amprius Technologies, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+STLN,27.63,5387.02,324.95,"Starling Oncology, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IMMR,765.47,191791.95,294.77,Immersion Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DEI,841.47,16341.35,19.42,"Douglas Emmett, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KYTX,204.02,49223.91,209.8,"Kyverna Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+W,667.39,375990.17,402.41,Wayfair Inc. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NESR,46.02,14600.67,528.78,National Energy Services Reunited Corp - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RGTI,243.03,66300.41,320.95,"Rigetti Computing, Inc.  - Common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ALX,38.2,16108.94,421.7,"Alexander's, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ADIL,893.3,577257.61,561.92,"Adial Pharmaceuticals, Inc - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EWBC,322.68,136844.72,302.92,"East West Bancorp, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PG,634.91,5417.05,14.22,Procter & Gamble Company (The) Common Stock,Consumer Staples,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AA,705.43,229304.96,382.42,Alcoa Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SONO,456.13,27664.28,60.65,"Sonos, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HOWL,267.45,146725.08,477.05,"Werewolf Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ZNB,65.76,50924.28,553.14,Zeta Network Group - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NPWR,735.27,242140.59,548.87,NET Power Inc. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TVC,293.84,125945.99,504.26,Tennessee Valley Authority Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CALM,63.49,10963.45,172.68,"Cal-Maine Foods, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CAF,501.11,21155.11,36.71,Morgan Stanley China A Share Fund Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RCMT,240.78,81414.46,241.52,"RCM Technologies, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CLF,39.73,15182.18,636.89,Cleveland-Cliffs Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ARBE,202.41,99867.27,580.46,Arbe Robotics Ltd. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+C,911.11,87903.89,96.48,"Citigroup, Inc. Common Stock",Financials,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AVTR,499.68,230117.13,400.46,"Avantor, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ZNTL,733.46,201846.73,196.57,"Zentalis Pharmaceuticals, Inc. - common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TTMI,675.65,84000.86,207.21,"TTM Technologies, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ADSK,169.83,47783.11,331.01,"Autodesk, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VCEL,892.49,342296.69,383.53,Vericel Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SIND,909.26,675227.84,645.75,Sinda Ltd. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NTES,950.59,612659.06,460.36,"NetEase, Inc. - American Depositary Shares, each representing 5 ordinary shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MLGO,559.77,82763.11,246.42,"MicroAlgo, Inc. - Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NSAI,640.52,15124.60,27.78,NorthStrive Acquisition Corp I. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CMCM,742.99,426580.28,574.14,"Cheetah Mobile Inc. American Depositary Shares, each representing fifty (50) Class A Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BXP,329.65,142555.82,376.04,"BXP, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PUSA,456.79,318218.19,497.6,Powerus Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BTBD,954.55,207156.44,361.7,"BT Brands, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DIT,5.82,227.96,46.08,AMCON Distributing Company Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PVH,893.63,195088.37,218.31,PVH Corp. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LMT,744.36,239444.24,279.72,Lockheed Martin Corporation Common Stock,Industrials,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SAFE,104.14,75082.02,514.98,Safehold Inc. New Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IMDX,172.06,22034.69,213.44,Insight Molecular Diagnostics Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DDS,240.64,115297.36,563.68,"Dillard's, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GAP,214.45,133237.78,621.3,"Gap, Inc. (The) Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BLLN,390.85,278482.77,619.57,"BillionToOne, Inc. - Class A common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VRXA,997.82,214850.60,153.8,Veraxa Biotech AG - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ACAD,4.97,1273.16,426.95,ACADIA Pharmaceuticals Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MLAA,169.39,81559.76,566.46,Mountain Lake Acquisition Corp. II - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TPC,984.88,346283.81,351.6,Tutor Perini Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CHGG,27.9,2149.70,67,"Chegg, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GRBK,857.37,732626.09,610.36,"Green Brick Partners, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AXGN,247.08,7811.19,52.69,"Axogen, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TER,697.27,357782.83,603.67,"Teradyne, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KBDC,707.09,249595.70,352.99,"Kayne Anderson BDC, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TDY,510.11,204539.06,348.67,Teledyne Technologies Incorporated Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FDMT,519.3,434067.29,597.05,"4D Molecular Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ELTX,467.8,144648.44,515.35,"Elicio Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SMCI,656.64,53637.64,96.1,"Super Micro Computer, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NTSK,522.91,205843.52,393.65,"Netskope, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FORM,525.46,55762.87,92.28,"FormFactor, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UTF,103.95,43071.06,295.96,"Cohen & Steers Infrastructure Fund, Inc Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HON,123.7,17812.06,239.99,Honeywell International Inc. - Common Stock,Industrials,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MBC,655.58,15586.09,27.97,"MasterBrand, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FPS,915.52,56734.77,61.97,"Forgent Power Solutions, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HHH,353.19,90067.86,221.75,Howard Hughes Holdings Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IMA,455.17,172991.00,271.47,"ImageneBio, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TPVG,774.32,292855.57,630.35,TriplePoint Venture Growth BDC Corp. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GSIW,586.12,105598.90,211.96,Garden Stage Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GTM,793.32,60466.85,76.22,ZoomInfo Technologies Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MYPS,971.56,96768.83,86.61,"PLAYSTUDIOS, Inc.  - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AGPU,94.98,32100.77,241.41,Axe Compute Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+YSXT,796.7,58863.38,123.14,"YSX Tech. Co., Ltd  - Class A Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+QUCY,268.36,42226.98,185.12,Quantum Cyber N.V. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AMIX,998.8,190591.02,190.82,"Autonomix Medical, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+THC,510.33,14237.70,24.26,Tenet Healthcare Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WEST,271.33,197585.22,520.15,Westrock Coffee Company - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PECO,126.34,10684.57,140.95,"Phillips Edison & Company, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SNEX,588.27,197091.63,394.16,StoneX Group Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FVRR,191.64,77529.88,404.56,"Fiverr International Ltd. Ordinary Shares, no par value",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UBER,494.85,102200.63,179.59,"Uber Technologies, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IHS,620.57,388587.28,447.27,IHS Holding Limited Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PFSI,778.75,121564.43,260.17,"PennyMac Financial Services, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ADAM,336.68,180767.20,631.66,"Adamas Trust, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FLGT,297.06,81115.20,273.06,"Fulgent Genetics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EPRT,341.53,131464.46,334.72,"Essential Properties Realty Trust, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SIMA,678.31,255631.98,269.19,SIM Acquisition Corp. I - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GLW,156.23,39857.40,425.2,Corning Incorporated Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JELD,16.58,5787.01,410.63,"JELD-WEN Holding, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EGHA,611.04,299305.72,489.83,EGH Acquisition Corp. - Class A ordinary shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RCON,767.46,534357.46,605.45,"Recon Technology, Ltd. - Class A Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ESLT,974.09,830986.44,609.35,Elbit Systems Ltd. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BIYA,184.66,29564.80,266.84,Baiya International Group Inc.  - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ODC,701.83,83833.94,140.53,Oil-Dri Corporation Of America Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RGCO,93.98,46507.88,494.87,RGC Resources Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PSO,289.81,116185.26,348.61,"Pearson, Plc Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OKUR,625.59,353027.94,403.08,"OnKure Therapeutics, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RLI,295.89,77463.41,436.33,RLI Corp. Common Stock (DE),Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TCI,318.86,64993.23,239.8,"Transcontinental Realty Investors, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AUB,588.67,234726.28,398.74,Atlantic Union Bankshares Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EP,624.24,395363.03,550.74,Empire Petroleum Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LNG,688.49,319528.21,331.5,"Cheniere Energy, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LITE,334.08,56682.69,282.78,Lumentum Holdings Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RELL,282.31,142749.49,594.88,"Richardson Electronics, Ltd. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GS,51.71,3274.28,63.32,"Goldman Sachs Group, Inc. (The) Common Stock",Financials,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SKT,353.82,244493.87,600.88,Tanger Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DEA,461.03,145521.35,225.46,"Easterly Government Properties, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MMSI,191.57,41710.15,362.88,"Merit Medical Systems, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FG,942.15,51957.69,64.88,"F&G Annuities & Life, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SFWL,504.89,271746.94,538.23,Shengfeng Development Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PLPC,640.86,346738.58,470.48,Preformed Line Products Company - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KEYY,27.77,3214.04,82.67,Keystone Acquisition Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WLY,703.9,138354.36,327.59,"John Wiley & Sons, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GENK,366.22,104057.02,334.28,"GEN Restaurant Group, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PUMP,14.48,2703.27,186.69,ProPetro Holding Corp. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RPGL,995.86,218935.34,191.17,Republic Power Group Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KOYN,463.57,376224.14,579.7,CSLM Digital Asset Acquisition Corp III - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SYM,463.65,33062.88,118.85,Symbotic Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+QSI,644.4,10500.18,19.17,Quantum-Si Incorporated - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LSAK,138.76,31168.27,224.62,"Lesaka Technologies, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GTN,377.74,243099.49,559.62,"Gray Media, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EZPW,52.64,38711.77,525.29,"EZCORP, Inc. - Class A Non-Voting Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HLSQ,298.1,105098.14,587.6,Tessera Defense and Homeland Security Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LQDT,750.84,268375.37,420.51,"Liquidity Services, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NOMA,72.66,14027.01,193.05,NOMADAR Corp. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VNDA,96.68,34224.04,307.82,Vanda Pharmaceuticals Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+QCOM,695.7,375917.32,385.96,QUALCOMM Incorporated - Common Stock,Technology,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+APRE,199.85,16793.40,140.05,"Aprea Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NODK,431.53,231414.44,630.9,"NI Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ENSG,947.34,182391.37,192.53,"The Ensign Group, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BCO,126.27,52614.12,362.33,Brinks Company (The) Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EBF,899.75,383538.23,304.48,"Ennis, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HUHU,887.88,3111.13,5.84,HUHUTECH International Group Inc. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RY,211.12,40793.03,227.32,Royal Bank Of Canada Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AKBA,281.96,58080.94,205.99,"Akebia Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UMC,369.37,231447.43,544.87,United Microelectronics Corporation (NEW) Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MYRG,690.42,448970.46,464.49,"MYR Group, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ACH,455.98,3277.58,11.98,"Accendra Health, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VCV,393.75,85773.71,256.28,Invesco California Value Municipal Income Trust Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WOLF,161.95,99644.60,615.28,"Wolfspeed, Inc. Common Stock New",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DRUG,119.04,8921.51,65.17,Bright Minds Biosciences Inc. - common stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LIMN,902.82,337992.33,267.41,"Liminatus Pharma, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EBMT,100.99,23476.54,387.44,"Eagle Bancorp Montana, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SHOE,102,38812.12,447.66,"Shoe Station Group, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ATKR,424.31,187197.09,441.18,Atkore Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PESI,53.57,31709.58,514.72,"Perma-Fix Environmental Services, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RUN,554.59,318660.76,410.42,Sunrun Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RAPP,672.21,46559.95,115.44,"Rapport Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PBA,223.11,118115.66,622.83,Pembina Pipeline Corp. Ordinary Shares (Canada),Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TDF,441.28,161504.07,365.99,"Templeton Dragon Fund, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ENTA,422.73,223429.71,459.6,"Enanta Pharmaceuticals, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CIGL,387.75,4342.80,8,Concorde International Group Ltd - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+INVA,874.92,106948.47,203.73,"Innoviva, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LSE,929.26,338862.56,429.01,"Leishen Energy Holding Co., Ltd. - Class A Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GASS,977.24,394150.21,403.33,"StealthGas, Inc. - common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PDM,840.71,302217.17,312.59,"Piedmont Realty Trust, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AFRM,826.15,493768.38,426.91,"Affirm Holdings, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UFPI,48.81,11330.17,386.88,"UFP Industries, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JNJ,115.64,35410.41,360.25,Johnson & Johnson Common Stock,Healthcare,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ABT,58.89,20361.81,345.76,Abbott Laboratories Common Stock,Healthcare,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CLDX,665.81,330230.77,431.29,"Celldex Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OPP,462.96,377427.21,582.32,"RiverNorth/DoubleLine Strategic Opportunity Fund, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GPN,666.28,43426.80,108.63,Global Payments Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CRBG,783.64,343238.24,515.3,Corebridge Financial Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BGC,29.36,19053.17,648.95,"BGC Group, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SPFI,289.53,134981.78,405.4,"South Plains Financial, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NAKA,584.82,116909.03,142.79,Nakamoto Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NEOG,788.76,48229.52,101.91,Neogen Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AMPY,940.86,413980.75,517.65,Amplify Energy Corp. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CTSH,544.29,25287.71,46.46,Cognizant Technology Solutions Corporation - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ZKH,343.04,82678.47,209.58,"ZKH Group Limited American Depositary Shares, each representing thirty-five (35) Class A Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BZH,544.9,89277.51,117.03,"Beazer Homes USA, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BBSI,554.88,27779.51,83.44,"Barrett Business Services, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+INN,716.02,313419.50,514.97,"Summit Hotel Properties, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WYY,601.69,343240.08,570.46,WidePoint Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PWR,241.76,23303.97,83.82,"Quanta Services, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RMCO,228.5,77230.26,241.42,Royalty Management Holding Corporation - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AMKR,910.33,272481.80,498.87,"Amkor Technology, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NYC,464.43,21396.29,54.2,American Strategic Investment Co. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ZD,867.71,59151.79,68.17,"Ziff Davis, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ALH,665.09,210541.22,275.27,Alliance Laundry Holdings Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RMMZ,497.18,439174.01,630.95,"RiverNorth Managed Duration Municipal Income Fund II, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BDN,193.99,67488.73,579.83,Brandywine Realty Trust Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RANG,125.42,15590.21,146.24,Range Capital Acquisition Corp. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NEXM,754.6,351311.58,465.56,NexMetals Mining Corp. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OVLY,68.18,2405.53,30.68,Oak Valley Bancorp (CA) - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HLNE,126.43,101569.06,573.83,Hamilton Lane Incorporated - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EFC,795.91,42181.64,88.33,Ellington Financial Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CTKB,429.2,78604.12,215.46,"Cytek Biosciences, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CLSK,805.35,458815.95,569.71,"CleanSpark, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SGHT,466.44,55180.09,102.87,"Sight Sciences, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MGRT,939.44,729076.84,554.34,Mega Fortune Company Limited - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SLND,342.97,74163.83,360.4,"Southland Holdings, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FRA,1.64,775.62,556.4,Blackrock Floating Rate Income Strategies Fund Inc  Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+XHLD,657.67,187863.44,285.65,"TEN Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EPRX,68.07,33894.67,432.99,Eupraxia Pharmaceuticals Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+XXI,901.25,360507.21,285.72,"Twenty One Capital, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AIP,919.34,43532.59,78.92,"Arteris, Inc.  - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CORZ,583.5,322210.16,649.65,"Core Scientific, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GOLF,182.85,99395.43,543.59,Acushnet Holdings Corp. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CLFD,302.62,200403.29,575.85,"Clearfield, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BTCT,29.53,1898.42,45.92,BTC Digital Ltd. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SNWV,356.78,2996.95,14,"SANUWAVE Health, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MKSI,337.31,158056.55,551.27,MKS Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CHCO,704.71,178298.68,253.01,City Holding Company - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FWRD,374.55,95893.98,222.63,Forward Air Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ADPT,639.4,549941.55,614.35,Adaptive Biotechnologies Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TAYD,574.05,95362.33,276.87,"Taylor Devices, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NTHI,15.55,6451.33,488.09,"NeOnc Technologies Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IRON,703.71,270020.56,383.71,"Disc Medicine, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VRSN,544.59,50597.04,80.79,"VeriSign, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AG,625.21,261170.22,298.38,First Majestic Silver Corp. Ordinary Shares (Canada),Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IVDA,799.67,171567.60,357.58,"Iveda Solutions, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KAI,573.88,31423.95,64.42,Kadant Inc Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MP,542.93,18171.87,33.47,MP Materials Corp. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FACT,450.44,55939.47,107.99,FACT II Acquisition Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IMVT,830.22,577260.27,496.65,"Immunovant, Inc.  - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KGS,550.42,96803.47,293.12,"Kodiak Gas Services, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MESH,729.24,192458.47,310.49,Meshflow Acquisition Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AGO,557.92,97619.26,174.97,Assured Guaranty Ltd. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+COLD,296.55,67647.21,198.36,"Americold Realty Trust, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CLPR,604.18,81345.59,96.17,Clipper Realty Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OC,372.06,130343.04,583.88,Owens Corning Inc Common Stock New,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CENT,726.92,46823.10,75.78,Central Garden & Pet Company - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OHI,142.51,13358.89,93.74,"Omega Healthcare Investors, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SFST,767.37,164767.00,186.71,"Southern First Bancshares, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MSEX,713.39,44584.02,44.64,Middlesex Water Company - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OSG,44.13,3371.44,127.33,"Octave Specialty Group, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PODD,970.58,324082.00,392.83,Insulet Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DXLG,316.07,149921.48,474.33,"Destination XL Group, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TWI,423.81,76450.66,156.86,"Titan International, Inc. (DE) Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PTAC,336.91,268123.09,568.45,Patriot Acquisition Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PULM,297.2,102045.40,572.26,"Pulmatrix, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WYFI,59.27,2796.57,55.51,"WhiteFiber, Inc. - Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BBY,78.54,16271.92,207.18,"Best Buy Co., Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UNH,894.55,88872.20,86.39,UnitedHealth Group Incorporated Common Stock (DE),Healthcare,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TACT,541.75,461987.06,609.12,TransAct Technologies Incorporated - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GCO,306.38,72176.39,392.63,Genesco Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CNP,643.4,16991.87,31.07,"CenterPoint Energy, Inc (Holding Co) Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SXTP,748.68,81299.16,108.59,"60 Degrees Pharmaceuticals, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PSQL,718.98,58109.40,70.28,Pasqal Holding SA - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CIX,136.85,65832.24,343.61,CompX International Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MBIO,325.01,22532.94,115.55,"Mustang Bio, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FFR,654.35,208462.82,374.8,FF EAI Robotics Ecosystem Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KEN,639.09,182051.18,284.86,Kenon Holdings Ltd. Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AMG,146.85,49484.49,293.02,"Affiliated Managers Group, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JILL,787.63,115230.27,104.5,"J. Jill, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PLAY,201.24,66775.05,553.03,"Dave & Buster's Entertainment, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AIRG,97.61,23938.90,288.53,"Airgain, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VEL,602.93,75125.08,124.6,"Velocity Financial, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AMCX,701.39,133387.19,165.37,AMC Global Media Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PACH,145.82,25236.78,123.62,Pioneer Acquisition I Corp - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MOB,859.87,25383.36,49.2,Mobilicom Limited - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NET,474.27,176973.85,439,"Cloudflare, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BMRC,764.31,217186.33,284.16,Bank of Marin Bancorp - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CAMP,956.51,664732.84,604.31,CAMP4 Therapeutics Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ICLR,17.49,15561.34,635.52,ICON plc - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MIR,751.16,279134.06,619.34,"Mirion Technologies, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BOF,105.22,11521.27,128.82,BranchOut Food Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GLXG,91.15,12027.24,131.95,Galaxy Payroll Group Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GRAN,699.33,161336.48,200.61,Grande Group Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DMC,664.54,208288.10,223.88,Del Monte Corporation Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MNPR,302.87,67740.51,372.77,Monopar Therapeutics Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ESS,3.65,192.11,61.92,"Essex Property Trust, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DAVE,193.55,90734.30,468.79,Dave Inc.  - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NYAX,559.13,237697.63,369.67,Nayax Ltd. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KNTK,141.21,120502.40,609.54,Kinetik Holdings Inc. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+INDO,381.32,88400.65,386.38,Indonesia Energy Corporation Limited Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MTW,982.41,119228.22,142.78,"Manitowoc Company, Inc. (The) Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CALC,180.93,65623.31,362.7,"CalciMedica, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ACRS,82.87,18839.96,197.69,"Aclaris Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PJT,359.12,239342.71,476.05,PJT Partners Inc. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SLDB,118.78,27797.37,390.04,Solid Biosciences Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JMIA,547.55,137549.49,295.54,"Jumia Technologies AG American Depositary Shares, each representing two Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CBFV,387.15,20441.52,52.8,"CB Financial Services, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VRT,685.43,399025.13,506.22,"Vertiv Holdings, LLC Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GMHS,843.39,145125.49,122.91,Gamehaus Holdings Inc. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KN,757.33,80596.57,177.37,Knowles Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HPQ,619.92,269151.60,510.79,HP Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NDAQ,786.26,244448.23,310.9,"Nasdaq, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NSP,500.56,196553.64,341.45,"Insperity, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KLTR,912.22,104914.42,82.15,"Kaltura, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AS,772.15,11702.71,25.26,"Amer Sports, Inc. Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MHD,902.45,253114.21,329.97,"Blackrock MuniHoldings Fund, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FBP,559.32,238164.05,425.81,First BanCorp. New Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ANIX,56.86,11062.51,169.18,"Anixa Biosciences, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FCCO,166.61,106758.02,457.69,First Community Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ADIG,210.4,69847.33,553.29,ADI Global Distribution Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AFCG,331.44,70873.31,251.57,Advanced Flower Capital Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ADEA,659.13,67593.78,102.55,Adeia Inc.  - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SWBI,779.75,438214.43,488.69,"Smith & Wesson Brands, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+F,332.6,235697.66,506.18,Ford Motor Company Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CPSH,855.72,127274.66,247.89,CPS Technologies Corp. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EML,599.85,76455.38,149.95,Eastern Company (The) - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PAII,555.01,352087.24,634.38,Pyrophyte Acquisition Corp. II Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NEXT,527.98,143190.55,235.83,NextDecade Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LMND,898.63,181201.55,144.03,"Lemonade, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IACO,834.69,85849.54,171.42,Idea Acquisition Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UNB,520.66,227232.95,513.45,"Union Bankshares, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GIL,961.01,432944.62,450.51,"Gildan Activewear, Inc. Class A Sub. Vot. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KRSP,878.88,113634.35,112.43,Rice Acquisition Corporation 3 Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ENIC,712.52,490584.27,491.8,Enel Chile S.A. American Depositary Shares (Each representing 50 shares of Common Stock),Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SOAR,950.14,15055.92,26.41,"Volato Group, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TOP,342.38,154640.89,531.37,TOP Financial Group Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MPA,751.82,333387.06,443.44,Blackrock MuniYield Pennsylvania Quality Fund Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CWD,442.16,187406.86,368.56,CaliberCos Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SID,430.06,305094.03,506.73,Companhia Siderurgica Nacional S.A. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UROY,338.39,67445.86,332.19,Uranium Royalty Corp. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ENB,872.24,36870.02,49.73,Enbridge Inc Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TMO,727.76,312223.60,429.02,Thermo Fisher Scientific Inc Common Stock,Healthcare,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FCNCA,91.21,25436.19,242.5,"First Citizens BancShares, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MDLZ,261.83,194439.15,530.44,"Mondelez International, Inc. - Class A Common Stock",Consumer Staples,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BRFH,910.1,93201.52,170.68,Barfresh Food Group Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PACB,470.3,191090.89,478.02,"Pacific Biosciences of California, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IRAB,462.27,118239.42,255.78,Iris Acquisition Corp II Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SPRO,600,141795.00,205.5,"Spero Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JCAP,2.42,1540.15,454.59,"Jefferson Capital, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CRWS,154.12,48542.25,524.94,"Crown Crafts, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CRGY,459.98,17461.30,44.66,Crescent Energy Company Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RCEL,528.08,311968.54,590.76,"Avita Medical, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TFSL,899.15,402886.19,389.63,TFS Financial Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FULT,780.1,324725.99,297.33,Fulton Financial Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WTW,525.89,147404.86,467.16,Willis Towers Watson Public Limited Company - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SLG,327.44,98988.71,355.66,SL Green Realty Corp Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SBET,666.87,377114.98,565.5,"Sharplink, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+INCR,373.76,112794.41,262.42,Intercure Ltd. - ordinary shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NPO,873.18,156657.22,128.15,Enpro Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+XPEL,535.83,202055.06,628.48,"XPEL, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VYX,349.2,97977.31,330.09,NCR Voyix Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NUCL,584.85,201527.61,344.58,Eagle Nuclear Energy Corp. - Common stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SWVL,109.3,57573.34,458.04,Swvl Holdings Corp - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+XNCR,960.27,537603.32,399.89,"Xencor, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RNXT,150.6,25712.84,284.56,"RenovoRx, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WGS,721.69,314619.31,512.88,GeneDx Holdings Corp. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PLD,134.04,84950.53,633.77,"Prologis, Inc. Common Stock",Real Estate,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IDAI,99.66,39284.53,342.77,T Stamp Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CUBI,993.37,109032.29,78.4,"Customers Bancorp, Inc Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UG,470.58,157143.60,556.56,"United-Guardian, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CHPT,591.48,223360.30,444.27,"ChargePoint Holdings, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NHI,895.43,66834.90,74.64,"National Health Investors, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DFLI,721.55,467781.59,563.74,Dragonfly Energy Holdings Corp - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GRAL,522.41,309298.06,422.9,"GRAIL, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AM,319.84,105906.06,551.87,Antero Midstream Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WK,658.08,330357.15,590.59,Workiva Inc. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SBR,968.99,424921.49,438.52,Sabine Royalty Trust Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MAZE,380.05,61157.46,139.93,"Maze Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MEDP,84.23,45307.99,384.22,"Medpace Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NIM,818.62,219490.03,446.87,Nuveen Select Maturities Municipal Fund Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ATLX,5.46,1783.77,384.35,Atlas Lithium Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PRMB,262.4,137340.16,523.4,Primo Brands Corporation Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OPAL,255.61,135561.61,461.17,OPAL Fuels Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IBG,13.95,2341.06,119.87,Innovation Beverage Group Limited - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+USB,711.86,52484.01,122.88,U.S. Bancorp Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EMD,247.9,6997.85,33.21,Western Asset Emerging Markets Debt Fund Inc Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MPLT,941.43,349082.24,370.8,"MapLight Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+YAAS,647.15,481370.56,646.81,Youxin Technology Ltd - Class A Ordinary shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AMRX,236.33,25387.04,76.73,"Amneal Pharmaceuticals, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KARO,501.14,147563.68,490.76,Karooooo Ltd. - Ordinary shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ASIC,290.03,66643.24,270.33,Ategrity Specialty Insurance Company Holdings Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SPHR,640.62,283602.47,442.7,Sphere Entertainment Co. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FRMI,288.97,148086.43,445.62,Fermi Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SUI,527.38,141553.01,191.72,"Sun Communities, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BKSY,132.76,33564.65,421.37,BlackSky Technology Inc. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VHC,448.06,162242.53,426,VirnetX Holding Corp - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NUAI,683.37,57013.56,83.43,"New Era Energy & Digital, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SIMO,325.08,161028.70,430.74,"Silicon Motion Technology Corporation - American Depositary Shares, each representing four ordinary shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WENC,321.28,131469.70,292.29,West Enclave Merger Corp. Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TNMG,36.44,8351.61,381.98,TNL Mediagene - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MOBI,401.13,105851.19,310.45,"Mobia Medical, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GDOT,162.21,73325.41,452.04,"Green Dot Corporation Class A Common Stock, $0.001 par value",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ACCV,20.91,8719.50,362.61,Accelevation Holdings Corp. - Class A ordinary shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TSLX,932.28,473536.71,362.81,"Sixth Street Specialty Lending, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IPVV,449.31,141888.50,526.32,"InterPrivate Investment Partners V, Inc. - Class A Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SAIH,184.54,67857.20,432.6,SAIHEAT Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GNRC,998.21,341028.46,341.64,Generac Holdlings Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NTWK,60.54,12170.45,174.81,NETSOL Technologies Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JXG,48.19,29880.02,442.89,JX Luxventure Group Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BELFB,957.3,218298.86,380.06,Bel Fuse Inc. - Class B Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CODA,153.6,21936.69,168.02,"Coda Octopus Group, Inc. - Common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IONQ,162.46,9512.03,58.55,"IonQ, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TNYA,302.32,46792.64,134.59,"Tenaya Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SRXH,145.39,124885.65,613.55,SRX Global Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TRU,737.38,102484.02,231.64,TransUnion Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SAAQ,913.8,493270.15,635.06,Space Asset Acquisition Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HXL,507.74,114607.07,225.72,Hexcel Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TDWD,116.17,59848.11,447.98,Tailwind 2.0 Acquisition Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CTO,790.21,610541.53,551.88,"CTO Realty Growth, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CTNM,444.18,88637.90,332.59,"Contineum Therapeutics, Inc. - Common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NCMI,143.86,71776.50,586.98,"National CineMedia, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AII,340.9,4983.96,14.62,"American Integrity Insurance Group, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GNW,899.68,475103.01,459.2,Genworth Financial Inc Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BMRN,53.39,21686.80,290.14,BioMarin Pharmaceutical Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OZK,750.59,218507.26,485.19,Bank OZK - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BRLT,906.52,45878.07,59.54,"Brilliant Earth Group, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+REI,216.91,12689.24,58.5,"Ring Energy, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BLUW,526.43,285764.37,472.03,Blue Water Acquisition Corp. III - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GRNQ,871.4,90911.42,74.52,Greenpro Capital Corp. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BXDC,9.23,41.70,7.53,Blackstone Digital Infrastructure Trust Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PWRL,785,417731.86,626.05,Powerlaw Corp. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+U,834.59,169463.50,203.05,Unity Software Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+XYL,705.6,358510.42,441.82,Xylem Inc. Common Stock New,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GCDT,758.16,28106.51,26.48,Green Circle Decarbonize Technology Limited Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CHRN,343.29,108165.19,525.14,ChronoScale Holdings Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PAYX,132.35,47693.32,423.95,"Paychex, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SMHI,484.44,272061.50,561.6,SEACOR Marine Holdings Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BAH,203.11,52213.69,223.54,Booz Allen Hamilton Holding Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FOF,109.75,2378.50,15.48,"Cohen & Steers Closed-End Opportunity Fund, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TAVI,496.74,100127.88,335.95,Tavia Acquisition Corp. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RGC,837.71,422639.35,593.55,Regencell Bioscience Holdings Limited - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TGTX,555.8,34898.68,62.79,"TG Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BDCI,245.73,182728.02,646.62,BTC Development Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MET,636.07,567808.24,637.63,"MetLife, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MLM,331.25,50337.41,253.27,"Martin Marietta Materials, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EIKN,587.52,62673.70,125.5,"Eikon Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RFAI,608.5,222205.94,365.17,RF Acquisition Corp II - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OPY,292.75,32743.79,97.26,"Oppenheimer Holdings, Inc. Class A Common Stock (DE)",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CCEL,703.4,176685.64,179.42,"Cryo-Cell International, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GCT,127.85,46262.27,603.08,GigaCloud Technology Inc - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TEL,548.42,276090.81,592.27,TE Connectivity plc Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TREX,629.66,235801.37,374.49,"Trex Company, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IGC,865.42,525363.60,527.88,"IGC Pharma, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RDIB,103.6,14680.95,101.22,Reading International Inc - Class B Voting Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CAG,266.01,15912.72,99.7,"ConAgra Brands, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ALG,170.75,67800.98,467.15,"Alamo Group, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IRHO,665.06,69605.18,104.66,Iron Horse Acquisitions II Corp. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DTF,880.18,496588.75,490.6,DTF Tax-Free Income 2028 Term Fund Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OPEN,763.43,364215.66,340.77,Opendoor Technologies Inc  - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BLIN,972.85,240208.34,411.52,"Bridgeline Digital, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MRNO,738.61,242909.26,386.91,Murano Global Investments PLC - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LONA,498.14,80678.75,161.96,"LeonaBio, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ARTL,828.27,293792.34,308.44,"Artelo Biosciences, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MOS,355.45,267058.12,536.66,Mosaic Company (The) Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NAK,997.82,346367.27,578.54,"Northern Dynasty Minerals, Ltd. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WPAC,64.71,1682.56,30.59,White Pearl Acquisition Corp. Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NWN,895.28,498939.54,557.3,Northwest Natural Holding Company Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ROC,788.97,137004.64,151,Rank One Computing Corporation - Common stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CWST,834.39,539917.08,462.2,"Casella Waste Systems, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PGEN,77.63,2136.07,45.86,"Precigen, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AMBO,923.89,484267.11,616.66,Ambow Education Holding Ltd. American Depository Shares (each representing twenty (20) Class A Ordinary Shares),Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+YTRA,927.98,553577.19,596.54,"Yatra Online, Inc. - Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IBRX,487.17,220882.39,394.26,"ImmunityBio, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HGBL,437.44,215974.63,352.66,Heritage Global Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MFIN,374.04,125421.60,558.86,Medallion Financial Corp. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TCMD,682.98,101796.46,175.35,"Tactile Systems Technology, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FATE,761.19,360910.63,474.14,"Fate Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MPU,60.7,22727.11,325.58,Mega Matrix Inc. Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SMG,532.3,90454.80,121.38,Scotts Miracle-Gro Company (The) Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SIGA,104.27,22119.42,353.56,SIGA Technologies Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OPNW,164.79,49502.67,353.41,"OpenWorld, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SLGN,918.84,563147.85,612.89,Silgan Holdings Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BRC,102.23,30192.91,256.82,Brady Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ALNY,860.77,507337.84,421,"Alnylam Pharmaceuticals, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+REZI,737.12,175595.25,397.03,"Resideo Technologies, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WKHS,374.27,34685.66,109.03,"Workhorse Group, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HY,434.87,188189.99,432.75,"Hyster-Yale, Inc. Class A common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TNON,38.48,20197.94,456.43,"Tenon Medical, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BAX,611.51,96338.51,112.53,Baxter International Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FLR,100.38,28478.81,472.85,Fluor Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LSTR,367.4,137466.94,440.19,"Landstar System, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CRESY,644.53,156865.71,243.38,"Cresud S.A.C.I.F. y A. - American Depositary Shares, each representing ten shares of Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EVLV,66.66,6698.46,87.38,"Evolv Technologies Holdings, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CNEY,659.8,176125.69,190.67,CN Energy Group Inc. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FRPH,565.13,34436.76,101.56,"FRP Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JOB,368.68,181956.67,580.63,GEE Group Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HFBL,430.53,250155.15,581.04,"Home Federal Bancorp, Inc. of Louisiana - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MDRR,145.66,19823.02,118.34,"Medalist Diversified, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ACLS,769.45,192307.10,178.52,"Axcelis Technologies, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HCA,444.6,50665.73,189.93,"HCA Healthcare, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CRE,661.66,127009.28,225.83,Cre8 Enterprise Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SPWR,294.49,180475.25,612.84,SunPower Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LYNX,963.85,446075.56,402.44,Lyntris Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VENU,481.08,267013.83,396.45,Venu Holding Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JAGX,966.07,148226.05,255.72,"Jaguar Health, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PDI,478.31,20015.12,49.23,PIMCO Dynamic Income Fund Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DDD,361.18,223675.16,619.29,3D Systems Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ATCX,770.27,478594.56,540.29,Atlas Critical Minerals Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TPCS,274.53,98649.06,256.67,TechPrecision Corporation - Common stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HRB,258.39,58764.09,379.04,"H&R Block, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LINK,19.9,8348.23,493.54,"Interlink Electronics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PASG,372.81,87591.71,234.95,"Passage Bio, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IIPR,532.16,319657.60,522.33,"Innovative Industrial Properties, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CRNT,759.69,7998.02,7.52,Ceragon Networks Ltd. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TSQ,600.55,15951.81,44.27,"Townsquare Media, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ROCK,903.04,32246.20,42.01,"Gibraltar Industries, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CBL,493.98,88881.82,179.93,"CBL & Associates Properties, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BLSM,488.51,58161.76,103.53,"BlossomHill Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+COR,314.03,151060.99,343.6,"Cencora, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WETH,452.06,149838.90,552.43,Wetouch Technology Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RAIN,885.26,202151.33,268.65,"Rain Enhancement Technologies Holdco, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NIQ,73.54,23862.26,324.48,NIQ Global Intelligence plc Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SUMA,729.94,545462.26,649.8,SUMA Acquisition Corporation - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FLNA,857.94,736452.26,613.14,"Filana Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DSGX,916.9,139928.11,254.35,The Descartes Systems Group Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+XGN,47.68,6480.83,159.91,Exagen Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PGNY,434.17,25724.57,59.25,"Progyny, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DMRA,919.97,175019.23,165.43,"Damora Therapeutics, Inc. - Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RPID,122.76,21838.76,127.07,"Rapid Micro Biosystems, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GF,110.41,23221.21,350.53,"New Germany Fund, Inc. (The) Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+INVZ,42.17,4989.20,139.19,Innoviz Technologies Ltd. - Ordinary shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BESS,512.28,298157.21,582.02,Bimergen Energy Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MLKN,221.55,50001.07,196.25,"MillerKnoll, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BALY,179.65,29896.99,118.87,Bally's Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VELO,191.57,25564.25,222.41,"Velo3D, Inc. - Common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MBUU,519.31,22516.50,51.01,"Malibu Boats, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LIFE,850.76,550926.65,647.57,Ethos Technologies Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FSS,737.28,379838.18,447.99,Federal Signal Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BMI,594.58,469730.09,564.3,"Badger Meter, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ZBRA,607.11,172053.76,472.33,Zebra Technologies Corporation - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+STIM,991.91,300522.94,356.44,"Neuronetics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FCUV,671.88,336712.66,501.15,Focus Universal Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MCHX,340.89,35340.92,90.15,"Marchex, Inc. - Class B Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WLII,125.94,65783.50,373.1,Willow Lane Acquisition Corp. II - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AUNA,52.81,1620.11,51.13,Auna SA Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NNBR,57.58,23573.89,481.66,"NN, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+THM,704.62,109300.65,155.12,"International Tower Hill Mines, Ltd. Ordinary Shares (Canada)",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OSCR,798.09,342322.35,372.98,"Oscar Health, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NWCL,976.79,374094.94,273.56,newcleo plc - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ALTI,622.26,51799.41,138.74,"AlTi Global, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JDZG,491.32,28348.18,67.88,JIADE LIMITED - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KGC,168.1,80941.83,481.51,Kinross Gold Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HAPN,764.95,521613.67,592.95,"Happen, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ACAA,388.44,340662.66,626.43,Averin Capital Acquisition Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PLCE,497.36,6744.20,22.6,"Children's Place, Inc. (The) - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BRZE,202.26,6046.46,35.17,"Braze, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BALL,68.21,17069.55,250.25,Ball Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PMVP,633.38,308974.48,424.19,"PMV Pharmaceuticals, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NVT,12.32,7361.10,426.78,nVent Electric plc Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DJT,243.51,66076.44,452.25,Trump Media & Technology Group Corp. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SRI,959.3,453593.49,556.28,"Stoneridge, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TREE,525.71,227695.52,433.12,"LendingTree, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KBON,83.77,35955.30,373.23,Karbon Capital Partners Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SIEB,639.35,534153.91,596.76,Siebert Financial Corp. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CNI,213.58,37265.44,290.8,Canadian National Railway Company Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DAN,208.13,92685.18,523.91,Dana Incorporated Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ATLQ,686.38,254104.74,370.21,JAB Acquisition Corp I - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LXP,139.54,68458.53,426.61,LXP Industrial Trust Common Stock (Maryland REIT),Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DFH,342.03,118005.82,246.44,"Dream Finders Homes, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DDOG,356.68,112123.07,523.92,"Datadog, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SDHC,112.34,58534.76,613,Smith Douglas Homes Corp. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CVNA,901.5,502487.08,557.39,Carvana Co. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CD,205.23,21359.31,90.5,Chaince Digital Holdings Inc. - American Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AVNT,242.26,198455.03,585.13,Avient Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UVV,364.24,44832.12,205.14,Universal Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DSS,389.52,49713.46,150.15,"DSS, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+XE,860.15,308983.08,359.22,"X-Energy, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JBIO,772.25,431326.34,485.68,"Jade Biosciences, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BZAI,254.48,80314.40,225.43,"Blaize Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WSFS,654.02,91800.86,233.94,WSFS Financial Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VCYT,456.54,216280.80,557.34,"Veracyte, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LULU,919.72,163195.12,177.44,lululemon athletica inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ENS,244.03,21406.80,76.28,EnerSys Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IZM,19.41,9397.31,345.82,ICZOOM Group Inc. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FVN,689.8,222274.25,537.05,Future Vision II Acquisition Corporation - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BPOP,922.18,44695.30,57.02,"Popular, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NNY,794.83,181475.59,228.32,Nuveen New York Municipal Value Fund Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DTSQ,481.63,208461.75,376.37,DT Cloud Star Acquisition Corporation - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UEC,376.98,227005.29,430.12,Uranium Energy Corp. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DXST,343.32,114508.89,555.89,Decent Holding Inc. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LFWD,166.53,71385.33,504.31,Lifeward Ltd. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GUAC,928.01,390311.73,420.59,Berto Acquisition Corp. II - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IHRT,301.9,205717.53,592.53,"iHeartMedia, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AEP,468.28,129151.62,197,"American Electric Power Company, Inc. - Common Stock",Utilities,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TRS,904.21,163246.07,300.9,TriMas Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EZRA,984.14,54390.47,65.02,"Reliance Global Group, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MEVO,61.65,19338.99,313.69,M Evo Global Acquisition Corp II - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TDAY,24.62,14621.40,516.42,"USA TODAY Co., Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MEI,571.3,65361.29,81.72,"Methode Electronics, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DT,642.07,184777.47,479.64,"Dynatrace, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FOXA,627.56,96262.06,180.46,Fox Corporation - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CACI,141.77,8055.37,56.82,"CACI International, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EQPT,834.91,265442.10,276.46,EquipmentShare.com Inc - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ECPG,437.27,329694.58,538.56,Encore Capital Group Inc - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+YHNA,767.69,236995.12,514.52,YHN Acquisition I Limited - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ETD,960.5,288026.58,352.79,Ethan Allen Interiors Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WERN,62.84,37597.17,598.3,"Werner Enterprises, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TRNS,737.31,178340.17,210.33,"Transcat, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FOSL,121.4,63041.56,370.92,"Fossil Group, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NEO,167.18,58164.60,579.86,"NeoGenomics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KMT,365.47,16576.26,53.36,Kennametal Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IDN,4.55,649.19,142.68,"Intellicheck, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TECH,44.18,22229.59,437.53,Bio-Techne Corp - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VIVO,19.51,7679.33,281.15,VivoPower PLC - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BBVA,537.8,129139.76,400.21,Banco Bilbao Vizcaya Argentaria S.A. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CLPS,804.5,138399.34,202.39,CLPS Incorporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GILT,840.35,421822.09,501.96,Gilat Satellite Networks Ltd. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TRIN,389.45,196407.81,438.54,Trinity Capital Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LUCD,424.35,97098.07,163.44,Lucid Diagnostics Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GTX,658.42,77528.96,196.25,Garrett Motion Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CACC,901.41,285592.83,372.74,Credit Acceptance Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NXAT,868.42,227161.30,261.58,Nexus Advanced Technologies Inc. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LEGO,387.09,138781.06,311.76,Legato Merger Corp. IV Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JOBY,416.4,7135.43,12.24,"Joby Aviation, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HOUR,800.9,163436.46,340.11,"Hour Loop, Inc. - common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PGAC,651.51,99293.38,179.3,Pantages Capital Acquisition Corporation - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SRG,632.65,189092.76,298.89,Seritage Growth Properties Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MVIS,587.25,296864.86,439.58,"MicroVision, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CIVB,789.79,254124.41,229.83,"Civista Bancshares, Inc.  - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AGM,808.37,97052.90,200.1,Federal Agricultural Mortgage Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BBDC,230.34,37947.82,193.82,"Barings BDC, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+COKE,878.57,471704.23,536.9,"Coca-Cola Consolidated, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JHI,428.34,94749.88,192.35,John Hancock Investors Trust Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BJ,469.53,189373.66,288.09,"BJ's Wholesale Club Holdings, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KRO,266.23,47063.61,294.63,Kronos Worldwide Inc Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KDP,8.38,749.98,105.29,Keurig Dr Pepper Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PNFP,150.64,52981.59,351.71,"Pinnacle Financial Partners, Inc. Common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CLGN,796.05,12239.67,13.37,CollPlant Biotechnologies Ltd. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HAIN,15.13,5457.75,257.66,"The Hain Celestial Group, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BCRX,183.94,59998.28,543.64,"BioCryst Pharmaceuticals, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ATHM,10.92,1681.43,181.15,"Autohome Inc. American Depositary Shares, each representing four class A ordinary shares.",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ARDT,659.34,139305.36,211.28,"Ardent Health, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VYGR,789.63,249575.20,274.84,"Voyager Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VREX,662.45,380023.72,409.76,Varex Imaging Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+L,990.68,312991.48,526.56,Loews Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ALV,135.5,30324.43,263.29,"Autoliv, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CARE,480.98,145635.93,302.79,"Carter Bankshares, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PFX,27.8,734.67,22.98,PhenixFIN Corporation  - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CMC,664.05,479254.18,515.51,Commercial Metals Company Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LWAC,563.69,72384.56,214.02,LightWave Acquisition Corp. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GSBC,254.02,47415.37,219.6,"Great Southern Bancorp, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DBGI,60.82,20346.72,334.54,"Digital Brands Group, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PSIX,713.99,90828.81,110.62,"Power Solutions International, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FNKO,26.79,12093.43,322.44,"Funko, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MERC,110.5,18418.80,277.81,Mercer International Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EHGO,360.53,77743.43,253.69,Eshallgo Inc. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BDTX,307.27,187167.38,609.13,"Black Diamond Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ETSS,455.22,158385.83,302.55,Energy Transition Special Opportunities Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ANRO,36.33,14878.66,292.53,"Alto Neuroscience, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BSX,933.75,241445.34,430.96,Boston Scientific Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GRI,955.02,416290.35,512.82,"GRI Bio, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NEXR,940.42,268960.12,286,Nexera Technologies Ltd - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DTE,906.26,412366.88,395.67,DTE Energy Company Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ASO,144.91,108176.47,533.22,"Academy Sports and Outdoors, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CANG,186.74,16024.53,143.02,Cango Inc. Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TRAX,542.37,186093.11,403.66,"First Tracks Biotherapeutics, Inc. - Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ALT,494.09,177521.60,359.29,"Altimmune, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RDW,161.84,91018.17,489.04,Redwire Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PPG,998.4,204100.92,146.02,"PPG Industries, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ARQT,484.69,63624.29,218.78,"Arcutis Biotherapeutics, Inc. - Common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FHI,679.46,335909.40,581.62,"Federated Hermes, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TRUG,634.12,290572.81,458.23,"TruGolf Holdings, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+YMAT,290.21,85527.93,256.27,"J-Star Holding Co., Ltd. - Class A Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HAVAR,326.42,143055.52,313.04,Harvard Ave Acquisition Corporation - Rights that convert on a 1/10th of 1 basis to Class A ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RMBI,231.16,35176.08,253.62,"Richmond Mutual Bancorporation, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MRX,373.97,92743.06,291.76,Marex Group Limited - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LKQ,600.77,44042.45,73.31,LKQ Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DPC,528.35,210965.66,347.21,DPC Holdings PLC Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IVF,530.43,154750.83,208.39,"INVO Fertility, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PRAX,457.39,147000.57,535.65,"Praxis Precision Medicines, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TMDX,920.95,318461.75,406.82,"TransMedics Group, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ERIE,209.83,127715.13,608.66,Erie Indemnity Company - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ELF,568.45,27044.29,41.37,"e.l.f. Beauty, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ARWR,569.16,297526.11,373.39,"Arrowhead Pharmaceuticals, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PPC,538.77,112120.19,346.84,Pilgrim's Pride Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MATV,978.95,120364.35,144.65,"Mativ Holdings, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HAE,721.67,238078.93,329.9,Haemonetics Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ATTO,717.68,314789.88,381.41,"Attovia Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ATRA,948.64,159358.24,119.99,"Atara Biotherapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IFBD,8.17,2074.18,423.13,"Infobird Co., Ltd - Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+XLAB,309.45,144478.49,549.28,Exascale Labs Holdings Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TACO,980.15,557626.94,568.92,Berto Acquisition Corp. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EVTL,183.54,76072.10,360.41,Vertical Aerospace Ltd. Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UNCY,65.27,43701.53,478.25,"Unicycive Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FOXX,341.58,108032.19,527.12,Foxx Development Holdings Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SBAC,72.68,31702.00,513.16,SBA Communications Corporation - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RJET,336.29,79946.22,237.73,Republic Airways Holdings Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CSL,632.62,459133.45,631.1,Carlisle Companies Incorporated Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ICU,519.11,379968.79,522.83,SeaStar Medical Holding Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SERV,887.53,232108.62,435.87,Serve Robotics Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MTZ,177.58,25707.10,170.31,"MasTec, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TIGR,917.2,328779.51,358.46,UP Fintech Holding Limited - American Depositary Shares representing fifteen Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ROMA,415.86,303404.39,634.42,Roma Green Finance Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CDRE,299.7,225943.83,538.5,"Cadre Holdings, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TLAC,492.99,37154.68,125.61,Three Lions Acquisition Corp. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PLOW,895.83,482130.78,633.17,"Douglas Dynamics, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SABS,877.38,520777.67,593.56,"SAB Biotherapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SXC,792.34,545520.94,598.69,"SunCoke Energy, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IIF,892.05,39689.09,31.78,"Morgan Stanley India Investment Fund, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SRTS,336.22,112318.33,556.77,"Sensus Healthcare, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BTMD,59.89,31439.35,617.59,Biote Corp. - Class A common stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VSME,97.18,22730.40,233.9,VS Media Holdings Limited - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SNGX,492.03,81683.87,144.36,"Soligenix, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LNN,567.4,500740.71,630.37,Lindsay Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+REFR,928.26,309617.41,555.91,Research Frontiers Incorporated - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ALCO,739.8,324721.52,516.39,"Alico, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OPTX,599.36,125458.04,209.32,"Syntec Optics Holdings, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GLND,373.99,147111.77,342.05,Greenland Energy Company - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AAON,196.58,65357.35,237.48,"AAON, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HCAT,989.72,341245.56,574.65,"Health Catalyst, Inc - Common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ETRA,738.74,113598.64,180.91,"Electra Therapeutics, Inc. - Common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PAMT,782.58,162815.77,208.05,PAMT CORP - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BWB,247.55,158366.03,556.29,"Bridgewater Bancshares, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TOVX,156.83,36609.77,166.74,"Theriva Biologics, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ADRX,366.32,87925.59,400.04,"ADARx Pharmaceuticals, Inc. - Common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BNKK,542.72,150655.27,326.58,"Bonk, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SMTI,771.59,33942.24,43.99,Sanara MedTech Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DBI,108.58,72114.44,577.53,Designer Brands Inc. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TVRD,668.96,24762.22,26.44,"Tvardi Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KGEI,167.27,45053.51,448.91,Kolibri Global Energy Inc. - Common stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BSP,406.99,143489.62,414.78,Bending Spoons S.p.A. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CTNT,610.72,165773.84,271.44,Cheetah Net Supply Chain Service Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CCNE,312.8,194863.92,541.71,CNB Financial Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LOAN,143.79,127801.13,634.86,"Manhattan Bridge Capital, Inc - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BIVI,370.83,82357.63,370.15,BioVie Inc. - Common stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+INBX,275.35,19734.89,84.32,"Inhibrx Biosciences, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+REAL,82.27,40566.51,493.09,"The RealReal, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+QTEX,374.57,106771.37,247.87,QTREX Quantum Ltd. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NAVN,299.07,83006.88,198.25,"Navan, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IOT,242.19,21477.41,147.8,Samsara Inc. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ACIC,675.88,267767.77,466.09,American Coastal Insurance Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KFRC,333.59,61657.44,184.83,"Kforce, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IIIN,732.31,60525.79,71.87,"Insteel Industries, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+QCLS,71.61,14510.76,144.74,"Q/C Technologies, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NXL,721.85,252390.52,582.74,"Nexalin Technology, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MWG,896.49,96631.31,126.81,Multi Ways Holdings Limited Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RHLD,248.58,121508.39,488.81,Resolute Holdings Management Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CCM,922.3,423568.58,399.35,Concord Medical Services Holdings Limited American Depositary Shares (Each represents thirty (30) Class A ordinary shares),Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BHB,13.02,11706.39,642.22,"Bar Harbor Bankshares, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ARVN,196.85,38405.83,325.17,"Arvinas, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HUBG,314.87,163557.17,611.11,"Hub Group, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UTSI,562.5,122613.75,217.98,UTStarcom Holdings Corp - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CVU,21,2747.30,113.76,"CPI Aerostructures, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PRHI,840.23,467435.07,397.37,"Presurance Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MGRX,44.41,2387.48,89.6,"Mangoceuticals, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BNY,179.61,69725.23,456.71,The Bank of New York Mellon Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SILO,913.62,562433.61,615.61,"Silo Pharma, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UGI,659.15,24612.99,32.47,UGI Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ODD,601.8,312389.57,370.78,ODDITY Tech Ltd. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NXT,177.65,65516.61,614.66,Nextpower Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ZGN,426.06,77616.20,214.32,Ermenegildo Zegna N.V. Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RVP,232.96,93114.11,399.7,"Retractable Technologies, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NVST,104.39,60876.59,507.1,Envista Holdings Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MCO,401.2,197790.00,352.14,Moody's Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CCC,170.6,5706.57,55.75,CCC Intelligent Solutions Holdings Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ALPX,745.52,240359.38,379.3,Alpex Acquisition Corporation - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+OCAC,976.58,87696.88,89.8,Ocean Capital Acquisition Corporation Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MRVI,735.61,114203.45,135,"Maravai LifeSciences Holdings, Inc. - Class A common stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FSK,247.13,181363.76,524.2,FS KKR Capital Corp. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SXT,642.01,237167.48,615.69,Sensient Technologies Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GT,908.01,74718.78,96.81,The Goodyear Tire & Rubber Company - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+IFN,861.84,149210.36,173.13,"Aberdeen India Fund, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SST,40.92,8078.92,171.68,"System1, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AGMH,709.37,195227.14,196.58,AGM Group Holdings Inc. - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UNIT,354.45,93753.44,440.84,Uniti Group Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GLOO,379.76,11242.98,34.83,"Gloo Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JHX,819.32,214252.18,261.5,James Hardie Industries plc. Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PLTR,815.07,345059.48,368.13,Palantir Technologies Inc. - Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LAD,288.28,199439.02,494.16,"Lithia Motors, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PDSB,885.11,152097.30,286.4,PDS Biotechnology Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ICCM,789.92,45818.52,68.24,IceCure Medical Ltd. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+KARD,411.14,240956.82,586.07,"Kardigan, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CNA,534.28,52502.36,85.45,CNA Financial Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MNOV,324.75,8533.78,18.77,"MediciNova, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+QUMS,558.59,13597.20,40.57,Quantumsphere Acquisition Corp. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RA,117.38,24347.61,244.03,Brookfield Real Assets Income Fund Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MNKD,402.56,243548.80,605,MannKind Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SBFG,843.43,7681.96,7.92,"SB Financial Group, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SWX,814.61,563555.34,494.15,"Southwest Gas Holdings, Inc. Common Stock (DE)",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DFNS,516.27,67184.28,216.89,T3 Defense Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LAKE,96.05,6517.52,79.83,"Lakeland Industries, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FLWS,755.15,236935.86,313.76,"1-800-FLOWERS.COM, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MRTN,283.45,150799.08,462.62,"Marten Transport, Ltd. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CI,138.85,16009.96,82.36,The Cigna Group Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FTLF,356.88,119464.15,557.91,"FitLife Brands, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MSFT,739.49,405915.67,645.78,Microsoft Corporation - Common Stock,Technology,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BYSI,724.86,404123.95,557.52,"BeyondSpring, Inc. - Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NNI,334.14,168144.93,437.58,"Nelnet, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+VECA,140.76,86384.98,438.36,Vernal Capital Acquisition Corp. Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HOLO,194.14,67651.58,580.78,MicroCloud Hologram Inc. - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TPET,875.99,11943.25,16.04,Trio Petroleum Corp. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HNNA,705.7,415791.38,589.19,"Hennessy Advisors, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CTS,395.53,248353.29,546,CTS Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ALMU,391.66,189747.52,346.05,"Aeluma, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SLF,188.29,40932.74,362.32,Sun Life Financial Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+SEPN,274.8,1716.81,7.35,"Septerna, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+RDAG,21.4,9986.95,466.68,Republic Digital Acquisition Company - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LIME,567.42,370325.53,567.52,"Neutron Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HCKT,151.31,131159.14,619.16,"The Hackett Group, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PVLA,624.76,41177.93,109.85,"Palvella Therapeutics, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ELBM,511.62,211432.85,486.19,Electra Battery Materials Corporation - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TTRX,697.62,247501.62,354.78,Turn Therapeutics Inc. - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NXTC,425.18,9593.34,19.62,"NextCure, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NWTG,19.85,11026.52,396.78,"Newton Golf Company, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+DCH,240.8,37278.73,258.02,Dauch Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+UAL,18.35,1553.51,99.6,"United Airlines Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CRVS,35.5,19055.34,536.77,"Corvus Pharmaceuticals, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BXC,106.91,74152.72,603.13,Bluelinx Holdings Inc. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+BDL,897.79,560140.16,445.65,"Flanigan's Enterprises, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ALHC,439.19,127311.52,483.13,"Alignment Healthcare, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FDSB,310.71,56306.87,213.2,"Fifth District Bancorp, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WEAV,210.39,77636.01,369.01,"Weave Communications, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+NBN,593.77,191610.47,280.61,Northeast Bank - Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PHUN,318.45,204921.30,459.64,"Phunware, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+POST,39.42,14742.76,623.32,"Post Holdings, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+COUR,896.93,431009.85,565.34,"Coursera, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+YOU,819.38,6079.80,7.42,"Clear Secure, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FHN,869.08,315234.00,315.41,First Horizon Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ZDAI,269.24,127713.46,338.82,"DirectBooking Technology Co., Ltd. - Class A Ordinary Shares",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+JACS,935.05,143915.42,256.52,Jackson Acquisition Company II Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+PAAS,377.03,67661.99,211.13,Pan American Silver Corp. Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+EROC,661.57,245263.85,370.73,"ERock, Inc. Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+WETO,302.67,14159.51,40.68,Wetour Robotics Limited - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+MCD,922.86,367213.38,284.22,McDonald's Corporation Common Stock,Consumer Discretionary,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+TSN,289,9367.07,54.02,"Tyson Foods, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LUV,237.41,75710.76,375.18,Southwest Airlines Company Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FELE,509.26,203490.11,399.58,"Franklin Electric Co., Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ALIS,726.94,420615.48,503.14,Calisa Acquisition Corp - Ordinary shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+INO,594.44,119522.86,143.62,"Inovio Pharmaceuticals, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+AMTB,136.16,17438.01,213.45,Amerant Bancorp Inc. Class A Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+GSBD,604.12,30866.61,60.11,"Goldman Sachs BDC, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+THRY,594.78,14381.78,24.18,"Thryv Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+FVAV,914.71,589220.51,560.14,Fortress Value Acquisition Corp. V - Class A Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+ASST,518,249048.18,343.42,"Strive, Inc. - Class A Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LTH,640.52,26071.73,67.84,"Life Time Group Holdings, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+HTOO,590.4,211866.81,422.18,Fusion Fuel Green PLC - Ordinary Shares,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+CNK,477.08,9832.62,20.61,"Cinemark Holdings Inc Cinemark Holdings, Inc. Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+STRR,300.89,143167.22,413.75,"Star Equity Holdings, Inc. - Common Stock",Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot
+LPX,975.94,9741.83,7.13,Louisiana-Pacific Corporation Common Stock,Unknown,SYNTHETIC - Large 1000,2026-10-09,USD,snapshot

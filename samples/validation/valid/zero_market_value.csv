@@ -1,0 +1,11 @@
+symbol,quantity,cost_basis,current_price,company_name,sector,portfolio_name,snapshot_date,currency,export_kind
+AAPL,459.01,43459.07,0,Apple Inc. - Common Stock,Technology,SYNTHETIC - Zero value,2026-10-09,USD,snapshot
+MSFT,867.82,390982.42,0,Microsoft Corporation - Common Stock,Technology,SYNTHETIC - Zero value,2026-10-09,USD,snapshot
+NVDA,55.29,26874.26,0,NVIDIA Corporation - Common Stock,Technology,SYNTHETIC - Zero value,2026-10-09,USD,snapshot
+AVGO,337.02,85599.37,0,Broadcom Inc. - Common Stock,Technology,SYNTHETIC - Zero value,2026-10-09,USD,snapshot
+ORCL,526.13,161525.07,0,Oracle Corporation Common Stock,Technology,SYNTHETIC - Zero value,2026-10-09,USD,snapshot
+CRM,467.51,48050.68,0,"Salesforce, Inc. Common Stock",Technology,SYNTHETIC - Zero value,2026-10-09,USD,snapshot
+ADBE,821.81,437871.87,0,Adobe Inc. - Common Stock,Technology,SYNTHETIC - Zero value,2026-10-09,USD,snapshot
+AMD,227.58,25941.84,0,"Advanced Micro Devices, Inc. - Common Stock",Technology,SYNTHETIC - Zero value,2026-10-09,USD,snapshot
+INTC,514.75,299533.02,0,Intel Corporation - Common Stock,Technology,SYNTHETIC - Zero value,2026-10-09,USD,snapshot
+QCOM,594,5555.09,0,QUALCOMM Incorporated - Common Stock,Technology,SYNTHETIC - Zero value,2026-10-09,USD,snapshot

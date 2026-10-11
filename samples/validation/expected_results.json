@@ -1,0 +1,237 @@
+{
+  "notice": "REAL identifiers; SYNTHETIC holdings, prices, costs, dates, and illustrative sectors. Not market quotes or historical performance.",
+  "seed": 20261010,
+  "source_url": "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt",
+  "source_file_creation": "1009202621:32",
+  "source_sha256": "6253cd52421b35c39fa604e5e2aa580d6d802e0341c19a7786062740ffdf5573",
+  "files": {
+    "valid/real_symbols_100.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "85 real stock symbols and 15 ETFs; gains, losses, breakeven and fractional shares.",
+      "cost_basis": "16233618.53",
+      "market_value": "16368367.8887",
+      "unrealized_gain": "134749.3587",
+      "gain_percent": "0.83006360196884582084608095075152662220405150791726"
+    },
+    "valid/template_style_100.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "Same holdings without metadata; enter portfolio and date in the app.",
+      "cost_basis": "16233618.53",
+      "market_value": "16368367.8887",
+      "unrealized_gain": "134749.3587",
+      "gain_percent": "0.83006360196884582084608095075152662220405150791726"
+    },
+    "valid/real_symbols_1000.csv": {
+      "expected": "valid",
+      "rows": 1000,
+      "description": "1,000 distinct directory-matched stocks. Unknown sectors deliberately remain Unknown; not a recommended portfolio.",
+      "cost_basis": "161993849.09",
+      "market_value": "162324337.0870",
+      "unrealized_gain": "330487.9970",
+      "gain_percent": "0.20401268249165965910070221666834276219863848905845"
+    },
+    "snapshots/mixed_100_2025-11-30.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "Independent synthetic snapshot, fixed holdings/costs with simulated price changes; not historical market data.",
+      "cost_basis": "16233618.53",
+      "market_value": "16067597.8569",
+      "unrealized_gain": "-166020.6731",
+      "gain_percent": "-1.0226966513546625762678926273870006972499679650905"
+    },
+    "snapshots/mixed_100_2025-12-31.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "Independent synthetic snapshot, fixed holdings/costs with simulated price changes; not historical market data.",
+      "cost_basis": "16233618.53",
+      "market_value": "16569111.3476",
+      "unrealized_gain": "335492.8176",
+      "gain_percent": "2.0666545599799800149671251391663692124469306474457"
+    },
+    "snapshots/mixed_100_2026-01-31.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "Independent synthetic snapshot, fixed holdings/costs with simulated price changes; not historical market data.",
+      "cost_basis": "16233618.53",
+      "market_value": "16134808.3443",
+      "unrealized_gain": "-98810.1857",
+      "gain_percent": "-0.60867628198480280539153460075792479521816138179268"
+    },
+    "snapshots/mixed_100_2026-02-28.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "Independent synthetic snapshot, fixed holdings/costs with simulated price changes; not historical market data.",
+      "cost_basis": "16233618.53",
+      "market_value": "16759745.8551",
+      "unrealized_gain": "526127.3251",
+      "gain_percent": "3.2409738107847480631910598431439179567810135058040"
+    },
+    "snapshots/mixed_100_2026-03-31.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "Independent synthetic snapshot, fixed holdings/costs with simulated price changes; not historical market data.",
+      "cost_basis": "16233618.53",
+      "market_value": "15791535.1448",
+      "unrealized_gain": "-442083.3852",
+      "gain_percent": "-2.7232584305404397105788095662489366133947216757717"
+    },
+    "snapshots/mixed_100_2026-04-30.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "Independent synthetic snapshot, fixed holdings/costs with simulated price changes; not historical market data.",
+      "cost_basis": "16233618.53",
+      "market_value": "15891987.3414",
+      "unrealized_gain": "-341631.1886",
+      "gain_percent": "-2.1044672693808827599695974869011536394652486638172"
+    },
+    "snapshots/mixed_100_2026-05-31.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "Independent synthetic snapshot, fixed holdings/costs with simulated price changes; not historical market data.",
+      "cost_basis": "16233618.53",
+      "market_value": "16788424.0265",
+      "unrealized_gain": "554805.4965",
+      "gain_percent": "3.4176329539511484381295240402572155303688782688181"
+    },
+    "snapshots/mixed_100_2026-06-30.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "Independent synthetic snapshot, fixed holdings/costs with simulated price changes; not historical market data.",
+      "cost_basis": "16233618.53",
+      "market_value": "16156676.1121",
+      "unrealized_gain": "-76942.4179",
+      "gain_percent": "-0.47396960670111298962499397846821277991432511504260"
+    },
+    "snapshots/mixed_100_2026-07-31.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "Independent synthetic snapshot, fixed holdings/costs with simulated price changes; not historical market data.",
+      "cost_basis": "16233618.53",
+      "market_value": "16237710.9697",
+      "unrealized_gain": "4092.4397",
+      "gain_percent": "0.025209657923383518116955530061971956415067984229638"
+    },
+    "snapshots/mixed_100_2026-08-31.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "Independent synthetic snapshot, fixed holdings/costs with simulated price changes; not historical market data.",
+      "cost_basis": "16233618.53",
+      "market_value": "16152454.9978",
+      "unrealized_gain": "-81163.5322",
+      "gain_percent": "-0.49997190737239776694444722793421461530425650577364"
+    },
+    "snapshots/mixed_100_2026-09-30.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "Independent synthetic snapshot, fixed holdings/costs with simulated price changes; not historical market data.",
+      "cost_basis": "16233618.53",
+      "market_value": "16426812.2231",
+      "unrealized_gain": "193193.6931",
+      "gain_percent": "1.1900839775369539868077705778146063162419278556252"
+    },
+    "snapshots/mixed_100_2026-10-09.csv": {
+      "expected": "valid",
+      "rows": 100,
+      "description": "Independent synthetic snapshot, fixed holdings/costs with simulated price changes; not historical market data.",
+      "cost_basis": "16233618.53",
+      "market_value": "15935064.9957",
+      "unrealized_gain": "-298553.5343",
+      "gain_percent": "-1.8391065044941646783910229039982252188600615096504"
+    },
+    "valid/precision_and_zero_basis.csv": {
+      "expected": "valid",
+      "rows": 5,
+      "description": "Eight decimals, zero basis, zero price, breakeven, missing company/sector defaults.",
+      "cost_basis": "700.14345678",
+      "market_value": "1063.0205463677625362",
+      "unrealized_gain": "362.8770895877625362",
+      "gain_percent": "51.828962489581082191999743392931462539461997369893"
+    },
+    "valid/zero_market_value.csv": {
+      "expected": "valid",
+      "rows": 10,
+      "description": "10 holdings with all prices zero: no allocation charts; monetary loss still defined.",
+      "cost_basis": "1525392.69",
+      "market_value": "0.00",
+      "unrealized_gain": "-1525392.69",
+      "gain_percent": "-100"
+    },
+    "valid/bom_and_ignored_column.csv": {
+      "expected": "valid",
+      "rows": 5,
+      "description": "UTF-8 BOM and ignored extra column warning.",
+      "cost_basis": "708440.19",
+      "market_value": "749094.6331",
+      "unrealized_gain": "40654.4431",
+      "gain_percent": "5.7385850878957050700356229084067068526984613902269"
+    },
+    "stress/fictional_10000.csv": {
+      "expected": "valid",
+      "rows": 10000,
+      "description": "10,000 FICTIONAL distinct identifiers; exactly the accepted row limit. Avoid charts at this scale for normal use.",
+      "cost_basis": "100000",
+      "market_value": "150000.0",
+      "unrealized_gain": "50000.0",
+      "gain_percent": "50.0"
+    },
+    "invalid/too_many_rows_10001.csv": {
+      "expected": "structural_error",
+      "rows": 10001,
+      "description": "10,001 rows: reject before analysis."
+    },
+    "invalid/negative_quantity.csv": {
+      "expected": "row_error",
+      "rows": 5,
+      "description": "CSV row 3, column quantity: '-2'; editable error, block whole analysis."
+    },
+    "invalid/zero_quantity.csv": {
+      "expected": "row_error",
+      "rows": 5,
+      "description": "CSV row 3, column quantity: '0'; editable error, block whole analysis."
+    },
+    "invalid/nonfinite_price.csv": {
+      "expected": "row_error",
+      "rows": 5,
+      "description": "CSV row 3, column current_price: 'NaN'; editable error, block whole analysis."
+    },
+    "invalid/currency_in_cost.csv": {
+      "expected": "row_error",
+      "rows": 5,
+      "description": "CSV row 3, column cost_basis: '$1,000'; editable error, block whole analysis."
+    },
+    "invalid/too_many_decimals.csv": {
+      "expected": "row_error",
+      "rows": 5,
+      "description": "CSV row 3, column quantity: '0.123456789'; editable error, block whole analysis."
+    },
+    "invalid/duplicate_symbol.csv": {
+      "expected": "row_error",
+      "rows": 5,
+      "description": "Row 3 collides with AAPL in row 2 after trimming and uppercasing."
+    },
+    "invalid/analysis_report.csv": {
+      "expected": "structural_error",
+      "rows": 5,
+      "description": "Analysis marker is not an importable snapshot."
+    },
+    "invalid/conflicting_metadata.csv": {
+      "expected": "structural_error",
+      "rows": 5,
+      "description": "Second data row has a conflicting portfolio name."
+    },
+    "invalid/duplicate_headers.csv": {
+      "expected": "structural_error",
+      "description": "Malformed or ambiguous CSV structure; correct and re-upload."
+    },
+    "invalid/missing_column.csv": {
+      "expected": "structural_error",
+      "description": "Malformed or ambiguous CSV structure; correct and re-upload."
+    },
+    "invalid/malformed_quotes.csv": {
+      "expected": "structural_error",
+      "description": "Malformed or ambiguous CSV structure; correct and re-upload."
+    }
+  }
+}

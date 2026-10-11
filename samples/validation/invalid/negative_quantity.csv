@@ -1,0 +1,6 @@
+symbol,quantity,cost_basis,current_price,company_name,sector
+AAPL,459.01,43459.07,157.8,Apple Inc. - Common Stock,Technology
+MSFT,-2,390982.42,530.04,Microsoft Corporation - Common Stock,Technology
+NVDA,55.29,26874.26,486.06,NVIDIA Corporation - Common Stock,Technology
+AVGO,337.02,85599.37,220.86,Broadcom Inc. - Common Stock,Technology
+ORCL,526.13,161525.07,219.29,Oracle Corporation Common Stock,Technology

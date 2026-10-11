@@ -1,0 +1,101 @@
+symbol,quantity,cost_basis,current_price,company_name,sector,portfolio_name,snapshot_date,currency,export_kind
+AAPL,459.01,43459.07,160.96,Apple Inc. - Common Stock,Technology,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+MSFT,867.82,390982.42,498.24,Microsoft Corporation - Common Stock,Technology,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+NVDA,55.29,26874.26,398.57,NVIDIA Corporation - Common Stock,Technology,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+AVGO,337.02,85599.37,212.03,Broadcom Inc. - Common Stock,Technology,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+ORCL,526.13,161525.07,221.48,Oracle Corporation Common Stock,Technology,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+CRM,467.51,48050.68,179.86,"Salesforce, Inc. Common Stock",Technology,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+ADBE,821.81,437871.87,626.84,Adobe Inc. - Common Stock,Technology,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+AMD,227.58,25941.84,116.27,"Advanced Micro Devices, Inc. - Common Stock",Technology,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+INTC,514.75,299533.02,485.76,Intel Corporation - Common Stock,Technology,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+QCOM,594,5555.09,8.02,QUALCOMM Incorporated - Common Stock,Technology,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+TXN,739.75,151486.00,310.58,Texas Instruments Incorporated - Common Stock,Technology,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+AMAT,386.22,72118.09,197.71,"Applied Materials, Inc. - Common Stock",Technology,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+GOOGL,577.77,231928.43,421.49,Alphabet Inc. - Class A Common Stock,Communication Services,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+META,223.34,33628.19,142.71,"Meta Platforms, Inc. - Class A Common Stock",Communication Services,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+NFLX,452.36,123855.26,156.46,"Netflix, Inc. - Common Stock",Communication Services,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+DIS,391.97,17836.20,87.97,Walt Disney Company (The) Common Stock,Communication Services,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+TMUS,993.01,55387.12,73.49,"T-Mobile US, Inc. - Common Stock",Communication Services,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+VZ,890.84,38689.18,42.56,Verizon Communications Inc. Common Stock,Communication Services,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+T,111.6,23038.31,179.51,AT&T Inc.,Communication Services,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+CMCSA,417.64,340866.07,629.62,Comcast Corporation - Class A Common Stock,Communication Services,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+AMZN,516.16,61548.98,234.51,"Amazon.com, Inc. - Common Stock",Consumer Discretionary,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+TSLA,882.42,32192.45,38.63,"Tesla, Inc.  - Common Stock",Consumer Discretionary,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+HD,595.58,153903.83,237.74,"Home Depot, Inc. (The) Common Stock",Consumer Discretionary,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+LOW,178.12,114293.46,569.13,"Lowe's Companies, Inc. Common Stock",Consumer Discretionary,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+MCD,967.23,357081.97,258.43,McDonald's Corporation Common Stock,Consumer Discretionary,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+SBUX,735.36,159393.69,357.65,Starbucks Corporation - Common Stock,Consumer Discretionary,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+NKE,51.27,15812.82,312.05,"Nike, Inc. Common Stock",Consumer Discretionary,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+BKNG,548.97,67457.43,104.45,Booking Holdings Inc. - Common Stock,Consumer Discretionary,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+MAR,789.22,131402.76,120.17,Marriott International - Class A Common Stock,Consumer Discretionary,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+RCL,89.84,66862.52,451.86,Royal Caribbean Cruises Ltd. Common Stock,Consumer Discretionary,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+WMT,736.48,99389.45,218.17,Walmart Inc. - Common Stock,Consumer Staples,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+COST,399.67,136917.15,403.03,Costco Wholesale Corporation - Common Stock,Consumer Staples,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+PG,775.19,447586.95,606.26,Procter & Gamble Company (The) Common Stock,Consumer Staples,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+KO,888.63,412796.18,395.86,Coca-Cola Company (The) Common Stock,Consumer Staples,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+PEP,547.8,265323.64,287.15,"PepsiCo, Inc. - Common Stock",Consumer Staples,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+MDLZ,275.14,73934.52,488.17,"Mondelez International, Inc. - Class A Common Stock",Consumer Staples,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+CL,705.56,354833.89,615.33,Colgate-Palmolive Company Common Stock,Consumer Staples,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+KMB,527.56,151272.55,252.33,Kimberly-Clark Corporation - Common Stock,Consumer Staples,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+KR,131.3,31921.85,221.98,Kroger Company (The) Common Stock,Consumer Staples,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+GIS,15.35,6979.95,373.52,"General Mills, Inc. Common Stock",Consumer Staples,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+JNJ,636.04,137270.15,410.06,Johnson & Johnson Common Stock,Healthcare,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+UNH,954.57,465158.62,470.10,UnitedHealth Group Incorporated Common Stock (DE),Healthcare,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+LLY,366.82,40339.20,125.37,Eli Lilly and Company Common Stock,Healthcare,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+ABBV,34.73,17017.82,451.66,AbbVie Inc. Common Stock,Healthcare,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+MRK,945.6,466216.73,320.47,"Merck & Company, Inc. Common Stock (new)",Healthcare,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+TMO,107.13,17711.16,325.14,Thermo Fisher Scientific Inc Common Stock,Healthcare,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+ABT,199.97,87936.31,481.14,Abbott Laboratories Common Stock,Healthcare,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+AMGN,709.57,200056.17,236.83,Amgen Inc. - Common Stock,Healthcare,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+GILD,957.76,359956.38,375.83,"Gilead Sciences, Inc. - Common Stock",Healthcare,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+ISRG,743.53,187473.65,181.90,"Intuitive Surgical, Inc. - Common Stock",Healthcare,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+JPM,721.26,63134.77,144.43,JP Morgan Chase & Co. Common Stock,Financials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+BAC,772.51,83497.52,150.05,Bank of America Corporation Common Stock,Financials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+WFC,537.75,230027.94,500.48,Wells Fargo & Company Common Stock,Financials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+C,392.56,104748.55,273.80,"Citigroup, Inc. Common Stock",Financials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+GS,317.86,24706.62,58.85,"Goldman Sachs Group, Inc. (The) Common Stock",Financials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+MS,381.02,41374.20,204.51,Morgan Stanley Common Stock,Financials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+BLK,888.38,133754.94,164.73,"BlackRock, Inc. Common Stock",Financials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+SCHW,67.88,43268.75,726.67,Charles Schwab Corporation (The) Common Stock,Financials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+V,40.22,16207.51,367.93,Visa Inc.,Financials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+MA,868.56,126778.49,111.56,Mastercard Incorporated Common Stock,Financials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+CAT,296.31,75055.92,363.07,"Caterpillar, Inc. Common Stock",Industrials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+DE,340.01,129675.22,448.69,Deere & Company Common Stock,Industrials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+HON,53.36,319.09,4.78,Honeywell International Inc. - Common Stock,Industrials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+UNP,284.08,32728.00,111.20,Union Pacific Corporation Common Stock,Industrials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+UPS,905.88,735916.98,644.10,"United Parcel Service, Inc. Common Stock",Industrials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+RTX,748.87,268582.23,681.44,RTX Corporation Common Stock,Industrials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+LMT,813.8,242036.33,339.40,Lockheed Martin Corporation Common Stock,Industrials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+GE,894.52,70604.46,71.04,GE Aerospace Common Stock,Industrials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+GD,875.94,551735.34,443.65,General Dynamics Corporation Common Stock,Industrials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+WM,694.28,28216.93,32.80,"Waste Management, Inc. Common Stock",Industrials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+XOM,680.07,214250.61,446.31,ExxonMobil Holdings Corporation Common Stock,Energy,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+CVX,243.36,31253.87,160.16,Chevron Corporation Common Stock,Energy,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+COP,519.85,47743.02,81.74,ConocoPhillips Common Stock,Energy,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+SLB,718.76,393126.86,542.20,SLB Limited Common Shares,Energy,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+EOG,185,97650.77,403.42,"EOG Resources, Inc. Common Stock",Energy,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+NEE,738,74412.54,186.54,"NextEra Energy, Inc. Common Stock",Utilities,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+DUK,40.24,982.68,33.33,Duke Energy Corporation (Holding Company) Common Stock,Utilities,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+SO,23.57,14076.95,579.32,Southern Company (The) Common Stock,Utilities,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+AEP,619.13,383739.25,619.80,"American Electric Power Company, Inc. - Common Stock",Utilities,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+PLD,727.87,660140.24,602.47,"Prologis, Inc. Common Stock",Real Estate,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+AMT,524.65,105438.91,391.89,American Tower Corporation (REIT) Common Stock,Real Estate,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+EQIX,141.5,1389.18,10.51,"Equinix, Inc. - Common Stock",Real Estate,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+LIN,187.88,18132.30,102.30,Linde plc - Ordinary Shares,Materials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+APD,431.5,3488.46,6.96,"Air Products and Chemicals, Inc. Common Stock",Materials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+SHW,206.67,146245.89,515.56,Sherwin-Williams Company (The) Common Stock,Materials,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+SPY,747.74,231836.79,490.91,State Street SPDR S&P 500 ETF Trust,Broad Market ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+VTI,943.19,366694.82,384.21,Vanguard Morningstar Total Stock Market ETF,Broad Market ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+VOO,541.2,273414.24,495.10,Vanguard S&P 500 ETF,Broad Market ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+QQQ,812.74,28282.54,29.35,"Invesco QQQ Trust, Series 1",Broad Market ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+IWM,789.97,420839.14,365.30,iShares Russell 2000 Index Fund,Broad Market ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+XLK,788.95,150541.13,263.96,State Street Technology Select Sector SPDR ETF,Sector ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+XLF,771.16,100820.30,124.59,State Street Financial Select Sector SPDR ETF,Sector ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+XLE,595.21,150457.18,285.64,State Street Energy Select Sector SPDR ETF,Sector ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+XLV,587.63,226972.38,298.92,State Street Health Care Select Sector SPDR ETF,Sector ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+XLI,451.06,49615.70,73.86,State Street Industrial Select Sector SPDR ETF,Sector ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+VXUS,975.31,58249.41,119.45,Vanguard Total International Stock ETF,International Equity ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+VEA,678.37,213739.46,355.85,Vanguard FTSE Developed Markets ETF,International Equity ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+VWO,254.36,117959.45,380.28,Vanguard FTSE Emerging Markets ETF,International Equity ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+BND,932.59,346260.41,258.29,Vanguard Total Bond Market ETF,Bond ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot
+AGG,844.67,569226.49,447.66,iShares Core U.S. Aggregate Bond ETF,Bond ETF,SYNTHETIC - Monthly 100,2025-11-30,USD,snapshot

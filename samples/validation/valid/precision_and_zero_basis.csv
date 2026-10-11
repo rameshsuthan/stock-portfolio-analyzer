@@ -1,0 +1,6 @@
+symbol,quantity,cost_basis,current_price,company_name,sector,portfolio_name,snapshot_date,currency,export_kind
+AAPL,0.00000001,0,123.12345678,,,SYNTHETIC - Decimal edges,2026-10-09,USD,snapshot
+MSFT,0.1,0.02,0.3,Microsoft synthetic micro-position,Technology,SYNTHETIC - Decimal edges,2026-10-09,USD,snapshot
+NVDA,1,100,0,NVIDIA zero-price scenario,Technology,SYNTHETIC - Decimal edges,2026-10-09,USD,snapshot
+JPM,2.5,500,200,JPMorgan breakeven scenario,Financials,SYNTHETIC - Decimal edges,2026-10-09,USD,snapshot
+SPY,1.12345678,100.12345678,501.12345678,ETF precision scenario,Broad Market ETF,SYNTHETIC - Decimal edges,2026-10-09,USD,snapshot
