@@ -25,11 +25,11 @@ No blocking interface conflicts found. Approved design/plan supersede earlier pl
 
 ## Tasks
 
-Tasks 1–10 complete (details and commit bases below). Task 11: acceptance and final review in progress.
+All 11 tasks complete. Implementation and important review fixes are committed. Branch/worktree retained for owner inspection and manual acceptance.
 
 ## Review / browser
 
-Pending. Reviewer requested: GPT-6 Astra, High, one whole-branch review.
+Complete: one independent GPT-6 Astra High whole-branch review; all seven Important findings fixed, four Minor items deferred. Final normal suite179passed; isolated Edge2passed.
 
 ### Task 1 complete
 RED: focused tests failed on missing database/backup modules. GREEN: migration/backup/storage 14 passed; full suite 66 passed; Ruff clean after formatting.
@@ -76,7 +76,7 @@ Base a424553. RED: missing reconciliation controls and audit view; GREEN: 2 addi
 Test adjustment: inspect the actual Reason column rather than pandas' truncated string representation.
 Next: Task 11 synthetic fixtures, isolated Edge browser workflows, performance, fresh install, documentation, one Astra High whole-branch review and important fixes.
 
-### Task 11 in progress
+### Task 11 implementation and acceptance record
 Base 47ce8f4. Added dev-only Playwright 1.63.0 (runtime lock versions unchanged), synthetic fixtures/hand-calculated JSON, explicit browser marker and ephemeral server/profile harness. Fixture checks: 7 passed; 10,000 rows preview 0.613s / commit 0.399s / load+replay 0.137s on this machine.
 Acceptance RED→GREEN safeguard: incomplete schema-2 backup (missing reconciliation_rows) was accepted; new test failed, schema validation now compares every required table/column with an in-memory canonical schema. Migration/backup checks 9 passed. SQLite backup connections now close explicitly.
 Browser: Edge installed. Localhost bind required sandbox escalation; isolated launch/onboarding smoke passed. Full workflow exposed untracked expander panels collapsing after reruns; panels now have explicit state, focused UI suite 7 passed. Full Edge workflow running again; do not claim acceptance complete yet.
@@ -111,3 +111,19 @@ Final: Ruling: certify the documented locked editable uv installation; noneditab
 Final: Ruling: actual browser certification is the author's isolated Edge execution, not a second independent browser run — reviewer inspected harness and reviewed code independently — cost if wrong: browser assurance is not independently duplicated.
 
 Final verification: 179 passed / 2 explicitly deselected browser tests in the fresh locked environment; explicit post-review Edge suite 2 passed in 144.24s, including affected navigation/duplicate/conversion flows. Ruff lint/format and diff whitespace checks passed. Final browser10k preview0.747s / commit0.942s. Corrupt-destination restore CLI passed with byte-for-byte preservation of damaged original. All seven fixes verified with full suite179/179. No Critical/Important findings remain; four deferred Minor items and all six declined-review rulings are recorded above.
+
+## Final completion ledger
+
+- Task 1: complete (commits 6b14063..d40b51c, tests: uv run --locked pytest -q → 66 passed in 1.73s)
+- Task 2: complete (commits d40b51c..21b525c, tests: uv run --locked pytest -q → 93 passed in 1.64s)
+- Task 3: complete (commits 21b525c..6363948, tests: uv run --locked pytest -q → 104 passed in 1.49s)
+- Task 4: complete (commits 6363948..1fb232b, tests: uv run --locked pytest -q → 111 passed in 1.66s)
+- Task 5: complete (commits 1fb232b..d5f33b7, tests: uv run --locked pytest -q → 134 passed in 1.71s)
+- Task 6: complete (commits d5f33b7..afe8ba0, tests: uv run --locked pytest -q → 138 passed in 1.61s)
+- Task 7: complete (commits afe8ba0..4353214, tests: uv run --locked pytest -q → 148 passed in 1.93s)
+- Task 8: complete (commits 4353214..4cfc5c7, tests: uv run --locked pytest -q → 150 passed in 1.85s)
+- Task 9: complete (commits 4cfc5c7..a424553, tests: uv run --locked pytest -q → 155 passed in 2.13s)
+- Task 10: complete (commits a424553..47ce8f4, tests: uv run --locked pytest -q → 157 passed in 2.40s)
+- Task 11: complete (commits 47ce8f4..1363173, tests: uv run --locked pytest -q → 179 passed, 2 deselected in 4.21s)
+
+Final implementation/fix head: 1363173. No merge, push, publication, V1 worktree removal or course submission. Main and V1 remain unchanged. Persistent setup/recovery/checklist: acceptance-v2.md; independent findings/fixes/minors: review-v2.md. No required implementation work remains.
