@@ -28,3 +28,12 @@ Browser fallback explicitly authorized by user; completed using isolated Playwri
 Browser acceptance: upload, invalid/valid canvas editing, fractional row addition/deletion, discard cancel/confirm, replacement cancel/confirm, filtering, two downloads, complete CSV reimport, analysis rejection, second date, process restart, older snapshot loading, snapshot/portfolio deletion all passed.
 Browser-discovered fix: allocation labels showed one decimal by Plotly default — test_allocation_labels_show_two_decimal_places RED→GREEN; 54/54 suite; browser verified 57.14% and 42.86% after server restart.
 Final status: all six tasks, independent review fixes, and browser acceptance complete. Branch/worktree retained per user's no-merge/no-push instruction. Progress ledger archived in docs/implementation-progress.md.
+
+2026-10-11 — approved large-portfolio UI refinement:
+- Reproduced clipped totals, 100 filter chips, crowded charts, and missing row numbers using samples/validation/valid/real_symbols_100.csv in isolated Edge.
+- Implemented approved Analysis/Edit tabs, two-plus-three metric layout, empty-means-all filters/reset, numbered tables, financial columns first, top-ten stock allocation plus remainder, sector bars, separate top gain/loss charts.
+- Behavioral tests RED→GREEN for filter/reset selection and row identity, allocation aggregation, gain/loss limits. Browser exposed sidebar confirmations hidden inside Edit; added regression RED→GREEN and moved confirmations above tabs.
+- Verification: 58 pytest tests passed; Ruff lint/format and diff checks passed. Browser upload, quantity edit, exact revised total, 100-row export, filter/reset, temporary-database save and tab transitions passed. Sidebar discard/cancel verified separately.
+- Metric values render in full at 1366, 1024, and 768-pixel widths; measured content has no horizontal overflow. Synthetic screenshots in docs/evidence/portfolio-100-*.png.
+- Adjustment: empty filter controls now mean all (documented), avoiding hundreds of preselected chips; a nonmatching intersection still has an explicit empty state. Table columns scroll horizontally on narrow screens. Chart summaries never reduce exports or saved holdings.
+- Existing independent Astra High release review remains recorded above; this UI follow-up has automated and browser verification. No merge, push, or publication.

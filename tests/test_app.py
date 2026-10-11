@@ -83,8 +83,9 @@ def test_charts_share_analysis_and_zero_baseline():
 
     a = analyze(validate_rows(parse_csv(Path("samples/demo.csv").read_bytes()).rows).holdings)
     fig = gain_chart(a)
-    assert list(fig.data[0].y) == [200, -100]
-    assert fig.layout.yaxis.zeroline
+    assert list(fig.data[0].x) == [200]
+    assert list(gain_chart(a, losses=True).data[0].x) == [-100]
+    assert fig.layout.xaxis.zeroline
     pie = allocation_chart(a.stock_allocations, "Stock allocation")
     assert list(pie.data[0].labels) == ["DEMO_A", "DEMO_B"]
 
@@ -117,3 +118,56 @@ def test_allocation_labels_show_two_decimal_places():
         "Stock allocation",
     )
     assert list(chart.data[0].text or []) == ["DEMO_A<br>57.14%", "DEMO_B<br>42.86%"]
+
+
+def test_compact_filters_reset_and_numbered_results(tmp_path, monkeypatch):
+    at = app(tmp_path, monkeypatch)
+    button(at, "Load synthetic sample").click().run()
+    assert at.multiselect(key="symbols").value == []
+    assert at.multiselect(key="sectors").value == []
+    at.multiselect(key="symbols").set_value(["DEMO_B"]).run()
+    assert at.metric[-1].value == "1"
+    table = next(d.value for d in at.dataframe if "#" in d.value.columns)
+    assert list(table["#"]) == [2]
+    button(at, "Reset filters").click().run()
+    assert at.metric[-1].value == "2"
+    assert at.multiselect(key="symbols").value == []
+
+
+def test_large_allocation_groups_remainder_without_losing_value():
+    from decimal import Decimal
+
+    from stock_portfolio.charts import allocation_chart
+
+    values = {f"S{i}": Decimal(i) for i in range(1, 13)}
+    chart = allocation_chart(values, "Allocation")
+    assert list(chart.data[0].labels) == [f"S{i}" for i in range(12, 2, -1)] + ["Other holdings"]
+    assert list(chart.data[0].values) == list(range(12, 2, -1)) + [3]
+
+
+def test_gain_chart_limits_each_side_and_excludes_zero():
+    from decimal import Decimal
+
+    from stock_portfolio.calculations import analyze
+    from stock_portfolio.charts import gain_chart
+    from stock_portfolio.models import Holding
+
+    a = analyze(
+        tuple(Holding(f"S{i}", Decimal(1), Decimal(20), Decimal(20 + i)) for i in range(-12, 13))
+    )
+    chart = gain_chart(a, losses=True)
+    assert list(chart.data[0].x) == list(range(-12, -2))
+    assert len(chart.data[0].y) == 10
+    assert chart.layout.xaxis.zeroline
+    chart = gain_chart(a)
+    assert list(chart.data[0].x) == list(range(12, 2, -1))
+
+
+def test_sidebar_confirmation_is_outside_hidden_edit_tab(tmp_path, monkeypatch):
+    at = app(tmp_path, monkeypatch)
+    button(at, "Load synthetic sample").click().run()
+    button(at, "New blank draft").click().run()
+    assert any("discard unsaved" in w.value for w in at.warning)
+    assert not any("discard unsaved" in w.value for w in at.tabs[1].warning)
+    button(at, "Cancel switch").click().run()
+    assert at.metric[-1].value == "2"

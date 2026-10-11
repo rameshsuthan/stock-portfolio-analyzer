@@ -61,3 +61,13 @@ Browser discovery: Plotly's default pie labels displayed 57.1% / 42.9%. The appr
 Some scripted actions initially raced Streamlit rerenders or focused a canvas cell before its editor opened. Repeating them with settled UI state and visible cell-editor checks passed; no production workaround was needed.
 
 [Verified synthetic dashboard screenshot](evidence/synthetic-dashboard.png). No video was recorded or submitted. Browser acceptance is now complete; the prior blocked status above is historical. Scope remains local desktop v1, and no merge, push, hosting, or publication occurred.
+
+## 2026-10-11 — large-portfolio UI refinement
+
+Approved after reproducing the user's 100-stock layout concerns. The Analysis tab now starts with compact filters and full monetary totals; Edit holdings contains import, inputs, and saving. Both tables have row numbers, and financial columns appear first in the analysis table. Empty filters mean all; Reset filters restores all holdings. Stock allocation groups positions after the largest ten into Other holdings. Sector bars and separate gain/loss charts replace crowded 100-position plots; complete data remains in tables and CSVs.
+
+Four regression tests were developed with observed failures before the corresponding fixes. The final suite passes 58 tests, with Ruff lint/format checks passing. A browser-only interaction regression (sidebar confirmation hidden in the Edit tab) was reproduced, covered by a regression test, fixed by rendering confirmations above tabs, and checked again in Edge.
+
+Isolated headless Edge/Playwright used only synthetic CSVs and `/private/tmp/portfolio-ui-refinement` SQLite data. Uploaded `real_symbols_100.csv`; observed basis $16,233,618.53, market value $16,368,367.89, gain $134,749.36, 0.83%, 100 holdings. At widths 1366, 1024, and 768, metric content fits without horizontal overflow. Edited AAPL quantity 459.01→460.01 through the actual canvas editor: total becomes $16,368,525.69. Complete download retained 100 rows and exact edited quantity; AAPL filtering, Reset filters, saving and switching tabs passed. Sidebar discard confirmation/cancel is visible from Analysis.
+
+Screenshots: [dashboard](evidence/portfolio-100-dashboard.png), [charts](evidence/portfolio-100-charts.png). Narrow tables require horizontal scrolling; charts deliberately summarize positions while tables/reports retain all selected holdings. Restart an already-running Streamlit process to load the changed Python modules.

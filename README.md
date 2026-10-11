@@ -50,11 +50,17 @@ UTF-8 and UTF-8 BOM are accepted. Headers ignore case and surrounding whitespace
 
 **Complete snapshot CSV** always includes all draft holdings and exact decimal inputs, plus repeated `portfolio_name`, `snapshot_date`, `currency=USD`, and `export_kind=snapshot`. Import validates metadata consistency. **Analysis report CSV** includes only the intersecting symbol/sector selection, with calculated metrics and `export_kind=analysis`; it is a report, not an importable snapshot. Undefined percentages are blank in reports and N/A in the dashboard. Store personal downloads outside this repository. Only open trusted CSV text in spreadsheet software, which may interpret text beginning with formula characters.
 
+## Reading and editing a portfolio
+
+Use **Edit holdings** to upload CSVs, update inputs, and save the complete snapshot. Use **Analysis** for totals, filters, downloads, and charts. Both tables show row numbers; the analysis table retains the original holding number after filtering or sorting. CSV validation row numbers include the header, so they are one higher. Financial columns come first in the analysis table; scroll horizontally for company and sector details.
+
+Totals display full amounts. Stock allocation shows the ten largest holdings plus an aggregate “Other holdings”; hover for percentages. Sector bars include every sector, and separate gain/loss charts show up to ten positions each by dollar amount. Tables and reports retain all selected holdings.
+
 ## Calculations and scope
 
 Market value is quantity × price. Gain/loss is value − total cost basis. Average cost is basis ÷ quantity. Portfolio gain percentage is aggregate gain ÷ aggregate basis, never the average of holding percentages. Zero cost basis produces undefined gain percentages. Allocation divides selected market values by their sum; zero total value omits allocation charts. ETF sectors describe the supplied fund classification without looking through to underlying holdings.
 
-Filters intersect and affect metrics, the sortable table, charts, and analysis report. They never reduce saved snapshots or complete exports. Changes to holdings reset filters. Empty selections have an explicit empty state and disable analysis download.
+Filters intersect and affect metrics, the sortable table, charts, and analysis report. They never reduce saved snapshots or complete exports. Changes to holdings reset filters. Empty filter controls mean all symbols or sectors; Reset filters clears both controls. An intersection with no matches shows an empty state and disables analysis download.
 
 V1 excludes transactions, realized gains, cash, shorts, derivatives, multiple currencies, historical performance, benchmark comparisons, combined-account analysis, hosting, and multi-user access.
 
