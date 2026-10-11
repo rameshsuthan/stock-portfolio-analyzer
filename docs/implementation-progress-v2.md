@@ -37,3 +37,9 @@ RED: focused tests failed on missing database/backup modules. GREEN: migration/b
 Implemented transactional V1→V2 with pre-migration backup, schema constraints, shared connection, SQLite backup API, offline staged atomic restore and preserved recovery file. Injected backup/migration/replacement failures preserve originals. Commit: this task commit (see git log).
 Environment: use UV_CACHE_DIR=/private/tmp/portfolio-v2-uv-cache for sandbox-writable uv cache.
 Next: Task 2, pure trades/opening replay.
+
+### Task 2 complete
+Base d40b51c. RED: missing replay/models; fee-slice test subsequently failed on absent match_proceeds. GREEN: 27 trade/opening tests; full suite 93 passed. FIFO 1794/1252/542 and explicit 908/288 verified; precision-50 residual conservation; unknown pools do not prorate.
+Task 2: Ruling: aggregate-to-detailed replacement total checks belong to Task 4's atomic mutation boundary, where the old and proposed datasets coexist; replay validates each representation now — avoids inventing mutation semantics in pure replay — cost if wrong: replacement test arrives two tasks later.
+Added optional Disposal.match_proceeds to expose proportional fee allocation and final residuals without changing required signatures.
+Next: Task 3 additional events.
