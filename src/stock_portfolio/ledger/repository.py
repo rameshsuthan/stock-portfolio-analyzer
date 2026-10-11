@@ -256,3 +256,58 @@ class LedgerRepository:
                 (event_id,),
             )
         )
+
+    def find_import_batch(self, batch, effective_date):
+        row = self.connection.execute(
+            """SELECT id FROM import_batches WHERE account_ids=? AND kind=?
+            AND source_hash=? AND effective_date IS ? ORDER BY rowid LIMIT 1""",
+            (
+                dumps(batch.account_ids),
+                batch.kind,
+                batch.source_hash,
+                effective_date.isoformat() if effective_date else None,
+            ),
+        ).fetchone()
+        return row[0] if row else None
+
+    def commit_import_batch(self, preview):
+        with self.connection:
+            self.connection.execute("BEGIN IMMEDIATE")
+            self._check_revision(preview.expected_revision)
+            if preview.issues:
+                raise InvalidLedger(preview.issues)
+            existing = self.find_import_batch(preview.batch, preview.effective_date)
+            if existing:
+                return existing
+            if preview.proposed_prices or preview.proposed_statement:
+                raise ValueError("Price/statement persistence not yet available.")
+            self.proposed_dataset(preview.proposed_events, preview.void_ids)
+            operation = self._audit(
+                "Confirm CSV import",
+                {
+                    "source_hash": preview.batch.source_hash,
+                    "source_name": preview.batch.source_name,
+                },
+            )
+            self._write_events(preview.proposed_events, preview.void_ids, operation)
+            batch = preview.batch
+            self.connection.execute(
+                "INSERT INTO import_batches VALUES (?,?,?,?,?,?,?)",
+                (
+                    batch.id,
+                    dumps(batch.account_ids),
+                    batch.kind,
+                    batch.source_hash,
+                    batch.source_name,
+                    preview.effective_date.isoformat() if preview.effective_date else None,
+                    operation,
+                ),
+            )
+            choices = {c.row: c.action for c in batch.choices}
+            for number, row in enumerate(batch.rows, 2):
+                self.connection.execute(
+                    "INSERT INTO import_rows VALUES (?,?,?,?)",
+                    (batch.id, number, dumps(row), choices.get(number, "keep")),
+                )
+            self._bump(economic=bool(preview.proposed_events or preview.void_ids))
+        return batch.id

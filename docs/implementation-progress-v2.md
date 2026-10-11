@@ -51,3 +51,7 @@ Next: Task 4 revisioned persistence, grouped corrections and replacement totals.
 ### Task 4 complete
 Base 6363948. RED: missing codec/repository; GREEN: 7 persistence/correction integration tests; full suite 111 passed. SQLite trigger rollback preserves identities, heads, audits and counters. Restart preserves exact decimals; invalid cross-account corrections and partial reinvestment changes are rejected. Task 2 deferred opening replacement contract now verified.
 Next: Task 5 generic CSV previews and atomic batch exchange.
+
+### Task 5 complete
+Base 1fb232b. RED: missing exchange/import modules; GREEN: 23 CSV/import/export tests, full suite 134 passed. Verified repeated-file no-op, explicit identical occurrence decisions, external identity conflicts, exact cross-account lot/transfer round trip, stale previews and injected batch-record rollback. CSV boundaries retain NA, normalize headers, bound bytes/rows and reject report metadata. Prices/statements deliberately blocked at commit until Tasks 6/7.
+Next: Task 6 dated price persistence and completeness-aware valuation.
