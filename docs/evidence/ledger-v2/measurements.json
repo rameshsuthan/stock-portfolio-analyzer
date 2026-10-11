@@ -1,0 +1,110 @@
+{
+  "preview_10000_browser_seconds": 0.8523734579939628,
+  "commit_10000_browser_seconds": 0.9371229169919388,
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "metrics": [
+        {
+          "text": "$1,000,000.00",
+          "overflow": false
+        },
+        {
+          "text": "$1,250,000.00",
+          "overflow": false
+        },
+        {
+          "text": "$250,000.00",
+          "overflow": false
+        },
+        {
+          "text": "$0.00",
+          "overflow": false
+        },
+        {
+          "text": "$0.00",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 900,
+      "metrics": [
+        {
+          "text": "$1,000,000.00",
+          "overflow": false
+        },
+        {
+          "text": "$1,250,000.00",
+          "overflow": false
+        },
+        {
+          "text": "$250,000.00",
+          "overflow": false
+        },
+        {
+          "text": "$0.00",
+          "overflow": false
+        },
+        {
+          "text": "$0.00",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "metrics": [
+        {
+          "text": "$1,000,000.00",
+          "overflow": false
+        },
+        {
+          "text": "$1,250,000.00",
+          "overflow": false
+        },
+        {
+          "text": "$250,000.00",
+          "overflow": false
+        },
+        {
+          "text": "$0.00",
+          "overflow": false
+        },
+        {
+          "text": "$0.00",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "metrics": [
+        {
+          "text": "$1,000,000.00",
+          "overflow": false
+        },
+        {
+          "text": "$1,250,000.00",
+          "overflow": false
+        },
+        {
+          "text": "$250,000.00",
+          "overflow": false
+        },
+        {
+          "text": "$0.00",
+          "overflow": false
+        },
+        {
+          "text": "$0.00",
+          "overflow": false
+        }
+      ]
+    }
+  ]
+}
