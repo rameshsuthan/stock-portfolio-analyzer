@@ -342,6 +342,11 @@ def prepare_import(repo, parsed, account_id, effective_date=None, choices=()):
             if dispositions.get(number) != "skip":
                 proposed.append(e)
             dispositions.setdefault(number, "keep")
+    if prices:
+        try:
+            repo.validate_prices(prices)
+        except ValueError as exc:
+            issues.append(Issue("invalid_price", str(exc)))
     projected, statement = None, None
     if parsed.kind == I.broker_holdings:
         if effective_date is None or account_id is None:

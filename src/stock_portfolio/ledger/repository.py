@@ -279,7 +279,7 @@ class LedgerRepository:
             existing = self.find_import_batch(preview.batch, preview.effective_date)
             if existing:
                 return existing
-            if preview.proposed_prices or preview.proposed_statement:
+            if preview.proposed_statement:
                 raise ValueError("Price/statement persistence not yet available.")
             self.proposed_dataset(preview.proposed_events, preview.void_ids)
             operation = self._audit(
@@ -290,6 +290,7 @@ class LedgerRepository:
                 },
             )
             self._write_events(preview.proposed_events, preview.void_ids, operation)
+            self._write_prices(preview.proposed_prices, operation)
             batch = preview.batch
             self.connection.execute(
                 "INSERT INTO import_batches VALUES (?,?,?,?,?,?,?)",
@@ -311,3 +312,69 @@ class LedgerRepository:
                 )
             self._bump(economic=bool(preview.proposed_events or preview.void_ids))
         return batch.id
+
+    def validate_prices(self, observations):
+        from .validation import decimal_input
+
+        seen = set()
+        for p in observations:
+            if (
+                not p.symbol
+                or p.symbol != p.symbol.strip().upper()
+                or type(p.price_date) is not date
+                or p.price_date > date.today()
+            ):
+                raise ValueError("Price requires normalized symbol and a nonfuture date.")
+            decimal_input(p.price)
+            if (p.symbol, p.price_date) in seen:
+                raise ValueError("Duplicate symbol/date price in one batch.")
+            seen.add((p.symbol, p.price_date))
+
+    def _write_prices(self, observations, operation):
+        self.validate_prices(observations)
+        for p in observations:
+            day = p.price_date.isoformat()
+            version = self.connection.execute(
+                "SELECT coalesce(max(version),0)+1 FROM price_revisions WHERE symbol=? AND price_date=?",
+                (p.symbol, day),
+            ).fetchone()[0]
+            self.connection.execute(
+                "INSERT INTO price_revisions VALUES (?,?,?,?,?)",
+                (p.symbol, day, version, dumps(p), operation),
+            )
+            self.connection.execute(
+                "INSERT INTO price_observations VALUES (?,?,?,?) ON CONFLICT(symbol,price_date) DO UPDATE SET price=excluded.price,source_label=excluded.source_label",
+                (p.symbol, day, format(p.price, "f"), p.source_label),
+            )
+
+    def save_prices(self, observations, expected_revision, reason):
+        with self.connection:
+            self.connection.execute("BEGIN IMMEDIATE")
+            self._check_revision(expected_revision)
+            self.validate_prices(observations)
+            operation = self._audit(reason)
+            self._write_prices(observations, operation)
+            self._bump()
+
+    def load_prices(self):
+        from decimal import Decimal
+
+        from .models import PriceObservation
+
+        return tuple(
+            PriceObservation(s, date.fromisoformat(d), Decimal(p), label)
+            for s, d, p, label in self.connection.execute(
+                "SELECT symbol,price_date,price,source_label FROM price_observations ORDER BY symbol,price_date"
+            )
+        )
+
+    def price_history(self, symbol, price_date):
+        return tuple(
+            dict(zip(("version", "payload", "reason", "recorded_at"), r))
+            for r in self.connection.execute(
+                """
+            SELECT p.version,p.payload,a.reason,a.recorded_at FROM price_revisions p
+            JOIN audit_operations a ON a.id=p.operation_id WHERE symbol=? AND price_date=? ORDER BY version""",
+                (symbol, price_date.isoformat()),
+            )
+        )

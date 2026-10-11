@@ -242,3 +242,74 @@ def export_prices(observations):
 
 def template(kind):
     return write_csv([], (*REQUIRED[kind], *OPTIONAL[kind]), kind)
+
+
+def export_holdings_report(value):
+    rows = [
+        {
+            "account_id": value.account_id,
+            "as_of": value.as_of,
+            "ticker": h.position.symbol,
+            "quantity": h.position.quantity,
+            "cost_basis": h.position.basis,
+            "price": h.price,
+            "price_date": h.price_date,
+            "market_value": h.market_value,
+            "unrealized_gain": h.unrealized_gain,
+            "status": ";".join(i.code for i in h.issues) or "complete",
+        }
+        for h in value.holdings
+    ]
+    return write_csv(
+        rows,
+        (
+            "account_id",
+            "as_of",
+            "ticker",
+            "quantity",
+            "cost_basis",
+            "price",
+            "price_date",
+            "market_value",
+            "unrealized_gain",
+            "status",
+        ),
+        "holdings_report",
+    )
+
+
+def export_realized_report(replayed, account_id, as_of):
+    rows = [
+        {
+            "account_id": account_id,
+            "as_of": as_of,
+            "event_id": d.event_id,
+            "ticker": d.symbol,
+            "quantity": d.quantity,
+            "proceeds": d.proceeds,
+            "cost_basis": d.basis,
+            "realized_gain": d.gain,
+            "method": d.method,
+            "lots": dumps(d.matches),
+            "status": "unresolved" if d.gain is None else "complete",
+        }
+        for d in replayed.disposals
+        if d.account_id == account_id
+    ]
+    return write_csv(
+        rows,
+        (
+            "account_id",
+            "as_of",
+            "event_id",
+            "ticker",
+            "quantity",
+            "proceeds",
+            "cost_basis",
+            "realized_gain",
+            "method",
+            "lots",
+            "status",
+        ),
+        "realized_report",
+    )
