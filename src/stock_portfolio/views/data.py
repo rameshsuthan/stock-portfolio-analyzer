@@ -303,3 +303,70 @@ def render(repo, account_id, as_of, notices):
         repo.archive_account(account_id)
         st.session_state["receipt"] = "Account archived. History retained."
         st.rerun()
+
+    with st.expander("Audit history", expanded=True):
+        history = repo.audit_history(account_id)
+        table(
+            [
+                {
+                    "Time (UTC)": r["recorded_at"],
+                    "Event ID": r["event_id"],
+                    "Version": r["version"],
+                    "Status": r["status"],
+                    "Reason": r["reason"],
+                    "Old values": r["old_payload"] or "New event",
+                    "New values": r["payload"],
+                    "Provenance": r["provenance"],
+                }
+                for r in history
+            ],
+            height=280,
+        )
+        if history:
+            selected = st.selectbox(
+                "Exact audit revision",
+                list(range(len(history))),
+                format_func=lambda i: (
+                    f"{history[i]['event_id'][:8]} · revision {history[i]['version']}"
+                ),
+            )
+            st.json(history[selected], expanded=False)
+    recovery(repo)
+
+
+def recovery(repo):
+    import shlex
+    import tempfile
+    from pathlib import Path
+
+    from ..backup import create_backup
+
+    with st.expander("Backup & offline recovery", expanded=True):
+        st.caption(
+            "A database backup includes both modes, exact values, audit history and reconciliation evidence. Store downloaded backups privately."
+        )
+        if st.button("Prepare consistent database backup"):
+            with tempfile.TemporaryDirectory(prefix="portfolio-backup-") as temporary:
+                backup = create_backup(repo.path, Path(temporary) / "portfolio-backup.sqlite3")
+                st.session_state["backup_bytes"] = backup.read_bytes()
+            st.session_state["backup_revision"] = repo.load_dataset().revision
+        if "backup_bytes" in st.session_state:
+            st.caption(
+                f"Prepared at data revision {st.session_state['backup_revision']}; prepare again after changes."
+            )
+            st.download_button(
+                "Download database backup",
+                st.session_state["backup_bytes"],
+                "portfolio-backup.sqlite3",
+                "application/vnd.sqlite3",
+            )
+        st.markdown(
+            "**Restore offline:** stop every running app/SQLite writer first. The command validates the backup and preserves the current database as a pre-restore recovery copy."
+        )
+        st.code(
+            "uv run --locked python -m stock_portfolio.backup restore --source PATH_TO_BACKUP.sqlite3 "
+            + "--destination "
+            + shlex.quote(str(repo.path))
+            + " --confirm-stopped",
+            language="bash",
+        )

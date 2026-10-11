@@ -559,3 +559,14 @@ class LedgerRepository:
                 )
             self._bump(economic=True)
         return account
+
+    def audit_history(self, account_id):
+        records = []
+        for identity in self.identities():
+            if identity["account_id"] != account_id:
+                continue
+            previous = None
+            for row in self.history(identity["id"]):
+                records.append({"event_id": identity["id"], "old_payload": previous, **row})
+                previous = row["payload"]
+        return tuple(sorted(records, key=lambda r: (r["recorded_at"], r["event_id"], r["version"])))

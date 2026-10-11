@@ -71,3 +71,8 @@ Next: Task 9 transaction onboarding, entry/import/lot/overview/data views and UI
 ### Task 9 complete
 Base 4cfc5c7. RED: absent onboarding controls/snapshot conversion; later opening replacement preview parameter failed. GREEN: 5 UI/workflow tests, full suite 155 passed. Added account onboarding; trade/revision/void/revival previews; paired reinvestment; split/transfer entry; CSV review/duplicate choices; allocation and supplied-pool basis editor; derived overview; exact details; opening/price/data exports; atomic snapshot conversion; reviewed aggregate-to-detail replacement. New shared views/common.py centralizes preview/confirmation controls.
 Next: Task 10 reconciliation, audit, backup and recovery UI. Browser verification remains pending Task 11.
+
+### Task 10 complete
+Base a424553. RED: missing reconciliation controls and audit view; GREEN: 2 additional UI scenarios, full suite 157 passed; Ruff check/format and diff whitespace check passed. Completeness confirmation gates statement import; saved evidence shows stale state and recalculates into a new result. Added current-history lot/event drill-through, immutable audit old/new/reason display, SQLite backup download and configured-path offline restore instructions. Backup bytes were reopened and integrity-checked in a temporary test directory. Shared snapshot money formatting consolidated.
+Test adjustment: inspect the actual Reason column rather than pandas' truncated string representation.
+Next: Task 11 synthetic fixtures, isolated Edge browser workflows, performance, fresh install, documentation, one Astra High whole-branch review and important fixes.

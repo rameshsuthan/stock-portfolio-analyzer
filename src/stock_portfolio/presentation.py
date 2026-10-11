@@ -33,5 +33,10 @@ def table(rows, *, height=420):
         column_config={
             "#": st.column_config.NumberColumn("#", pinned=True, width="small"),
             "Symbol": st.column_config.TextColumn("Symbol", pinned=True),
+            **{
+                key: st.column_config.NumberColumn(key, format="dollar", width="medium")
+                for key in frame.columns
+                if "(USD)" in key
+            },
         },
     )

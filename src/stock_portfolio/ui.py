@@ -10,7 +10,7 @@ import streamlit as st
 from .ledger.repository import LedgerRepository
 from .storage import Repository
 from .ui_state import dirty, guard_navigation, resolve_navigation
-from .views import data, lots, overview, snapshots, transactions
+from .views import data, lots, overview, reconcile, snapshots, transactions
 
 PAGES = ("Overview", "Transactions", "Lots & realized gains", "Reconcile", "Data & recovery")
 
@@ -89,11 +89,11 @@ def main():
                         "Transactions": transactions,
                         "Lots & realized gains": lots,
                         "Data & recovery": data,
+                        "Reconcile": reconcile,
                     }
                     if page in views:
                         views[page].render(ledger, account, as_of, notices)
-                    else:
-                        st.info("Reconciliation workspace follows in Task 10.")
+
                 else:
                     st.info("Create an account to start from full history or opening records.")
     except (ValueError, sqlite3.Error, OSError) as exc:

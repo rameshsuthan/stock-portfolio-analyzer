@@ -11,6 +11,7 @@ from ..calculations import analyze
 from ..charts import allocation_chart, gain_chart, sector_chart
 from ..csv_io import CsvFormatError, export_analysis, export_snapshot, parse_csv
 from ..models import Metadata, Selection
+from ..presentation import money
 from ..storage import ReplacementRequired
 from ..validation import FIELDS, holding_rows
 from ..workflow import Draft
@@ -235,9 +236,9 @@ def _dashboard(draft):
     analysis = analyze(snapshot.holdings, draft.selection)
     st.caption("Selected holdings · Unrealized gain/loss based on supplied prices")
     values = [
-        ("Cost basis", f"${analysis.cost_basis:,.2f}"),
-        ("Market value", f"${analysis.market_value:,.2f}"),
-        ("Gain / loss (USD)", f"${analysis.gain:,.2f}"),
+        ("Cost basis", money(analysis.cost_basis)),
+        ("Market value", money(analysis.market_value)),
+        ("Gain / loss (USD)", money(analysis.gain)),
         (
             "Gain / loss %",
             "N/A" if analysis.gain_percent is None else f"{analysis.gain_percent:.2f}%",
