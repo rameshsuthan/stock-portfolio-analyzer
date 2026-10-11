@@ -1,12 +1,14 @@
-from datetime import date
-from decimal import Decimal as D
 import csv
 import io
+from datetime import date
+from decimal import Decimal as D
+
 import pytest
-from stock_portfolio.csv_io import parse_csv, export_snapshot, export_analysis, CsvFormatError
-from stock_portfolio.validation import validate_rows
-from stock_portfolio.models import Snapshot, Metadata, Holding, Selection
+
 from stock_portfolio.calculations import analyze
+from stock_portfolio.csv_io import CsvFormatError, export_analysis, export_snapshot, parse_csv
+from stock_portfolio.models import Holding, Metadata, Selection, Snapshot
+from stock_portfolio.validation import validate_rows
 
 HEADER = b"symbol,quantity,cost_basis,current_price\n"
 
@@ -52,7 +54,7 @@ def snapshot():
             Holding(
                 "NA", D("0.12345678"), D("1234567890.12345678"), D("1.23000000"), "NA", "Unknown"
             ),
-            Holding("B", D("1"), D("0"), D("0"), "B", "Other"),
+            Holding("B", D(1), D(0), D(0), "B", "Other"),
         ),
     )
 

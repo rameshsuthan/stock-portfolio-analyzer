@@ -4,8 +4,9 @@ import csv
 import io
 from dataclasses import dataclass
 from datetime import date
+
 from .models import Metadata
-from .validation import FIELDS, REQUIRED, MAX_HOLDINGS, holding_rows
+from .validation import FIELDS, MAX_HOLDINGS, REQUIRED, holding_rows
 
 MAX_BYTES = 10_000_000
 META = ("portfolio_name", "snapshot_date", "currency", "export_kind")
@@ -69,12 +70,12 @@ def parse_csv(content):
 
 
 def _metadata(metadata, kind):
-    return dict(
-        portfolio_name=metadata.portfolio_name,
-        snapshot_date=metadata.snapshot_date.isoformat(),
-        currency=metadata.currency,
-        export_kind=kind,
-    )
+    return {
+        "portfolio_name": metadata.portfolio_name,
+        "snapshot_date": metadata.snapshot_date.isoformat(),
+        "currency": metadata.currency,
+        "export_kind": kind,
+    }
 
 
 def _write(rows, fields):

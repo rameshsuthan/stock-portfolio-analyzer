@@ -1,16 +1,18 @@
 """Streamlit presentation. Editor inputs remain strings until shared validation."""
 
-from datetime import date
-from pathlib import Path
 import os
 import sqlite3
+from datetime import date
+from pathlib import Path
+
 import pandas as pd
 import streamlit as st
-from .csv_io import parse_csv, CsvFormatError, export_snapshot, export_analysis
+
 from .calculations import analyze
 from .charts import allocation_chart, gain_chart
+from .csv_io import CsvFormatError, export_analysis, export_snapshot, parse_csv
 from .models import Metadata, Selection
-from .storage import Repository, ReplacementRequired
+from .storage import ReplacementRequired, Repository
 from .validation import FIELDS, holding_rows
 from .workflow import Draft
 

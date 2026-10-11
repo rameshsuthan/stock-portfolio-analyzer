@@ -1,8 +1,9 @@
 """One validator for editor rows, imports, and persistence boundaries."""
 
+import re
 from dataclasses import dataclass
 from decimal import Decimal
-import re
+
 from .models import Holding
 
 FIELDS = ("symbol", "quantity", "cost_basis", "current_price", "company_name", "sector")

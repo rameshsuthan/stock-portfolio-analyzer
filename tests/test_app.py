@@ -34,6 +34,7 @@ def test_editor_delta_survives_rerun_and_invalid_blocks_save(tmp_path, monkeypat
     # AppTest does not serialize the canvas editor; provide the browser's delta
     # in WidgetStates on each rerun instead of assigning server session state.
     import json
+
     from streamlit.proto.WidgetStates_pb2 import WidgetState
 
     editor = next(e for e in at.dataframe if e.proto.id.endswith(f"editor_{generation}"))
@@ -75,8 +76,8 @@ def test_dashboard_filter_metrics_and_complete_export(tmp_path, monkeypatch):
 
 
 def test_charts_share_analysis_and_zero_baseline():
-    from stock_portfolio.charts import allocation_chart, gain_chart
     from stock_portfolio.calculations import analyze
+    from stock_portfolio.charts import allocation_chart, gain_chart
     from stock_portfolio.csv_io import parse_csv
     from stock_portfolio.validation import validate_rows
 

@@ -1,8 +1,9 @@
 """Local SQLite storage. Replacement is one rollback-safe transaction."""
 
+import sqlite3
 from datetime import date
 from pathlib import Path
-import sqlite3
+
 from .models import Metadata, Snapshot
 from .validation import FIELDS, holding_rows, validate_rows
 

@@ -1,4 +1,5 @@
 import pytest
+
 from stock_portfolio.validation import validate_rows
 
 

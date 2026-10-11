@@ -5,3 +5,26 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 *.egg-info/
+# Private local data and credentials
+.env
+.env.*
+!.env.example
+.aws/
+credentials*
+secrets*
+.streamlit/secrets.toml
+*.pem
+*.key
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+data/
+private/
+.stock-portfolio-analyzer/
+exports/
+reports/
+backups/
+.DS_Store

@@ -1,14 +1,16 @@
 import sqlite3
 from datetime import date
 from decimal import Decimal as D
+
 import pytest
-from stock_portfolio.models import Holding
-from stock_portfolio.storage import Repository, ReplacementRequired, UnsupportedSchema
+
 from stock_portfolio.csv_io import export_snapshot, parse_csv
+from stock_portfolio.models import Holding
+from stock_portfolio.storage import ReplacementRequired, Repository, UnsupportedSchema
 from stock_portfolio.validation import validate_rows
 
 DAY = date(2026, 10, 10)
-ROWS = (Holding("A", D(".12345678"), D("1.23000000"), D("2"), "A", "Unknown"),)
+ROWS = (Holding("A", D(".12345678"), D("1.23000000"), D(2), "A", "Unknown"),)
 
 
 def test_portfolios_casefold_unique_and_delete(tmp_path):

@@ -1,10 +1,13 @@
+import sqlite3
 from datetime import date
 from pathlib import Path
+
 import pytest
-from stock_portfolio.workflow import Draft, DiscardRequired
-from stock_portfolio.models import Metadata, Selection
+
 from stock_portfolio.csv_io import parse_csv
-from stock_portfolio.storage import Repository, ReplacementRequired
+from stock_portfolio.models import Metadata, Selection
+from stock_portfolio.storage import ReplacementRequired, Repository
+from stock_portfolio.workflow import DiscardRequired, Draft
 
 META = Metadata("Demo", date(2026, 10, 10))
 ROWS = parse_csv(Path("samples/demo.csv").read_bytes()).rows
@@ -54,7 +57,7 @@ def test_invalid_draft_and_save_failure_preserve_state(tmp_path):
         assert d.rows == bad and repo.list_portfolios() == []
         d.update(ROWS, META)
         repo.connection.close()
-        with pytest.raises(Exception):
+        with pytest.raises(sqlite3.ProgrammingError):
             d.save(repo)
         assert d.rows == ROWS and d.dirty
 
@@ -82,6 +85,7 @@ def test_metadata_required():
 def test_filtered_analysis_report_and_full_snapshot_agree():
     import csv
     import io
+
     from stock_portfolio.calculations import analyze
     from stock_portfolio.csv_io import export_analysis, export_snapshot
 

@@ -1,6 +1,7 @@
 """Pure calculations at 50 digits; rounding is presentation only."""
 
 from decimal import Decimal, localcontext
+
 from .models import Analysis, HoldingMetrics, Selection
 
 

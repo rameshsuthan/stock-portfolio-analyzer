@@ -13,7 +13,7 @@ def allocation_chart(values, title):
             sort=False,
         )
     )
-    fig.update_layout(title=title, margin=dict(t=50, b=20, l=20, r=20))
+    fig.update_layout(title=title, margin={"t": 50, "b": 20, "l": 20, "r": 20})
     return fig
 
 
@@ -28,6 +28,6 @@ def gain_chart(analysis):
     fig.update_layout(
         title="Unrealized gain / loss by holding",
         yaxis_title="USD",
-        yaxis=dict(zeroline=True, zerolinewidth=2, zerolinecolor="#555"),
+        yaxis={"zeroline": True, "zerolinewidth": 2, "zerolinecolor": "#555"},
     )
     return fig

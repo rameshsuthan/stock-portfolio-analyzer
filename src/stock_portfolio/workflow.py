@@ -2,6 +2,7 @@
 
 from copy import deepcopy
 from datetime import date
+
 from .models import Metadata, Selection, Snapshot
 from .validation import holding_rows, validate_rows
 

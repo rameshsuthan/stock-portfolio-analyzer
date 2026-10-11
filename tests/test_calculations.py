@@ -1,7 +1,7 @@
 from decimal import Decimal as D
 
-from stock_portfolio.models import Holding, Selection
 from stock_portfolio.calculations import analyze
+from stock_portfolio.models import Holding, Selection
 
 
 def holding(symbol, quantity, basis, price, sector="Unknown"):
