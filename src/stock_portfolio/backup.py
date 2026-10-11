@@ -2,6 +2,7 @@
 
 import argparse
 import os
+import shutil
 import sqlite3
 import tempfile
 from contextlib import closing
@@ -73,7 +74,15 @@ def restore_backup(source: Path, destination: Path) -> Path:
     recovery = destination.with_name(f"{destination.stem}.pre-restore-{uuid4().hex}.db")
     try:
         create_backup(source, staged)
-        create_backup(destination, recovery)
+        try:
+            create_backup(destination, recovery)
+        except ValueError, sqlite3.DatabaseError:
+            # An invalid destination is precisely a recovery use case. With all
+            # writers stopped and sidecars absent, retain its bytes for forensics.
+            with destination.open("rb") as src, recovery.open("xb") as dst:
+                shutil.copyfileobj(src, dst)
+                dst.flush()
+                os.fsync(dst.fileno())
         os.replace(staged, destination)
     finally:
         staged.unlink(missing_ok=True)

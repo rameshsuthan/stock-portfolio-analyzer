@@ -28,9 +28,11 @@ class Repository:
             raise ValueError("Portfolio name is required.")
         try:
             with self.connection:
-                return self.connection.execute(
+                id_ = self.connection.execute(
                     "INSERT INTO portfolios(name,name_key) VALUES (?,?)", (name, name.casefold())
                 ).lastrowid
+                self.connection.execute("UPDATE ledger_state SET revision=revision+1 WHERE id=1")
+                return id_
         except sqlite3.IntegrityError as exc:
             raise ValueError("A portfolio with that name already exists.") from exc
 
@@ -98,12 +100,21 @@ class Repository:
                     "INSERT INTO holdings VALUES (?,?,?,?,?,?,?)",
                     (snapshot_id, *(row[f] for f in FIELDS)),
                 )
+            c.execute("UPDATE ledger_state SET revision=revision+1 WHERE id=1")
         return self.load_snapshot(snapshot_id)
 
     def delete_snapshot(self, snapshot_id):
         with self.connection:
-            self.connection.execute("DELETE FROM snapshots WHERE id=?", (snapshot_id,))
+            changed = self.connection.execute(
+                "DELETE FROM snapshots WHERE id=?", (snapshot_id,)
+            ).rowcount
+            if changed:
+                self.connection.execute("UPDATE ledger_state SET revision=revision+1 WHERE id=1")
 
     def delete_portfolio(self, portfolio_id):
         with self.connection:
-            self.connection.execute("DELETE FROM portfolios WHERE id=?", (portfolio_id,))
+            changed = self.connection.execute(
+                "DELETE FROM portfolios WHERE id=?", (portfolio_id,)
+            ).rowcount
+            if changed:
+                self.connection.execute("UPDATE ledger_state SET revision=revision+1 WHERE id=1")

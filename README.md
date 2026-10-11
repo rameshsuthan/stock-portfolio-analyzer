@@ -98,9 +98,11 @@ uv run --locked python -m stock_portfolio.backup restore \
   --confirm-stopped
 ```
 
-The destination must exist. Source integrity/schema are checked in a temporary copy; the current destination gets a `*.pre-restore-*.db` recovery backup before atomic replacement. If sidecars remain, stop/checkpoint the owning SQLite clients before retrying. The tool does not stop arbitrary processes or claim exclusive access to other clients. Never reset `user_version`, hand-edit the database, or copy a live main database file alone.
+The destination must exist. A corrupt or unsupported destination is preserved byte-for-byte for recovery analysis before replacement. Source integrity/schema are checked in a temporary copy; the current destination gets a `*.pre-restore-*.db` recovery backup before atomic replacement. If sidecars remain, stop/checkpoint the owning SQLite clients before retrying. The tool does not stop arbitrary processes or claim exclusive access to other clients. Never reset `user_version`, hand-edit the database, or copy a live main database file alone.
 
 ## Verification
+
+V2 results, synthetic screenshots, launch/recovery commands and the manual checklist: [acceptance record](docs/acceptance-v2.md).
 
 ```sh
 uv sync --locked

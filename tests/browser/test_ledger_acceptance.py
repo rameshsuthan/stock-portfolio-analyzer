@@ -197,6 +197,10 @@ def test_ledger_acceptance(tmp_path):
             choose(page, "Row 2: 2 matching occurrences", "keep")
             choose(page, "Row 3: 2 matching occurrences", "keep")
             click(page, "Update duplicate decisions")
+            choose(page, "Row 3: 2 matching occurrences", "skip")
+            expect(page.get_by_role("button", name="Confirm import", exact=True)).to_be_disabled()
+            choose(page, "Row 3: 2 matching occurrences", "keep")
+            click(page, "Update duplicate decisions")
             click(page, "Confirm import")
             from stock_portfolio.ledger.repository import LedgerRepository
 
@@ -211,6 +215,12 @@ def test_ledger_acceptance(tmp_path):
             choose(page, "Event to change", "BUY · " + b1.id)
             fill(page, "Trade price", "101")
             fill(page, "Reason / source", "Synthetic corrected execution")
+            create_account(page, "Synthetic guarded creation")
+            expect(
+                page.get_by_role("button", name="Discard draft and navigate", exact=True)
+            ).to_be_visible()
+            click(page, "Keep editing")
+            expect(page.get_by_role("textbox", name="Trade price", exact=True)).to_have_value("101")
             click(page, "Preview operation")
             click(page, "Cancel operation")
             with LedgerRepository(db) as repo:
@@ -522,6 +532,25 @@ def test_snapshot_browser(tmp_path):
                 page.get_by_test_id("stMetricValue").filter(has_text="$2,220.00")
             ).to_be_visible()
             page.screenshot(path=str(evidence / "snapshot-analysis.png"), full_page=True)
+            choose(page, "Mode", "Transaction accounts")
+            fill(page, "New account name", "Conversion host")
+            click(page, "Create account")
+            navigate(page, "Data & recovery")
+            expand(page, "Start account from snapshot")
+            fill(page, "Account name from snapshot", "Synthetic converted")
+            set_checkbox(page, "Include snapshot prices as dated observations", True)
+            click(page, "Preview opening account")
+            set_checkbox(page, "Include snapshot prices as dated observations", False)
+            expect(
+                page.get_by_role("button", name="Confirm opening account", exact=True)
+            ).to_have_count(0)
+            click(page, "Preview opening account")
+            click(page, "Confirm opening account")
+            from stock_portfolio.ledger.repository import LedgerRepository
+
+            with LedgerRepository(server.directory / "synthetic-data/portfolio.sqlite3") as repo:
+                assert repo.load_prices() == ()
+                assert sorted(e.quantity for e in repo.load_dataset().events) == [5, 11]
             browser.close()
     finally:
         server.stop()

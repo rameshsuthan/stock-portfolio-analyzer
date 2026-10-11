@@ -30,18 +30,21 @@ uv run --locked python -m stock_portfolio.backup restore \
   --confirm-stopped
 ```
 
-The destination must already exist. Restore validates a staged copy and preserves the destination in a new `*.pre-restore-*.db` before atomic replacement. Remaining WAL/journal sidecars cause refusal. The tool relies on the operator stopping all clients; it cannot prove exclusivity over arbitrary external programs.
+The destination must already exist. A corrupt or unsupported destination is preserved byte-for-byte for recovery analysis before replacement. Restore validates a staged copy and preserves the destination in a new `*.pre-restore-*.db` before atomic replacement. Remaining WAL/journal sidecars cause refusal. The tool relies on the operator stopping all clients; it cannot prove exclusivity over arbitrary external programs.
 
 ## Verification record
 
-- Locked fresh isolated environment: 169 non-browser tests passed; installed UI import worked outside source cwd.
+- Locked fresh isolated environment: **179 non-browser tests passed**; installed UI import worked outside source cwd.
 - Ruff lint, formatting and Git whitespace checks passed.
 - Isolated Edge ledger scenario: imports/no-op/duplicates, trade cancel/confirm, explicit lot choices, supplied pool basis, reinvestment/split/transfer, dated prices, reconciliation mismatch/correction/staleness/recalculation, downloads/backup and restart passed.
 - Isolated Edge snapshot scenario: actual upload and canvas edit, dirty navigation, replacement cancel/confirm, downloads and restart passed. Quantity 10→11 yields $2,220 value.
 - 10,000-event service measurements: preview 0.613s, commit 0.399s, load/replay 0.137s. Initial full browser measurement: preview 2.217s, commit 1.567s, including UI settling. Timings describe this machine, not a cross-hardware threshold.
 - Offline restore CLI exercised successfully against temporary synthetic V2 databases; both restored and pre-restore recovery contents verified.
-- Combined extended Edge suite: **2 passed in 128.43s**. Includes priced 100-holding charts, filtered report download, and viewport checks at 1440×900, 1366×900, 1024×768 and 768×900. No metric overflow measured; screenshots inspected. [Synthetic evidence](evidence/ledger-v2/overview-1440.png), [charts](evidence/ledger-v2/charts-1440.png), [measurements](evidence/ledger-v2/measurements.json). Final 10,000-event browser preview 0.852s / commit 0.937s.
-- Independent Astra High review is in progress.
+- Final post-review extended Edge suite: **2 passed in 144.24s**. Includes priced 100-holding charts, filtered report download, and viewport checks at 1440×900, 1366×900, 1024×768 and 768×900. No metric overflow measured; screenshots inspected. [Synthetic evidence](evidence/ledger-v2/overview-1440.png), [charts](evidence/ledger-v2/charts-1440.png), [measurements](evidence/ledger-v2/measurements.json). Final 10,000-event browser preview 0.747s / commit 0.942s.
+- One independent **GPT-6 Astra High** whole-branch review completed: 0 Critical, 7 Important findings. All seven fixed with observed RED→GREEN regressions and final suite/browser verification. Four minor items are explicitly deferred in [review record](review-v2.md). No second review was dispatched.
+- Post-review browser checks additionally verify changed occurrence choices cannot commit stale decisions, account creation preserves another draft, and changing snapshot conversion options invalidates the preview.
+- Post-review restore CLI also recovered a corrupt temporary destination while preserving its original bytes.
+- Streamlit printed an optional Watchdog performance hint; no runtime/browser exceptions occurred in passing acceptance.
 
 ## Manual acceptance checklist
 

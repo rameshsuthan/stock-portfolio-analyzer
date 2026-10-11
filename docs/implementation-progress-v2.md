@@ -89,3 +89,25 @@ Browser acceptance: isolated Edge ledger scenario passed (103.47s), including tw
 Fresh isolated locked environment: 169 passed / 2 browser deselected; installed UI import outside source cwd passed. Ruff check/format and whitespace checks passed. V1 and main remain clean, unchanged. Final independent review next.
 
 Combined extended isolated Edge suite: 2 passed in 128.43s. Priced 100-holding charts, filtered downloads, four viewport measurements and synthetic screenshots inspected; no summary overflow. Final browser 10k preview 0.852s / commit 0.937s. Offline restore CLI passed on temporary synthetic data, including recovery-file content verification. Evidence and commands: [acceptance-v2.md](acceptance-v2.md). One independent GPT-6 Astra High review dispatched against 6b14063..b958caa; pending findings.
+
+## Final review and fix pass
+One independent GPT-6 Astra High review of 6b14063..b958caa returned 0 Critical, 7 Important, 4 Minor. All seven Important findings entered the single fix pass. See review-v2.md for exact regression mapping; every finding reproduced RED before GREEN. Initial post-fix full suite: 178 passed / 2 browser deselected. Added partial transfer-chain coverage subsequently. Affected browser rerun is in progress; no second review is claimed.
+Final: fixed decimal-scale duplicate bypass — test_numeric_scale_does_not_bypass_duplicate_occurrence_review RED→GREEN.
+Final: fixed outdated duplicate decisions — test_changed_duplicate_choice_requires_new_review RED→GREEN.
+Final: fixed transferred split-price validity — test_split_price_guard_survives_full_transfer_to_empty_account RED→GREEN; partial chains additionally verified.
+Final: fixed snapshot revision/source staleness — test_snapshot_mutations_invalidate_conversion_preview and test_snapshot_conversion_revalidates_source_contents_with_current_revision RED→GREEN.
+Final: fixed changed conversion options — test_snapshot_option_change_invalidates_conversion_preview RED→GREEN; proposed price writes now visible.
+Final: fixed automatic account navigation bypass — test_creating_account_preserves_other_draft_and_guards_navigation RED→GREEN.
+Final: fixed corrupt destination recovery — test_restore_valid_backup_over_corrupt_destination_preserves_raw_original RED→GREEN for success and injected replacement failure.
+Final: minor (deferred): some exact financial table columns sort lexically; calculations and exported values remain correct.
+Final: minor (deferred): import review lacks generated-sequence display/editor; explicit CSV sequences and transaction correction remain available.
+Final: minor (deferred): repeated-file no-op shows prior receipt but not prior occurrence dispositions.
+Final: minor (deferred): ledger overview lacks a separate losses chart; tables/reports retain losses.
+Final: Ruling: tax/live-price/cash/unsupported-action/combined-account behaviors remain excluded — approved scope does not invent those results — cost if wrong: future feature work is required.
+Final: Ruling: restore requires all external writers stopped — local CLI cannot prove exclusivity over arbitrary clients — cost if wrong: external writes can invalidate recovery assumptions.
+Final: Ruling: no speculative malicious-schema/extreme-programmatic-input hardening beyond concrete defects — existing input/schema/replay checks remain and corrupt-destination recovery is fixed — cost if wrong: adversarial edge cases may require later hardening.
+Final: Ruling: historical pool allocations stay unresolved rather than inferred from residual totals — preserves the approved uncertainty policy — cost if wrong: manual supported allocation work remains necessary.
+Final: Ruling: certify the documented locked editable uv installation; noneditable-wheel sample packaging remains unverified — matches the delivered launch workflow — cost if wrong: wheel-only installs may need resource packaging work.
+Final: Ruling: actual browser certification is the author's isolated Edge execution, not a second independent browser run — reviewer inspected harness and reviewed code independently — cost if wrong: browser assurance is not independently duplicated.
+
+Final verification: 179 passed / 2 explicitly deselected browser tests in the fresh locked environment; explicit post-review Edge suite 2 passed in 144.24s, including affected navigation/duplicate/conversion flows. Ruff lint/format and diff whitespace checks passed. Final browser10k preview0.747s / commit0.942s. Corrupt-destination restore CLI passed with byte-for-byte preservation of damaged original. All seven fixes verified with full suite179/179. No Critical/Important findings remain; four deferred Minor items and all six declined-review rulings are recorded above.

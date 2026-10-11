@@ -92,3 +92,55 @@ def test_sql_trigger_failure_rolls_back_every_write(tmp_path):
             repo.connection.execute("SELECT count(*) FROM ledger_event_identities").fetchone()[0]
             == 0
         )
+
+
+def test_snapshot_mutations_invalidate_conversion_preview(tmp_path):
+    from datetime import date
+    from decimal import Decimal as D
+
+    from stock_portfolio.ledger.repository import StaleRevision
+    from stock_portfolio.models import Holding
+    from stock_portfolio.storage import Repository
+
+    for mutation in ("replace", "delete_snapshot", "delete_portfolio"):
+        path = tmp_path / (mutation + ".db")
+        with Repository(path) as snapshots, LedgerRepository(path) as repo:
+            pid = snapshots.create_portfolio("Synthetic")
+            original = snapshots.save_snapshot(
+                pid, date(2025, 1, 1), (Holding("ABC", D(10), D(1000), D(120)),)
+            )
+            revision = repo.load_dataset().revision
+            economic = repo.load_dataset().economic_revision
+            if mutation == "replace":
+                snapshots.save_snapshot(
+                    pid, date(2025, 1, 1), (Holding("ABC", D(20), D(2000), D(120)),), replace=True
+                )
+            elif mutation == "delete_snapshot":
+                snapshots.delete_snapshot(original.id)
+            else:
+                snapshots.delete_portfolio(pid)
+            with pytest.raises(StaleRevision):
+                repo.start_from_snapshot(original, "Stale conversion", revision)
+            assert repo.load_dataset().accounts == ()
+            assert repo.load_dataset().economic_revision == economic
+
+
+def test_snapshot_conversion_revalidates_source_contents_with_current_revision(tmp_path):
+    from dataclasses import replace
+    from datetime import date
+    from decimal import Decimal as D
+
+    from stock_portfolio.ledger.repository import StaleRevision
+    from stock_portfolio.models import Holding
+    from stock_portfolio.storage import Repository
+
+    path = tmp_path / "source.db"
+    with Repository(path) as snapshots, LedgerRepository(path) as repo:
+        pid = snapshots.create_portfolio("Synthetic")
+        saved = snapshots.save_snapshot(
+            pid, date(2025, 1, 1), (Holding("ABC", D(10), D(1000), D(120)),)
+        )
+        changed = replace(saved, holdings=(Holding("ABC", D(20), D(2000), D(120)),))
+        with pytest.raises(StaleRevision):
+            repo.start_from_snapshot(changed, "Mismatch", repo.load_dataset().revision)
+        assert repo.load_dataset().accounts == ()

@@ -6,7 +6,7 @@ from dataclasses import dataclass, replace
 from datetime import date
 from uuid import uuid4
 
-from .codec import dumps, event_from_json, primitive
+from .codec import event_from_json
 from .csv_io import ImportKind as I
 from .engine import replay
 from .models import (
@@ -61,10 +61,9 @@ class ImportPreview:
 
 
 def fingerprint(event):
-    values = primitive(event)
-    for key in ("id", "external_id", "day_sequence", "notes"):
-        values.pop(key)
-    return dumps(values)
+    # Frozen events compare/hash Decimal values numerically, without rounding or
+    # treating insignificant trailing zeros as distinct economic occurrences.
+    return replace(event, id="", external_id=None, day_sequence=0, notes="")
 
 
 def _allocations(text):

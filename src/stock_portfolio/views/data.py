@@ -143,6 +143,7 @@ def import_wizard(repo, account_id, as_of, kind=None):
         table(list(parsed.rows), height=260)
         if preview.no_op_batch_id:
             st.info(f"Previously imported file. No-op; prior receipt {preview.no_op_batch_id}.")
+        decisions_changed = False
         if preview.duplicate_rows:
             choices = []
             for row, count in preview.duplicate_rows.items():
@@ -153,6 +154,15 @@ def import_wizard(repo, account_id, as_of, kind=None):
                 )
                 if action != "Choose…":
                     choices.append(ImportChoice(row, action))
+            reviewed = {choice.row: choice.action for choice in preview.batch.choices}
+            displayed = {choice.row: choice.action for choice in choices}
+            decisions_changed = any(
+                displayed.get(row) != reviewed.get(row) for row in preview.duplicate_rows
+            )
+            if decisions_changed:
+                st.info(
+                    "Duplicate choices changed. Update duplicate decisions to review before confirming."
+                )
             if st.button("Update duplicate decisions", key="decide:" + draft.key):
                 draft.inputs["_preview"] = prepare_import(
                     repo, parsed, scope, effective, tuple(choices), replace_openings=replacement
@@ -173,7 +183,7 @@ def import_wizard(repo, account_id, as_of, kind=None):
         if st.button(
             "Confirm import",
             key="commit:" + draft.key,
-            disabled=bool(preview.issues) or not complete,
+            disabled=bool(preview.issues) or not complete or decisions_changed,
         ):
             try:
                 with st.spinner("Committing validated batch…"):
@@ -285,6 +295,10 @@ def render(repo, account_id, as_of, notices):
             draft = draft_for("snapshot_start")
             name = text_input(draft, "name", "Account name from snapshot")
             include = st.checkbox("Include snapshot prices as dated observations", value=False)
+            signature = (sid, name, include)
+            if draft.inputs.get("_conversion_signature") != signature:
+                draft.inputs.pop("_preview", None)
+                draft.inputs["_conversion_signature"] = signature
             if st.button("Preview opening account"):
                 snapshot = snapshots.load_snapshot(sid)
                 draft.inputs["_preview"] = (snapshot, name, repo.load_dataset().revision, include)
@@ -305,6 +319,23 @@ def render(repo, account_id, as_of, notices):
                     ],
                     height=230,
                 )
+                if include:
+                    st.warning(
+                        "This conversion writes shared dated prices and may replace existing observations."
+                    )
+                    table(
+                        [
+                            {
+                                "Symbol": h.symbol,
+                                "Price date": str(snapshot.metadata.snapshot_date),
+                                "Proposed price": exact(h.current_price),
+                            }
+                            for h in snapshot.holdings
+                        ],
+                        height=180,
+                    )
+                else:
+                    st.caption("No shared price observations will be written.")
                 if st.button("Confirm opening account", disabled=not name.strip()):
                     try:
                         new = repo.start_from_snapshot(snapshot, name, revision, include)

@@ -137,3 +137,19 @@ def test_future_validation_with_explicit_today():
     assert validate_events(
         dataset(event("future", day=2, quantity="1", price="2")), today=date(2025, 1, 1)
     )
+
+
+def test_numeric_scale_does_not_bypass_duplicate_occurrence_review(tmp_path):
+    with LedgerRepository(tmp_path / "scale.db") as repo:
+        a = repo.create_account("A")
+        header = b"ticker,date,transaction_type,quantity,price,fees\n"
+        first = b"ABC,2025-01-01,BUY,1,100,0\n"
+        same = b"ABC,2025-01-01,BUY,1.0,100.00,0.000\n"
+        batch = preview(repo, a.id, header + first + same)
+        assert set(batch.duplicate_rows) == {2, 3}
+        commit_import(repo, preview(repo, a.id, header + first))
+        overlap = preview(repo, a.id, header + same)
+        assert set(overlap.duplicate_rows) == {2}
+        with pytest.raises(InvalidLedger):
+            commit_import(repo, overlap)
+        assert replay(repo.load_dataset(), date(2025, 1, 1)).positions[0].quantity == 1

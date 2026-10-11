@@ -219,3 +219,69 @@ def test_two_pending_operation_previews_have_distinct_controls(tmp_path, monkeyp
     button(at, "Preview reinvestment").click().run()
     assert not at.exception
     assert button(at, "Confirm operation") and button(at, "Confirm reinvestment")
+
+
+def test_changed_duplicate_choice_requires_new_review(tmp_path, monkeypatch):
+    at = create(ledger_app(tmp_path, monkeypatch))
+    at.radio(key="nav_page").set_value("Transactions").run()
+    at.file_uploader[0].upload(
+        "duplicates.csv",
+        b"ticker,date,transaction_type,quantity,price\nABC,2025-01-01,BUY,1,100\nABC,2025-01-01,BUY,1,100\n",
+        "text/csv",
+    ).run()
+    button(at, "Preview CSV import").click().run()
+    for row in (2, 3):
+        select(at, f"Row {row}: 2 matching occurrences").set_value("keep").run()
+    button(at, "Update duplicate decisions").click().run()
+    select(at, "Row 3: 2 matching occurrences").set_value("skip").run()
+    assert button(at, "Confirm import").disabled
+    button(at, "Update duplicate decisions").click().run()
+    button(at, "Confirm import").click().run()
+    with LedgerRepository(tmp_path / "portfolio.sqlite3") as repo:
+        assert len(repo.load_dataset().events) == 1
+
+
+def snapshot_source(path):
+    from decimal import Decimal as D
+
+    from stock_portfolio.models import Holding
+    from stock_portfolio.storage import Repository
+
+    with Repository(path) as repo:
+        pid = repo.create_portfolio("Synthetic source")
+        return repo.save_snapshot(pid, date(2025, 1, 1), (Holding("ABC", D(10), D(1000), D(120)),))
+
+
+def test_snapshot_option_change_invalidates_conversion_preview(tmp_path, monkeypatch):
+    snapshot_source(tmp_path / "portfolio.sqlite3")
+    at = create(ledger_app(tmp_path, monkeypatch))
+    at.radio(key="nav_page").set_value("Data & recovery").run()
+    text(at, "Account name from snapshot").input("Converted").run()
+    include = next(
+        c for c in at.checkbox if c.label == "Include snapshot prices as dated observations"
+    )
+    include.check().run()
+    button(at, "Preview opening account").click().run()
+    include = next(
+        c for c in at.checkbox if c.label == "Include snapshot prices as dated observations"
+    )
+    include.uncheck().run()
+    assert not any(b.label == "Confirm opening account" and not b.disabled for b in at.button)
+    button(at, "Preview opening account").click().run()
+    button(at, "Confirm opening account").click().run()
+    with LedgerRepository(tmp_path / "portfolio.sqlite3") as repo:
+        assert repo.load_prices() == ()
+        assert len(repo.load_dataset().events) == 1
+
+
+def test_creating_account_preserves_other_draft_and_guards_navigation(tmp_path, monkeypatch):
+    at = create(ledger_app(tmp_path, monkeypatch))
+    at.radio(key="nav_page").set_value("Transactions").run()
+    original = at.session_state["context"]
+    text(at, "Symbol").input("ABC").run()
+    text(at, "Quantity").input("10").run()
+    create(at, "Synthetic B")
+    assert at.session_state["context"] == original
+    button(at, "Keep editing").click().run()
+    assert text(at, "Symbol").value == "ABC"
+    assert text(at, "Quantity").value == "10"

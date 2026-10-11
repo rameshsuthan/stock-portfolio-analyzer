@@ -25,9 +25,11 @@ def value_account(dataset, replayed, prices, account_id, as_of):
             p.symbol not in latest or p.price_date > latest[p.symbol].price_date
         ):
             latest[p.symbol] = p
+    # Prices are shared by symbol. Any recorded split makes an older observation
+    # unusable, even if the affected shares have moved to a different account.
     split_dates = {}
     for e in dataset.events:
-        if e.kind == K.SPLIT and e.account_id == account_id and e.effective_date <= as_of:
+        if e.kind == K.SPLIT and e.effective_date <= as_of:
             split_dates[e.symbol] = max(
                 split_dates.get(e.symbol, e.effective_date), e.effective_date
             )

@@ -510,6 +510,7 @@ class LedgerRepository:
         return tuple(results)
 
     def start_from_snapshot(self, snapshot, name, expected_revision, include_prices=False):
+        from ..storage import Repository
         from ..validation import holding_rows, validate_rows
         from .models import LedgerEvent, PriceObservation
 
@@ -523,6 +524,13 @@ class LedgerRepository:
         with self.connection:
             self.connection.execute("BEGIN IMMEDIATE")
             self._check_revision(expected_revision)
+            with Repository(self.path) as snapshots:
+                try:
+                    current_source = snapshots.load_snapshot(snapshot.id)
+                except ValueError as exc:
+                    raise StaleRevision("Source snapshot changed; preview again.") from exc
+                if current_source != snapshot:
+                    raise StaleRevision("Source snapshot changed; preview again.")
             self.connection.execute(
                 "INSERT INTO accounts VALUES (?,?,?,?,?,?,?)",
                 (account.id, name, name.casefold(), day.isoformat(), 0, "USD", ""),

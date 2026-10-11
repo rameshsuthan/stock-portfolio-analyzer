@@ -33,7 +33,7 @@ def main():
             state.setdefault("context", ("Snapshots", None, "Overview"))
             if "_new_account" in state:
                 new = state.pop("_new_account")
-                state["context"] = ("Transaction accounts", new, "Overview")
+                # Request navigation through the normal dirty-draft guard below.
                 state["nav_mode"], state["nav_account"], state["nav_page"] = (
                     "Transaction accounts",
                     new,

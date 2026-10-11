@@ -113,3 +113,40 @@ def test_filtered_holdings_report_preserves_unknowns_and_exact_derived_values():
     rows = list(csv.DictReader(io.StringIO(export_holdings_report(v, symbols={"ABC"}).decode())))
     assert len(rows) == 1 and rows[0]["ticker"] == "ABC"
     assert rows[0]["market_value"] == "" and rows[0]["cost_basis"] == "100"
+
+
+def test_split_price_guard_survives_full_transfer_to_empty_account():
+    ds = dataset(
+        event("source-buy", quantity="10", price="100"),
+        event("source-split", "SPLIT", day=2, split_numerator=2, split_denominator=1),
+        event("source-transfer", "TRANSFER", day=3, quantity="20", destination_account_id="b"),
+    )
+    day = date(2025, 1, 3)
+    result = replay(ds, day)
+    stale = value_account(ds, result, (P("ABC", date(2025, 1, 1), D(100)),), "b", day)
+    assert stale.total_value is None
+    assert "pre_split_price" in {i.code for i in stale.issues}
+    current = value_account(ds, result, (P("ABC", date(2025, 1, 2), D(50)),), "b", day)
+    assert current.total_value == 1000
+    assert current.total_basis == 1000
+
+
+def test_split_price_guard_covers_partial_transfer_chains():
+    from conftest import B
+
+    from stock_portfolio.ledger.models import Account
+
+    ds = dataset(
+        event("chain-buy", quantity="10", price="100"),
+        event("chain-split", "SPLIT", day=2, split_numerator=2, split_denominator=1),
+        event("chain-ab", "TRANSFER", day=3, quantity="12", destination_account_id="b"),
+        event("chain-bc", "TRANSFER", day=4, account="b", quantity="4", destination_account_id="c"),
+        accounts=(A, B, Account("c", "Gamma")),
+    )
+    day = date(2025, 1, 4)
+    result = replay(ds, day)
+    for account, expected_value in [("a", 400), ("b", 400), ("c", 200)]:
+        stale = value_account(ds, result, (P("ABC", date(2025, 1, 1), D(100)),), account, day)
+        assert stale.total_value is None and any(i.code == "pre_split_price" for i in stale.issues)
+        current = value_account(ds, result, (P("ABC", date(2025, 1, 2), D(50)),), account, day)
+        assert current.total_value == expected_value
