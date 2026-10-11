@@ -63,3 +63,7 @@ Next: Task 7 dated brokerage statements and immutable reconciliation evidence.
 ### Task 7 complete
 Base afe8ba0. RED: missing reconciliation module; intermediate timestamp NameError traced to Ruff's existing UTC import and corrected. GREEN: 10 dated/tolerance/evidence cases, full suite 148 passed. Saved comparisons remain unchanged after economic edits; price edits do not stale them. Statement persistence never modifies events. Caller-confirmed completeness is part of save_statement's service contract; the owner-facing checkbox is verified with the Task 10 UI.
 Next: Task 8 shell and guarded snapshot/ledger navigation.
+
+### Task 8 complete
+Base 4353214. RED: missing UI state module. GREEN: 14 snapshot/navigation/installed-entrypoint tests; full suite 150 passed. Retained V1 assertions unchanged; shell defaults to Snapshots, blocks dirty navigation with outside-tab controls, and keeps normalized ledger drafts independent of widget lifecycle. Snapshot replacement confirmation moved out of hidden edit tab. Native blue theme added.
+Next: Task 9 transaction onboarding, entry/import/lot/overview/data views and UI behavior tests.
