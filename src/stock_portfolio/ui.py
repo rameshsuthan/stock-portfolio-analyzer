@@ -6,8 +6,10 @@ import os
 import sqlite3
 import pandas as pd
 import streamlit as st
-from .csv_io import parse_csv, CsvFormatError
-from .models import Metadata
+from .csv_io import parse_csv, CsvFormatError, export_snapshot, export_analysis
+from .calculations import analyze
+from .charts import allocation_chart, gain_chart
+from .models import Metadata, Selection
 from .storage import Repository, ReplacementRequired
 from .validation import FIELDS, holding_rows
 from .workflow import Draft
@@ -201,6 +203,87 @@ def main():
     ).expanduser()
     try:
         with Repository(data_dir / "portfolio.sqlite3") as repo:
-            _render(repo)
+            draft, valid = _render(repo)
+            if valid:
+                _dashboard(draft)
     except (ValueError, sqlite3.Error, OSError) as exc:
         st.error(f"Local storage unavailable: {exc}")
+
+
+def _dashboard(draft):
+    snapshot = draft.snapshot()
+    st.subheader("Portfolio analysis")
+    symbols = sorted(h.symbol for h in snapshot.holdings)
+    sectors = sorted({h.sector for h in snapshot.holdings})
+    selected_symbols = st.multiselect("Symbols", symbols, default=symbols, key="symbols")
+    selected_sectors = st.multiselect("Sectors", sectors, default=sectors, key="sectors")
+    draft.selection = Selection(frozenset(selected_symbols), frozenset(selected_sectors))
+    analysis = analyze(snapshot.holdings, draft.selection)
+    st.caption("Selected holdings · Unrealized gain/loss based on supplied prices")
+    values = [
+        ("Cost basis", f"${analysis.cost_basis:,.2f}"),
+        ("Market value", f"${analysis.market_value:,.2f}"),
+        ("Unrealized gain / loss", f"${analysis.gain:,.2f}"),
+        (
+            "Unrealized gain / loss %",
+            "N/A" if analysis.gain_percent is None else f"{analysis.gain_percent:.2f}%",
+        ),
+        ("Holding count", str(analysis.count)),
+    ]
+    for col, (label, value) in zip(st.columns(5), values):
+        col.metric(label, value)
+    st.download_button(
+        "Download complete snapshot CSV",
+        export_snapshot(snapshot),
+        "complete-snapshot.csv",
+        "text/csv",
+    )
+    st.download_button(
+        "Download analysis report CSV",
+        export_analysis(analysis, snapshot.metadata),
+        "analysis-report.csv",
+        "text/csv",
+        disabled=analysis.count == 0,
+    )
+    st.caption(
+        "Complete snapshot includes all draft holdings. Analysis report contains only the selected holdings and cannot be imported as a snapshot."
+    )
+    if not analysis.count:
+        st.info("No holdings match these filters. Select symbols and sectors to analyze.")
+        return
+    table = []
+    for r in analysis.holdings:
+        table.append(
+            {
+                "Symbol": r.holding.symbol,
+                "Company": r.holding.company_name,
+                "Sector": r.holding.sector,
+                "Quantity": str(r.holding.quantity),
+                "Cost basis (USD)": float(r.holding.cost_basis),
+                "Market value (USD)": float(r.market_value),
+                "Unrealized gain/loss (USD)": float(r.gain),
+                "Average cost (USD)": float(r.average_cost),
+                "Gain/loss %": None if r.gain_percent is None else float(r.gain_percent),
+            }
+        )
+    st.dataframe(
+        pd.DataFrame(table),
+        hide_index=True,
+        width="stretch",
+        column_config={
+            k: st.column_config.NumberColumn(k, format="%.2f")
+            for k in table[0]
+            if "USD" in k or k == "Gain/loss %"
+        },
+    )
+    st.caption("Blank percentage cells mean N/A (zero cost basis). Click a column header to sort.")
+    if analysis.market_value:
+        for col, values, title in zip(
+            st.columns(2),
+            [analysis.stock_allocations, analysis.sector_allocations],
+            ["Stock allocation", "Sector allocation"],
+        ):
+            col.plotly_chart(allocation_chart(values, title), width="stretch")
+    else:
+        st.info("Allocation percentages are unavailable because selected market value is zero.")
+    st.plotly_chart(gain_chart(analysis), width="stretch")

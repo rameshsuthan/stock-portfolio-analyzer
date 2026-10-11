@@ -77,3 +77,20 @@ def test_metadata_required():
     d.load(ROWS, Metadata(" ", META.snapshot_date))
     with pytest.raises(ValueError):
         d.snapshot()
+
+
+def test_filtered_analysis_report_and_full_snapshot_agree():
+    import csv
+    import io
+    from stock_portfolio.calculations import analyze
+    from stock_portfolio.csv_io import export_analysis, export_snapshot
+
+    d = Draft()
+    d.load(ROWS, META)
+    d.selection = Selection(frozenset({"DEMO_A"}))
+    s = d.snapshot()
+    a = analyze(s.holdings, d.selection)
+    report = list(csv.DictReader(io.StringIO(export_analysis(a, META).decode())))
+    assert len(report) == 1 and report[0]["market_value"] == "1200"
+    assert report[0]["allocation_percent"] == "100"
+    assert len(parse_csv(export_snapshot(s)).rows) == 2
