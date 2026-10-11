@@ -1,5 +1,7 @@
 # Stock Portfolio Analyzer — Path A Project Brief
 
+**Approved implementation:** The [approved design](docs/superpowers/specs/2026-10-10-stock-portfolio-analyzer-design.md) supersedes the historical proposed defaults below. V1 includes named portfolios, SQLite persistence, required prices-as-of dates, CSV replacement and table editing. `cost_basis` is total acquisition cost; average cost is derived. Complete snapshots and filtered analysis have separate exports.
+
 This document scopes the Week 1 stock portfolio project and provides input for a detailed development plan. It does not implement the application. Requirements from the course handout are distinguished from proposed product choices below.
 
 Source: [Week 1 Project Handout (Oct 2026)](Week%201%20Project%20Handout%20%28Oct%202026%29.md).
