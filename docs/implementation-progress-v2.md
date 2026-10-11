@@ -59,3 +59,7 @@ Next: Task 6 dated price persistence and completeness-aware valuation.
 ### Task 6 complete
 Base d5f33b7. RED: missing valuation/report API; GREEN: 4 valuation integration tests, full suite 138 passed. Latest eligible observation, stale/pre-split/missing price, unknown-vs-zero values, known subtotals, opening cutoff and report markers verified. Price changes retain revisions and invalidate previews without changing economic revision.
 Next: Task 7 dated brokerage statements and immutable reconciliation evidence.
+
+### Task 7 complete
+Base afe8ba0. RED: missing reconciliation module; intermediate timestamp NameError traced to Ruff's existing UTC import and corrected. GREEN: 10 dated/tolerance/evidence cases, full suite 148 passed. Saved comparisons remain unchanged after economic edits; price edits do not stale them. Statement persistence never modifies events. Caller-confirmed completeness is part of save_statement's service contract; the owner-facing checkbox is verified with the Task 10 UI.
+Next: Task 8 shell and guarded snapshot/ledger navigation.

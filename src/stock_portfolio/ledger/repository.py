@@ -279,8 +279,6 @@ class LedgerRepository:
             existing = self.find_import_batch(preview.batch, preview.effective_date)
             if existing:
                 return existing
-            if preview.proposed_statement:
-                raise ValueError("Price/statement persistence not yet available.")
             self.proposed_dataset(preview.proposed_events, preview.void_ids)
             operation = self._audit(
                 "Confirm CSV import",
@@ -291,6 +289,8 @@ class LedgerRepository:
             )
             self._write_events(preview.proposed_events, preview.void_ids, operation)
             self._write_prices(preview.proposed_prices, operation)
+            if preview.proposed_statement:
+                self._write_statement(preview.proposed_statement)
             batch = preview.batch
             self.connection.execute(
                 "INSERT INTO import_batches VALUES (?,?,?,?,?,?,?)",
@@ -378,3 +378,133 @@ class LedgerRepository:
                 (symbol, price_date.isoformat()),
             )
         )
+
+    def _write_statement(self, statement):
+        from .reconciliation import validate_statement
+
+        validate_statement(self.load_dataset(), statement)
+        if self.connection.execute(
+            "SELECT 1 FROM broker_statements WHERE id=?", (statement.id,)
+        ).fetchone():
+            raise ValueError("Broker statements are immutable; import a new assertion.")
+        self.connection.execute(
+            "INSERT INTO broker_statements VALUES (?,?,?,?)",
+            (
+                statement.id,
+                statement.account_id,
+                statement.as_of.isoformat(),
+                statement.source_hash,
+            ),
+        )
+        for h in statement.holdings:
+            self.connection.execute(
+                "INSERT INTO broker_statement_rows VALUES (?,?,?,?)",
+                (
+                    statement.id,
+                    h.symbol,
+                    format(h.quantity, "f"),
+                    format(h.basis, "f") if h.basis is not None else None,
+                ),
+            )
+
+    def save_statement(self, statement):
+        """Persist a caller-confirmed complete end-of-day assertion."""
+        with self.connection:
+            self.connection.execute("BEGIN IMMEDIATE")
+            self._write_statement(statement)
+            self._audit("Save complete broker statement", {"source_hash": statement.source_hash})
+            self._bump()
+        return statement.id
+
+    def load_statements(self, account_id):
+        from decimal import Decimal as D
+
+        from .models import BrokerHolding, BrokerStatement
+
+        return tuple(
+            BrokerStatement(
+                id_,
+                a,
+                date.fromisoformat(day),
+                tuple(
+                    BrokerHolding(s, D(q), D(b) if b is not None else None)
+                    for s, q, b in self.connection.execute(
+                        "SELECT symbol,quantity,basis FROM broker_statement_rows WHERE statement_id=? ORDER BY symbol",
+                        (id_,),
+                    )
+                ),
+                hash_,
+            )
+            for id_, a, day, hash_ in self.connection.execute(
+                "SELECT id,account_id,as_of,source_hash FROM broker_statements WHERE account_id=? ORDER BY rowid",
+                (account_id,),
+            )
+        )
+
+    def save_reconciliation(self, result):
+        from .reconciliation import reconcile
+
+        with self.connection:
+            self.connection.execute("BEGIN IMMEDIATE")
+            statement = next(
+                (s for s in self.load_statements(result.account_id) if s.id == result.statement_id),
+                None,
+            )
+            if (
+                statement is None
+                or reconcile(
+                    self.load_dataset(),
+                    statement,
+                    result.quantity_tolerance,
+                    result.basis_tolerance,
+                )
+                != result
+            ):
+                raise StaleRevision("Comparison changed; recalculate before saving.")
+            id_ = str(uuid4())
+            self.connection.execute(
+                "INSERT INTO reconciliation_runs VALUES (?,?,?,?,?)",
+                (
+                    id_,
+                    result.statement_id,
+                    result.account_id,
+                    dumps(result),
+                    datetime.now(UTC).isoformat(),
+                ),
+            )
+            for row in result.rows:
+                self.connection.execute(
+                    "INSERT INTO reconciliation_rows VALUES (?,?,?)", (id_, row.symbol, dumps(row))
+                )
+            self._audit("Save reconciliation evidence")
+            self._bump()
+        return id_
+
+    def load_reconciliations(self, account_id):
+        import json
+        from decimal import Decimal as D
+
+        from .models import ReconciliationResult, ReconciliationRow
+
+        results = []
+        for (payload,) in self.connection.execute(
+            "SELECT payload FROM reconciliation_runs WHERE account_id=? ORDER BY rowid",
+            (account_id,),
+        ):
+            value = json.loads(payload)
+            value["as_of"] = date.fromisoformat(value["as_of"])
+            for f in ("quantity_tolerance", "basis_tolerance"):
+                value[f] = D(value[f])
+            rows = []
+            for r in value["rows"]:
+                rows.append(
+                    ReconciliationRow(
+                        **{
+                            k: (D(v) if v is not None and k not in {"symbol", "status"} else v)
+                            for k, v in r.items()
+                        }
+                    )
+                )
+            value["rows"] = tuple(rows)
+            results.append(ReconciliationResult(**value))
+        return tuple(results)

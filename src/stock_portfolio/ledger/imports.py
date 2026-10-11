@@ -355,6 +355,13 @@ def prepare_import(repo, parsed, account_id, effective_date=None, choices=()):
             statement = BrokerStatement(
                 str(uuid4()), account_id, effective_date, tuple(holdings), parsed.file_hash
             )
+    if statement:
+        from .reconciliation import validate_statement
+
+        try:
+            validate_statement(dataset, statement)
+        except ValueError as exc:
+            issues.append(Issue("invalid_statement", str(exc)))
     if not issues and proposed:
         try:
             candidate = repo.proposed_dataset(tuple(proposed), ())

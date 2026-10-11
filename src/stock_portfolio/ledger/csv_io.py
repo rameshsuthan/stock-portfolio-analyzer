@@ -313,3 +313,42 @@ def export_realized_report(replayed, account_id, as_of):
         ),
         "realized_report",
     )
+
+
+def export_reconciliation(result):
+    rows = [
+        {
+            "account_id": result.account_id,
+            "statement_id": result.statement_id,
+            "as_of": result.as_of,
+            "source_hash": result.source_hash,
+            "ledger_revision": result.ledger_revision,
+            "policy": result.policy,
+            "quantity_tolerance": result.quantity_tolerance,
+            "basis_tolerance": result.basis_tolerance,
+            **primitive(r),
+        }
+        for r in result.rows
+    ]
+    return write_csv(
+        rows,
+        (
+            "account_id",
+            "statement_id",
+            "as_of",
+            "source_hash",
+            "ledger_revision",
+            "policy",
+            "quantity_tolerance",
+            "basis_tolerance",
+            "symbol",
+            "local_quantity",
+            "broker_quantity",
+            "local_basis",
+            "broker_basis",
+            "quantity_difference",
+            "basis_difference",
+            "status",
+        ),
+        "reconciliation_report",
+    )
