@@ -47,3 +47,7 @@ Next: Task 3 additional events.
 ### Task 3 complete
 Base 21b525c. RED: five missing-handler failures in event/transfer tests; GREEN: all 11 event/transfer cases, full suite 104 passed. Forward/reverse splits use exact rational representability checks; linked dividends and transfer-derived UUID5 lots verified. Source correction replays transfer descendants; no transfer income.
 Next: Task 4 revisioned persistence, grouped corrections and replacement totals.
+
+### Task 4 complete
+Base 6363948. RED: missing codec/repository; GREEN: 7 persistence/correction integration tests; full suite 111 passed. SQLite trigger rollback preserves identities, heads, audits and counters. Restart preserves exact decimals; invalid cross-account corrections and partial reinvestment changes are rejected. Task 2 deferred opening replacement contract now verified.
+Next: Task 5 generic CSV previews and atomic batch exchange.
