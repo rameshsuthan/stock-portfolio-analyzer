@@ -508,3 +508,54 @@ class LedgerRepository:
             value["rows"] = tuple(rows)
             results.append(ReconciliationResult(**value))
         return tuple(results)
+
+    def start_from_snapshot(self, snapshot, name, expected_revision, include_prices=False):
+        from ..validation import holding_rows, validate_rows
+        from .models import LedgerEvent, PriceObservation
+
+        if not validate_rows(holding_rows(snapshot.holdings)).valid:
+            raise ValueError("Snapshot must contain valid holdings.")
+        name = name.strip()
+        day = snapshot.metadata.snapshot_date
+        if not name or day > date.today():
+            raise ValueError("Account name and nonfuture snapshot date required.")
+        account = Account(str(uuid4()), name, day)
+        with self.connection:
+            self.connection.execute("BEGIN IMMEDIATE")
+            self._check_revision(expected_revision)
+            self.connection.execute(
+                "INSERT INTO accounts VALUES (?,?,?,?,?,?,?)",
+                (account.id, name, name.casefold(), day.isoformat(), 0, "USD", ""),
+            )
+            sequence = max(
+                (e.day_sequence for e in self.load_dataset().events if e.effective_date == day),
+                default=0,
+            )
+            events = tuple(
+                LedgerEvent(
+                    str(uuid4()),
+                    account.id,
+                    day,
+                    sequence + i,
+                    K.OPENING_BALANCE,
+                    h.symbol,
+                    quantity=h.quantity,
+                    basis=h.cost_basis,
+                )
+                for i, h in enumerate(snapshot.holdings, 1)
+            )
+            self.proposed_dataset(events, ())
+            operation = self._audit(
+                "Start account from snapshot", {"snapshot_id": str(snapshot.id)}
+            )
+            self._write_events(events, (), operation)
+            if include_prices:
+                self._write_prices(
+                    tuple(
+                        PriceObservation(h.symbol, day, h.current_price, "Snapshot")
+                        for h in snapshot.holdings
+                    ),
+                    operation,
+                )
+            self._bump(economic=True)
+        return account

@@ -10,7 +10,7 @@ import streamlit as st
 from .ledger.repository import LedgerRepository
 from .storage import Repository
 from .ui_state import dirty, guard_navigation, resolve_navigation
-from .views import snapshots
+from .views import data, lots, overview, snapshots, transactions
 
 PAGES = ("Overview", "Transactions", "Lots & realized gains", "Reconcile", "Data & recovery")
 
@@ -31,6 +31,14 @@ def main():
         ):
             state = st.session_state
             state.setdefault("context", ("Snapshots", None, "Overview"))
+            if "_new_account" in state:
+                new = state.pop("_new_account")
+                state["context"] = ("Transaction accounts", new, "Overview")
+                state["nav_mode"], state["nav_account"], state["nav_page"] = (
+                    "Transaction accounts",
+                    new,
+                    "Overview",
+                )
             state.setdefault("nav_mode", state["context"][0])
             accounts = ledger.load_dataset().accounts
             names = {a.id: a.name + (" (archived)" if a.archived else "") for a in accounts}
@@ -74,8 +82,19 @@ def main():
                 st.caption(
                     f"{names.get(account, 'Choose or create an account')} · {as_of} · {page} · {'Draft pending' if dirty() else 'Saved data'}"
                 )
-                st.info(
-                    "Transaction account workspace. Account setup and entry follow in the next implementation task."
-                )
+                data.onboarding(ledger)
+                if account:
+                    views = {
+                        "Overview": overview,
+                        "Transactions": transactions,
+                        "Lots & realized gains": lots,
+                        "Data & recovery": data,
+                    }
+                    if page in views:
+                        views[page].render(ledger, account, as_of, notices)
+                    else:
+                        st.info("Reconciliation workspace follows in Task 10.")
+                else:
+                    st.info("Create an account to start from full history or opening records.")
     except (ValueError, sqlite3.Error, OSError) as exc:
         st.error(f"Local operation unavailable; inputs preserved. {exc}")

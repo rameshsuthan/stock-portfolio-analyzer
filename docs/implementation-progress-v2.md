@@ -67,3 +67,7 @@ Next: Task 8 shell and guarded snapshot/ledger navigation.
 ### Task 8 complete
 Base 4353214. RED: missing UI state module. GREEN: 14 snapshot/navigation/installed-entrypoint tests; full suite 150 passed. Retained V1 assertions unchanged; shell defaults to Snapshots, blocks dirty navigation with outside-tab controls, and keeps normalized ledger drafts independent of widget lifecycle. Snapshot replacement confirmation moved out of hidden edit tab. Native blue theme added.
 Next: Task 9 transaction onboarding, entry/import/lot/overview/data views and UI behavior tests.
+
+### Task 9 complete
+Base 4cfc5c7. RED: absent onboarding controls/snapshot conversion; later opening replacement preview parameter failed. GREEN: 5 UI/workflow tests, full suite 155 passed. Added account onboarding; trade/revision/void/revival previews; paired reinvestment; split/transfer entry; CSV review/duplicate choices; allocation and supplied-pool basis editor; derived overview; exact details; opening/price/data exports; atomic snapshot conversion; reviewed aggregate-to-detail replacement. New shared views/common.py centralizes preview/confirmation controls.
+Next: Task 10 reconciliation, audit, backup and recovery UI. Browser verification remains pending Task 11.

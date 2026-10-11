@@ -91,7 +91,9 @@ def _allocations(text):
     return tuple(result)
 
 
-def prepare_import(repo, parsed, account_id, effective_date=None, choices=()):
+def prepare_import(
+    repo, parsed, account_id, effective_date=None, choices=(), *, replace_openings=False
+):
     dataset = repo.load_dataset()
     accounts = {a.id: a for a in dataset.accounts}
     names = {a.name: a for a in dataset.accounts}
@@ -362,9 +364,22 @@ def prepare_import(repo, parsed, account_id, effective_date=None, choices=()):
             validate_statement(dataset, statement)
         except ValueError as exc:
             issues.append(Issue("invalid_statement", str(exc)))
+    void_ids = ()
+    if replace_openings:
+        if parsed.kind != I.opening_lots:
+            issues.append(
+                Issue("replacement_kind", "Only detailed lots can replace aggregate openings.")
+            )
+        else:
+            symbols = {(e.account_id, e.symbol) for e in proposed}
+            void_ids = tuple(
+                e.id
+                for e in dataset.events
+                if e.kind == K.OPENING_BALANCE and (e.account_id, e.symbol) in symbols
+            )
     if not issues and proposed:
         try:
-            candidate = repo.proposed_dataset(tuple(proposed), ())
+            candidate = repo.proposed_dataset(tuple(proposed), void_ids)
             projected = replay(
                 candidate, max((e.effective_date for e in candidate.events), default=date.min)
             )
@@ -389,7 +404,7 @@ def prepare_import(repo, parsed, account_id, effective_date=None, choices=()):
         parsed.warnings,
         duplicates,
         tuple(proposed),
-        (),
+        void_ids,
         tuple(prices),
         statement,
         projected,
