@@ -23,3 +23,18 @@ The original checkout contained two untracked planning documents and no applicat
 ## Evidence status
 
 Automated evidence uses only synthetic holdings and temporary databases. Browser access was initially blocked by macOS Accessibility/Screen Recording permissions; actual browser outcomes will be recorded only after observed. No screenshots or video are claimed yet. No personal database has been used for verification.
+
+## Independent review and fix pass
+
+GPT-6 Astra with High reasoning independently reviewed the complete branch (`9d2666f..5f9e391`) and reran all 51 original tests. It found no calculation or transactional data-loss defect. Findings:
+
+- Important: the development environment had a stale editable wheel built when the source directory was still empty. Pytest's source-path setting hid a standalone import failure. A new isolated subprocess import test failed first, then passed after `uv sync --locked --reinstall-package stock-portfolio-analyzer`. A separate fresh environment installed all 42 packages with `uv sync --locked` and imported the app successfully without source-path assistance. Fresh builds were already correct; no packaging workaround was required.
+- The reviewer rated disappearing ignored-column warnings Minor; the executor regraded it Important because users must see discarded input columns. A real AppTest upload reproduced the missing warning; storing warnings with the loaded draft fixes it across reruns and resets them when switching datasets. The regression failed before the fix and passed afterward.
+
+The fix pass leaves **53 tests passing**, Ruff lint passing, and formatted source. No deferred minor review findings remain. No second review was dispatched.
+
+Review rulings: actual browser behavior remains a separate acceptance gate; explicitly excluded product features remain outside v1; CSV text remains exact with documented spreadsheet formula risk; the course demo script is prepared but no video or publication is claimed. The cost of these choices is respectively pending browser assurance, future work for excluded uses, care opening untrusted CSVs in spreadsheet software, and a remaining owner-recorded video.
+
+## Browser verification status
+
+A localhost Streamlit server was started with a temporary data directory and telemetry disabled. Native browser control repeatedly reported that macOS Accessibility/Screen Recording permissions were not granted, including after the owner reported enabling them and after reconnection. Chrome and in-app browser connector surfaces were unavailable. Permission to use a separate Playwright browser was requested; until it is authorized and exercised, CSV upload, canvas editing, confirmation dialogs, downloads, and restart behavior **are not browser-verified**. Automated coverage and server startup are not substitutes for that walkthrough.

@@ -19,15 +19,16 @@ from .workflow import Draft
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def _queue_load(rows, metadata, saved=False):
-    st.session_state["load_next"] = (rows, metadata, saved)
+def _queue_load(rows, metadata, saved=False, warnings=()):
+    st.session_state["load_next"] = (rows, metadata, saved, warnings)
     st.rerun()
 
 
 def _apply_load():
     state = st.session_state
     if "load_next" in state:
-        rows, metadata, saved = state.pop("load_next")
+        rows, metadata, saved, warnings = state.pop("load_next")
+        state["import_warnings"] = warnings
         state["draft"].load(rows, metadata, discard=True, saved=saved)
         state["editor_base"] = rows
         state["generation"] += 1
@@ -48,7 +49,7 @@ def _render(repo):
             snapshots = repo.list_snapshots(portfolios[0][0])
             if snapshots:
                 s = repo.load_snapshot(snapshots[0][0])
-                state["load_next"] = (holding_rows(s.holdings), s.metadata, True)
+                state["load_next"] = (holding_rows(s.holdings), s.metadata, True, ())
     _apply_load()
     draft = state["draft"]
     st.title("Stock Portfolio Analyzer")
@@ -106,15 +107,15 @@ def _render(repo):
     if st.button("Import uploaded CSV", disabled=upload is None):
         try:
             parsed = parse_csv(upload.getvalue())
-            action = (parsed.rows, parsed.metadata or draft.metadata, False)
-            for warning in parsed.warnings:
-                st.warning(warning)
+            action = (parsed.rows, parsed.metadata or draft.metadata, False, parsed.warnings)
         except CsvFormatError as exc:
             st.error(str(exc))
-    name = st.text_input(
-        "Target portfolio name", value=draft.metadata.portfolio_name, key="target_name"
-    )
-    as_of = st.date_input("Prices as of", value=draft.metadata.snapshot_date, key="target_date")
+    for warning in state.get("import_warnings", ()):
+        st.warning(warning)
+    state.setdefault("target_name", draft.metadata.portfolio_name)
+    state.setdefault("target_date", draft.metadata.snapshot_date)
+    name = st.text_input("Target portfolio name", key="target_name")
+    as_of = st.date_input("Prices as of", key="target_date")
     frame = pd.DataFrame(state["editor_base"], columns=FIELDS).fillna("").astype(str)
     edited = st.data_editor(
         frame,

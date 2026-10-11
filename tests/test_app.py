@@ -87,3 +87,21 @@ def test_charts_share_analysis_and_zero_baseline():
     assert fig.layout.yaxis.zeroline
     pie = allocation_chart(a.stock_allocations, "Stock allocation")
     assert list(pie.data[0].labels) == ["DEMO_A", "DEMO_B"]
+
+
+def test_ignored_columns_remain_visible_after_import_and_rerun(tmp_path, monkeypatch):
+    at = app(tmp_path, monkeypatch)
+    at.file_uploader[0].upload(
+        "extra.csv",
+        b"symbol,quantity,cost_basis,current_price,ignored\nNA,1,1,2,text\n",
+        "text/csv",
+    ).run()
+    button(at, "Import uploaded CSV").click().run()
+    assert not at.exception
+    assert at.session_state["draft"].rows[0]["symbol"] == "NA"
+    assert any("Ignored columns: ignored" in w.value for w in at.warning)
+    at.run()
+    assert any("Ignored columns: ignored" in w.value for w in at.warning)
+    button(at, "New blank draft").click().run()
+    button(at, "Discard changes and switch").click().run()
+    assert not any("Ignored columns" in w.value for w in at.warning)
