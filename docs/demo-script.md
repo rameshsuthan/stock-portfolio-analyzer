@@ -1,3 +1,9 @@
+# Portfolio Ledger V2 local acceptance
+
+Launch from the V2 worktree with a fresh temporary `PORTFOLIO_DATA_DIR`. Follow [the synthetic ledger pack](../samples/ledger/README.md) for account/import/reconciliation examples and the [V2 manual checklist](superpowers/plans/2026-10-11-portfolio-ledger-v2.md#manual-acceptance-checklist). Verify both modes, cancellation and dirty navigation, dependent correction rejection, downloads, restart, backup and offline restore with synthetic files only. No course recording or submission is performed by this implementation.
+
+The original V1 demonstration script below is retained for the **Snapshots → Analysis / Edit holdings** workflow.
+
 # Synthetic demonstration and manual acceptance
 
 Use only `samples/demo.csv` and a fresh temporary `PORTFOLIO_DATA_DIR`. Record no personal holdings, file paths, account details, or credentials. Target video length: 4:30, maximum five minutes. This is a prepared script, not a claim that a video has been recorded or submitted.

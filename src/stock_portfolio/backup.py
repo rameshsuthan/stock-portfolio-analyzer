@@ -4,6 +4,7 @@ import argparse
 import os
 import sqlite3
 import tempfile
+from contextlib import closing
 from pathlib import Path
 from uuid import uuid4
 
@@ -14,12 +15,28 @@ def _validate(connection):
     version = connection.execute("PRAGMA user_version").fetchone()[0]
     if version not in (1, 2):
         raise ValueError("Unsupported backup schema.")
-    required = {"portfolios", "snapshots", "holdings"}
+    # Build the expected schema in memory, avoiding duplicated schema definitions.
+    from .database import LEDGER_SCHEMA, SNAPSHOT_SCHEMA
+
+    with closing(sqlite3.connect(":memory:")) as expected:
+        for statement in (*SNAPSHOT_SCHEMA, *(LEDGER_SCHEMA if version == 2 else ())):
+            expected.execute(statement)
+        tables = [
+            r[0] for r in expected.execute("SELECT name FROM sqlite_master WHERE type='table'")
+        ]
+        for table in tables:
+            expected_columns = expected.execute(f'PRAGMA table_info("{table}")').fetchall()
+            actual_columns = connection.execute(f'PRAGMA table_info("{table}")').fetchall()
+            if expected_columns != actual_columns:
+                raise ValueError("Invalid backup schema: required tables/columns differ.")
+    if connection.execute("PRAGMA foreign_key_check").fetchone():
+        raise ValueError("Invalid backup schema references.")
     if version == 2:
-        required |= {"accounts", "ledger_state", "ledger_event_revisions", "ledger_event_heads"}
-    tables = {r[0] for r in connection.execute("SELECT name FROM sqlite_master WHERE type='table'")}
-    if not required <= tables or connection.execute("PRAGMA foreign_key_check").fetchone():
-        raise ValueError("Invalid backup schema or references.")
+        rows = connection.execute(
+            "SELECT id,revision,economic_revision FROM ledger_state"
+        ).fetchall()
+        if len(rows) != 1 or rows[0][0] != 1 or not 0 <= rows[0][2] <= rows[0][1]:
+            raise ValueError("Invalid backup schema state counters.")
 
 
 def create_backup(source: Path, destination: Path) -> Path:
@@ -28,9 +45,9 @@ def create_backup(source: Path, destination: Path) -> Path:
         raise ValueError("Backup destination must be a new file different from source.")
     destination.parent.mkdir(parents=True, exist_ok=True)
     try:
-        with sqlite3.connect(source.resolve().as_uri() + "?mode=ro", uri=True) as src:
+        with closing(sqlite3.connect(source.resolve().as_uri() + "?mode=ro", uri=True)) as src:
             _validate(src)
-            with sqlite3.connect(destination) as dst:
+            with closing(sqlite3.connect(destination)) as dst:
                 src.backup(dst)
                 _validate(dst)
     except BaseException:

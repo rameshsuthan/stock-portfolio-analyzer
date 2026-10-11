@@ -213,8 +213,10 @@ def prepare_import(
             if opening:
                 values["basis"] = decimal_input(row["cost_basis"])
                 if parsed.kind == I.opening_lots:
-                    if not ext:
-                        raise ValueError("Detailed opening lot_id is required.")
+                    if not ext and not (incoming_id and row.get("export_kind") == I.opening_lots):
+                        raise ValueError(
+                            "Detailed opening lot_id is required, except an identified data export."
+                        )
                     values["acquired_date"] = iso_date(row["acquired_date"])
             for field in ("split_numerator", "split_denominator"):
                 if row.get(field):

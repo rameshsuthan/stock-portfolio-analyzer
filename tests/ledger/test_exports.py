@@ -78,3 +78,26 @@ def test_all_account_export_roundtrip_preserves_openings_allocations_and_transfe
         }
         assert {e.id: e for e in target.load_dataset().events} == expected
         assert replay(target.load_dataset(), END).disposals[0].gain == 100
+
+
+def test_opening_roundtrip_without_external_id_keeps_identity(tmp_path):
+    with (
+        LedgerRepository(tmp_path / "source.db") as source,
+        LedgerRepository(tmp_path / "target.db") as target,
+    ):
+        a = source.create_account("A", date(2025, 1, 1))
+        aa = target.create_account("A", date(2025, 1, 1))
+        opening = event(
+            "no-external",
+            "OPENING_LOT",
+            account=a.id,
+            quantity="3",
+            basis="1",
+            acquired_date=date(2020, 1, 1),
+        )
+        apply(source, opening)
+        raw = export_openings(source.load_dataset(), a.id, I.opening_lots)
+        p = prepare_import(target, parse_import(raw, I.opening_lots), aa.id, aa.opening_date)
+        assert not p.issues
+        commit_import(target, p)
+        assert target.load_dataset().events == (replace(opening, account_id=aa.id),)

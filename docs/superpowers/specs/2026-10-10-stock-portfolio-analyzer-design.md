@@ -1,3 +1,5 @@
+> Historical V1 record. Current release: [Portfolio Ledger V2](../specs/2026-10-11-portfolio-ledger-v2-design.md). Original acceptance claims below are unchanged.
+
 # Stock Portfolio Analyzer — Approved Design
 
 **Date:** 2026-10-10

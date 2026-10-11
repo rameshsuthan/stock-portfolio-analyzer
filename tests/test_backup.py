@@ -44,3 +44,18 @@ def test_restore_failure_preserves_destination(tmp_path, monkeypatch, failure):
     with pytest.raises((ValueError, sqlite3.DatabaseError, OSError)):
         restore_backup(source, dest)
     assert dest.read_bytes() == before
+
+
+def test_restore_rejects_schema_version_two_missing_required_tables(tmp_path):
+    from stock_portfolio.database import open_database
+
+    source, dest = tmp_path / "incomplete.db", tmp_path / "destination.db"
+    c = open_database(source)
+    c.execute("DROP TABLE reconciliation_rows")
+    c.commit()
+    c.close()
+    make_v1(dest)
+    before = dest.read_bytes()
+    with pytest.raises(ValueError, match="schema"):
+        restore_backup(source, dest)
+    assert dest.read_bytes() == before

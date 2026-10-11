@@ -11,7 +11,7 @@ from ..presentation import exact, table
 from ..ui_state import clear_draft
 
 
-def impact(repo, result):
+def impact(repo, result, *, key):
     names = {a.id: a.name for a in repo.load_dataset().accounts}
     st.caption(
         "Projected positions across affected ledger history (including destination accounts)"
@@ -30,7 +30,9 @@ def impact(repo, result):
         height=250,
     )
     if result.disposals:
-        with st.expander("Projected sale gains and consumed lots"):
+        with st.expander(
+            "Projected sale gains and consumed lots", key="panel:impact:" + key, on_change="rerun"
+        ):
             table(
                 [
                     {
@@ -68,7 +70,7 @@ def operation_controls(repo, draft, build, *, label="operation"):
         events, voids, reason, revision, projected = pending
         st.subheader("Review before saving")
         st.json({"events": primitive(events), "void_ids": voids, "reason": reason}, expanded=False)
-        impact(repo, projected)
+        impact(repo, projected, key=draft.key)
         if st.button(f"Confirm {label}", key=f"confirm:{draft.key}"):
             try:
                 repo.apply_operation(events, voids, revision, reason)

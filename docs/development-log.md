@@ -71,3 +71,11 @@ Four regression tests were developed with observed failures before the correspon
 Isolated headless Edge/Playwright used only synthetic CSVs and `/private/tmp/portfolio-ui-refinement` SQLite data. Uploaded `real_symbols_100.csv`; observed basis $16,233,618.53, market value $16,368,367.89, gain $134,749.36, 0.83%, 100 holdings. At widths 1366, 1024, and 768, metric content fits without horizontal overflow. Edited AAPL quantity 459.01→460.01 through the actual canvas editor: total becomes $16,368,525.69. Complete download retained 100 rows and exact edited quantity; AAPL filtering, Reset filters, saving and switching tabs passed. Sidebar discard confirmation/cancel is visible from Analysis.
 
 Screenshots: [dashboard](evidence/portfolio-100-dashboard.png), [charts](evidence/portfolio-100-charts.png). Narrow tables require horizontal scrolling; charts deliberately summarize positions while tables/reports retain all selected holdings. Restart an already-running Streamlit process to load the changed Python modules.
+
+## 2026-10-11 — Portfolio Ledger V2 implementation
+
+Executed the approved eleven-task plan sequentially in `feature/portfolio-ledger-v2`, based on V1 planning commit `6b14063`. Focused commits preserve the migration, pure replay, event types, revisioned repository, CSV exchange, valuation, reconciliation, shell, entry/lot workflows, and recovery UI boundaries. The detailed resumable record is [implementation-progress-v2.md](implementation-progress-v2.md).
+
+Cleanup inventory: centralized the database schema/connection in `database.py`; removed duplicate initialization from snapshot storage; extracted snapshot UI while retaining its contracts/tests; consolidated money/table formatting; replaced obsolete global unsupported-feature copy with mode-specific guidance; retained historical planning documents with status notices, course materials, privacy ignores, lockfile and snapshot fixtures. No owner files, databases, or V1 worktree were removed.
+
+Acceptance uses synthetic fixtures and temporary databases exclusively. The fresh isolated locked environment passes 169 non-browser tests; the installed `stock_portfolio.ui` entrypoint imports from outside the source directory. Playwright is a development dependency only. Real Edge acceptance and the independent whole-branch review are recorded below when complete.

@@ -187,7 +187,7 @@ def export_openings(dataset, account_id, kind):
     rows = [
         {
             "account_name": account.name,
-            "lot_id": e.external_id or e.id,
+            "lot_id": e.external_id or "",
             "ticker": e.symbol,
             "acquired_date": e.acquired_date,
             "quantity": e.quantity,
@@ -244,7 +244,7 @@ def template(kind):
     return write_csv([], (*REQUIRED[kind], *OPTIONAL[kind]), kind)
 
 
-def export_holdings_report(value):
+def export_holdings_report(value, *, symbols=None):
     rows = [
         {
             "account_id": value.account_id,
@@ -259,6 +259,7 @@ def export_holdings_report(value):
             "status": ";".join(i.code for i in h.issues) or "complete",
         }
         for h in value.holdings
+        if symbols is None or h.position.symbol in symbols
     ]
     return write_csv(
         rows,

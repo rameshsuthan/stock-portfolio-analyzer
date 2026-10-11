@@ -99,3 +99,17 @@ def test_price_corrections_keep_history_stale_previews_not_economic_revision(tmp
         )
         commit_import(repo, p)
         assert len(repo.load_prices()) == 2
+
+
+def test_filtered_holdings_report_preserves_unknowns_and_exact_derived_values():
+    import csv
+    import io
+
+    ds = dataset(
+        event("one", quantity="1", price="100"),
+        event("two", day=2, symbol="XYZ", quantity="1", price="20"),
+    )
+    v = value(ds)
+    rows = list(csv.DictReader(io.StringIO(export_holdings_report(v, symbols={"ABC"}).decode())))
+    assert len(rows) == 1 and rows[0]["ticker"] == "ABC"
+    assert rows[0]["market_value"] == "" and rows[0]["cost_basis"] == "100"

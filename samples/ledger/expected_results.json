@@ -1,0 +1,7 @@
+{
+  "fifo": {"proceeds": "1794", "basis": "1252", "gain": "542", "remaining_quantity": "3", "remaining_basis": "363"},
+  "linked": {"Synthetic A": {"quantity": "4.8", "basis": "291", "realized": "542", "dividends": "50", "market_value": "384"}, "Synthetic B": {"quantity": "1", "basis": "60.5", "realized": "19.5", "dividends": "0", "market_value": "80"}},
+  "hundred": {"holdings": 100, "quantity": "100", "basis": "10000", "market_value": "12000"},
+  "ten_thousand": {"events": 10000, "holdings": 100, "quantity": "10000", "basis": "1000000"},
+  "invalid": {"unknown_event.csv": "invalid_row", "precision.csv": "invalid_row", "oversell.csv": "oversell", "duplicate_headers.csv": "parse_error"}
+}

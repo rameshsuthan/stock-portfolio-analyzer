@@ -1,0 +1,2 @@
+date,transaction_type,ticker,transaction_id,quantity,price
+2025-01-02,SELL,ABC,partial-sale,4,150

@@ -45,7 +45,12 @@ def render(repo, account_id, as_of, notices):
             for e in sorted(events, key=lambda e: (e.effective_date, e.day_sequence))
         ]
     )
-    with st.expander("Add, revise or void an event", expanded=True):
+    with st.expander(
+        "Add, revise or void an event",
+        expanded=True,
+        key="panel:transactions.py:Add, revise or void an event",
+        on_change="rerun",
+    ):
         action = st.selectbox(
             "Event action", ("Add", "Revise", "Void", "Revive"), key="event_action"
         )
@@ -210,7 +215,11 @@ def render(repo, account_id, as_of, notices):
                 return (event, *linked), (), reason
 
             operation_controls(repo, draft, build)
-    with st.expander("Record dividend and reinvestment together"):
+    with st.expander(
+        "Record dividend and reinvestment together",
+        key="panel:transactions.py:Record dividend and reinvestment together",
+        on_change="rerun",
+    ):
         draft = draft_for("reinvestment")
         day = text_input(draft, "date", "Reinvestment date", str(date.today()))
         symbol = text_input(draft, "symbol", "Reinvestment symbol")
@@ -249,5 +258,10 @@ def render(repo, account_id, as_of, notices):
             return (div, buy), (), reason
 
         operation_controls(repo, draft, build_reinvestment, label="reinvestment")
-    with st.expander("Import transactions CSV", expanded=True):
+    with st.expander(
+        "Import transactions CSV",
+        expanded=True,
+        key="panel:transactions.py:Import transactions CSV",
+        on_change="rerun",
+    ):
         import_wizard(repo, account_id, as_of, kind="transactions")

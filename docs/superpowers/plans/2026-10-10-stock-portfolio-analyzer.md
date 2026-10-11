@@ -1,3 +1,5 @@
+> Historical V1 record. Current release: [Portfolio Ledger V2](../specs/2026-10-11-portfolio-ledger-v2-design.md). Original acceptance claims below are unchanged.
+
 # Stock Portfolio Analyzer Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use **superpowers:executing-plans** for native, task-by-task implementation. The user has already selected native execution; do not ask them to select an execution method again. Implementation begins only when requested after plan review. Steps use checkboxes for tracking.

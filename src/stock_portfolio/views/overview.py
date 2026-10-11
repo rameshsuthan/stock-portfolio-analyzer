@@ -61,7 +61,10 @@ def render(repo, account_id, as_of, notices):
         ]
     )
     st.download_button(
-        "Download holdings report", export_holdings_report(value), "holdings-report.csv", "text/csv"
+        "Download holdings report",
+        export_holdings_report(value, symbols={h.position.symbol for h in holdings}),
+        "holdings-report.csv",
+        "text/csv",
     )
     st.download_button(
         "Download realized report",

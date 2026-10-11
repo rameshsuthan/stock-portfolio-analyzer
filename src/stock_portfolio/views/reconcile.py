@@ -15,7 +15,12 @@ def render(repo, account_id, as_of, notices):
         "Compare complete end-of-day quantities and basis. A match does not certify tax lots or lifetime gains. Corrections never overwrite holdings from the statement."
     )
     statement_date = st.date_input("Broker statement date", value=as_of, key="statement_date")
-    with st.expander("Import complete broker statement", expanded=True):
+    with st.expander(
+        "Import complete broker statement",
+        expanded=True,
+        key="panel:reconcile.py:Import complete broker statement",
+        on_change="rerun",
+    ):
         import_wizard(repo, account_id, statement_date, kind="broker_holdings")
     statements = repo.load_statements(account_id)
     if not statements:

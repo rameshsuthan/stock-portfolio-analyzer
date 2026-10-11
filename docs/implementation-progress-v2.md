@@ -25,8 +25,7 @@ No blocking interface conflicts found. Approved design/plan supersede earlier pl
 
 ## Tasks
 
-1. In progress — migration and recovery. Next: RED tests.
-2–11. Pending in order.
+Tasks 1–10 complete (details and commit bases below). Task 11: acceptance and final review in progress.
 
 ## Review / browser
 
@@ -76,3 +75,15 @@ Next: Task 10 reconciliation, audit, backup and recovery UI. Browser verificatio
 Base a424553. RED: missing reconciliation controls and audit view; GREEN: 2 additional UI scenarios, full suite 157 passed; Ruff check/format and diff whitespace check passed. Completeness confirmation gates statement import; saved evidence shows stale state and recalculates into a new result. Added current-history lot/event drill-through, immutable audit old/new/reason display, SQLite backup download and configured-path offline restore instructions. Backup bytes were reopened and integrity-checked in a temporary test directory. Shared snapshot money formatting consolidated.
 Test adjustment: inspect the actual Reason column rather than pandas' truncated string representation.
 Next: Task 11 synthetic fixtures, isolated Edge browser workflows, performance, fresh install, documentation, one Astra High whole-branch review and important fixes.
+
+### Task 11 in progress
+Base 47ce8f4. Added dev-only Playwright 1.63.0 (runtime lock versions unchanged), synthetic fixtures/hand-calculated JSON, explicit browser marker and ephemeral server/profile harness. Fixture checks: 7 passed; 10,000 rows preview 0.613s / commit 0.399s / load+replay 0.137s on this machine.
+Acceptance RED→GREEN safeguard: incomplete schema-2 backup (missing reconciliation_rows) was accepted; new test failed, schema validation now compares every required table/column with an in-memory canonical schema. Migration/backup checks 9 passed. SQLite backup connections now close explicitly.
+Browser: Edge installed. Localhost bind required sandbox escalation; isolated launch/onboarding smoke passed. Full workflow exposed untracked expander panels collapsing after reruns; panels now have explicit state, focused UI suite 7 passed. Full Edge workflow running again; do not claim acceptance complete yet.
+Docs updated for V2 workflows, safe migration/restore, explicit browser command and synthetic pack; historical V1 records retained. Remaining: finish actual browser upload/edit/allocations/reconciliation/download/restart/snapshot canvas/sizes, fresh install, one independent Astra High review, important fixes, final checks/commit.
+
+Acceptance hardening: filtered holdings reports now honor selected symbols; detailed-opening export/import preserves absent external identity; simultaneous previews use distinct control keys. Each new behavioral regression failed before its fix. Full non-browser suite: 169 passed, 2 explicitly deselected browser scenarios.
+Task 11: Ruling: metadata-identified opening-lot exports may leave external lot_id blank when the event has none; ordinary opening CSVs still require it — preserves lossless identity instead of fabricating one — cost if wrong: exported-file compatibility needs a format revision.
+
+Browser acceptance: isolated Edge ledger scenario passed (103.47s), including two accounts, uploads/no-op/occurrence decisions, cancel/confirm trade edit, explicit lots, reinvestment/split/transfer, prices, mismatch correction/stale/recalculation, inspected downloads/backup, opening-pool basis resolution, 10,000-event import and restart. Browser preview 2.217s / commit 1.567s. Snapshot scenario passed separately with actual canvas editing, navigation guard, cancel/confirm replacement, downloads and restart. Harness issues resolved by waiting for scroll completion, searching virtualized selectors, and checking the visible canvas editor. Combined suite extended to capture priced 100-holding charts and filtered downloads is running.
+Fresh isolated locked environment: 169 passed / 2 browser deselected; installed UI import outside source cwd passed. Ruff check/format and whitespace checks passed. V1 and main remain clean, unchanged. Final independent review next.

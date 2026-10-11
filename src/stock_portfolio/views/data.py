@@ -23,7 +23,12 @@ from .common import impact
 
 
 def onboarding(repo):
-    with st.expander("Create transaction account", expanded=not repo.load_dataset().accounts):
+    with st.expander(
+        "Create transaction account",
+        expanded=not repo.load_dataset().accounts,
+        key="panel:account",
+        on_change="rerun",
+    ):
         draft = draft_for("account")
         name = text_input(draft, "name", "New account name")
         mode = st.selectbox(
@@ -160,7 +165,7 @@ def import_wizard(repo, account_id, as_of, kind=None):
                 "Reviewed replacement will void the matching aggregate openings and replay dependent sale gains."
             )
         if preview.projected:
-            impact(repo, preview.projected)
+            impact(repo, preview.projected, key=draft.key)
         if preview.proposed_prices:
             st.warning(
                 "Shared price observations affect every transaction account using this symbol/date."
@@ -215,9 +220,18 @@ def render(repo, account_id, as_of, notices):
     st.download_button(
         "Download shared prices", export_prices(repo.load_prices()), "prices.csv", "text/csv"
     )
-    with st.expander("Import opening records, allocations or prices", expanded=True):
+    with st.expander(
+        "Import opening records, allocations or prices",
+        expanded=True,
+        key="panel:data.py:Import opening records, allocations or prices",
+        on_change="rerun",
+    ):
         import_wizard(repo, account_id, as_of)
-    with st.expander("Add or correct a dated price"):
+    with st.expander(
+        "Add or correct a dated price",
+        key="panel:data.py:Add or correct a dated price",
+        on_change="rerun",
+    ):
         st.warning("A price correction affects all transaction accounts using that observation.")
         draft = draft_for("price")
         symbol = text_input(draft, "symbol", "Price symbol")
@@ -251,7 +265,14 @@ def render(repo, account_id, as_of, notices):
         if draft.dirty and st.button("Cancel price"):
             clear_draft(draft)
             st.rerun()
-    with st.expander("Start account from snapshot"), Repository(repo.path) as snapshots:
+    with (
+        st.expander(
+            "Start account from snapshot",
+            key="panel:data.py:Start account from snapshot",
+            on_change="rerun",
+        ),
+        Repository(repo.path) as snapshots,
+    ):
         options = {
             sid: f"{name} · {day}"
             for pid, name in snapshots.list_portfolios()
@@ -304,7 +325,9 @@ def render(repo, account_id, as_of, notices):
         st.session_state["receipt"] = "Account archived. History retained."
         st.rerun()
 
-    with st.expander("Audit history", expanded=True):
+    with st.expander(
+        "Audit history", expanded=True, key="panel:data.py:Audit history", on_change="rerun"
+    ):
         history = repo.audit_history(account_id)
         table(
             [
@@ -341,7 +364,12 @@ def recovery(repo):
 
     from ..backup import create_backup
 
-    with st.expander("Backup & offline recovery", expanded=True):
+    with st.expander(
+        "Backup & offline recovery",
+        expanded=True,
+        key="panel:data.py:Backup & offline recovery",
+        on_change="rerun",
+    ):
         st.caption(
             "A database backup includes both modes, exact values, audit history and reconciliation evidence. Store downloaded backups privately."
         )

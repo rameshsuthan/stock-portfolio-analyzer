@@ -166,3 +166,56 @@ def test_opening_replacement_preview_preserves_totals(tmp_path):
         assert not p.issues and p.void_ids == (pool.id,)
         commit_import(repo, p)
         assert all(e.kind == K.OPENING_LOT for e in repo.load_dataset().events)
+
+
+def test_duplicate_decisions_survive_reruns(tmp_path, monkeypatch):
+    at = create(ledger_app(tmp_path, monkeypatch))
+    at.radio(key="nav_page").set_value("Transactions").run()
+    at.file_uploader[0].upload(
+        "same.csv",
+        b"ticker,date,transaction_type,quantity,price\nNA,2025-01-01,BUY,1,1\nNA,2025-01-01,BUY,1,1\n",
+        "text/csv",
+    ).run()
+    button(at, "Preview CSV import").click().run()
+    select(at, "Row 2: 2 matching occurrences").set_value("keep").run()
+    at.run()
+    assert select(at, "Row 2: 2 matching occurrences").value == "keep"
+    select(at, "Row 3: 2 matching occurrences").set_value("keep").run()
+    button(at, "Update duplicate decisions").click().run()
+    assert not button(at, "Confirm import").disabled
+    button(at, "Confirm import").click().run()
+    with LedgerRepository(tmp_path / "portfolio.sqlite3") as repo:
+        assert len(repo.load_dataset().events) == 2
+
+
+def test_two_pending_operation_previews_have_distinct_controls(tmp_path, monkeypatch):
+    from decimal import Decimal as D
+    from uuid import uuid4
+
+    from stock_portfolio.ledger.models import EventKind as K
+    from stock_portfolio.ledger.models import LedgerEvent
+
+    with LedgerRepository(tmp_path / "portfolio.sqlite3") as repo:
+        a = repo.create_account("A")
+        buy = LedgerEvent(
+            str(uuid4()), a.id, date(2025, 1, 1), 1, K.BUY, "ABC", quantity=D(10), price=D(100)
+        )
+        sale = LedgerEvent(
+            str(uuid4()), a.id, date(2025, 1, 2), 1, K.SELL, "ABC", quantity=D(1), price=D(150)
+        )
+        repo.apply_operation((buy, sale), (), repo.load_dataset().revision, "Synthetic setup")
+    at = ledger_app(tmp_path, monkeypatch)
+    at.radio(key="nav_page").set_value("Transactions").run()
+    for label, value in [("Symbol", "ABC"), ("Quantity", "1"), ("Trade price", "100")]:
+        text(at, label).input(value).run()
+    button(at, "Preview operation").click().run()
+    for label, value in [
+        ("Reinvestment symbol", "ABC"),
+        ("Cash dividend received", "50"),
+        ("Reinvested quantity", ".4"),
+        ("Reinvestment price", "120"),
+    ]:
+        text(at, label).input(value).run()
+    button(at, "Preview reinvestment").click().run()
+    assert not at.exception
+    assert button(at, "Confirm operation") and button(at, "Confirm reinvestment")
