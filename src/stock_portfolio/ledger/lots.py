@@ -15,7 +15,7 @@ def invalid(event, message, code="invalid_history"):
 
 @dataclass
 class Pool:
-    original_basis: D
+    original_basis: D | None
     assigned: D = D(0)
     unresolved: bool = False
 
@@ -84,6 +84,11 @@ class LotBook:
                 if basis is None:
                     pool.unresolved = True
                 else:
+                    if pool.original_basis is None:
+                        invalid(
+                            event,
+                            "Resolve the source transfer basis before assigning descendant basis.",
+                        )
                     pool.assigned += basis
                     if pool.assigned > pool.original_basis:
                         invalid(event, "Supplied basis exceeds original pool basis.")

@@ -2,7 +2,8 @@
 
 from decimal import Decimal as D
 
-from .lots import LotBook, invalid
+from .events import reinvestment, split, transfer
+from .lots import LotBook
 from .models import Disposal, InvalidLedger, Issue, Lot, LotAllocation, Position, ReplayResult
 from .models import EventKind as K
 from .validation import precise, validate_events
@@ -14,9 +15,13 @@ def replay(dataset, as_of):
     if issues:
         raise InvalidLedger(issues)
     book, disposals = LotBook(), []
+    dividends, reinvestments, seen, linked = {}, [], {}, set()
+    accounts = {a.id: a for a in dataset.accounts}
     for e in sorted(dataset.events, key=lambda e: (e.effective_date, e.day_sequence)):
         if e.effective_date > as_of:
             continue
+        if e.reinvestment_of:
+            reinvestments.append(reinvestment(e, seen, linked))
         if e.kind in {K.BUY, K.OPENING_LOT, K.OPENING_BALANCE}:
             basis = e.quantity * e.price + e.fees if e.kind == K.BUY else e.basis
             acquired = e.effective_date if e.kind == K.BUY else e.acquired_date
@@ -67,8 +72,13 @@ def replay(dataset, as_of):
                     tuple(match_proceeds),
                 )
             )
-        else:
-            invalid(e, "Unsupported event handler.")
+        elif e.kind == K.DIVIDEND:
+            dividends[e.account_id] = dividends.get(e.account_id, D(0)) + e.amount
+        elif e.kind == K.SPLIT:
+            split(e, book)
+        elif e.kind == K.TRANSFER:
+            transfer(e, book, accounts)
+        seen[e.id] = e
     positions = []
     for (account, symbol), ids in book.by_position.items():
         lots = [book.lots[i] for i in ids if book.lots[i].quantity]
@@ -92,5 +102,10 @@ def replay(dataset, as_of):
         i for d in disposals for i in d.issues
     )
     return ReplayResult(
-        tuple(book.lots.values()), tuple(positions), tuple(disposals), {}, (), issues
+        tuple(book.lots.values()),
+        tuple(positions),
+        tuple(disposals),
+        dividends,
+        tuple(reinvestments),
+        issues,
     )

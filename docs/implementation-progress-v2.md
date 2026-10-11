@@ -43,3 +43,7 @@ Base d40b51c. RED: missing replay/models; fee-slice test subsequently failed on 
 Task 2: Ruling: aggregate-to-detailed replacement total checks belong to Task 4's atomic mutation boundary, where the old and proposed datasets coexist; replay validates each representation now — avoids inventing mutation semantics in pure replay — cost if wrong: replacement test arrives two tasks later.
 Added optional Disposal.match_proceeds to expose proportional fee allocation and final residuals without changing required signatures.
 Next: Task 3 additional events.
+
+### Task 3 complete
+Base 21b525c. RED: five missing-handler failures in event/transfer tests; GREEN: all 11 event/transfer cases, full suite 104 passed. Forward/reverse splits use exact rational representability checks; linked dividends and transfer-derived UUID5 lots verified. Source correction replays transfer descendants; no transfer income.
+Next: Task 4 revisioned persistence, grouped corrections and replacement totals.
